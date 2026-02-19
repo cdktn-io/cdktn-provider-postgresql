@@ -1,28 +1,28 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-postgresql.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-postgresql.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### PostgresqlProvider <a name="PostgresqlProvider" id="@cdktf/provider-postgresql.provider.PostgresqlProvider"></a>
+### PostgresqlProvider <a name="PostgresqlProvider" id="@cdktn/provider-postgresql.provider.PostgresqlProvider"></a>
 
 Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs postgresql}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-postgresql'
+import { provider } from '@cdktn/provider-postgresql'
 
 new provider.PostgresqlProvider(scope: Construct, id: string, config?: PostgresqlProviderConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig">PostgresqlProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig">PostgresqlProviderConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig">PostgresqlProviderConfig</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig">PostgresqlProviderConfig</a>
 
 ---
 
@@ -50,40 +50,40 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAlias">resetAlias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamAuth">resetAwsRdsIamAuth</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProfile">resetAwsRdsIamProfile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProviderRoleArn">resetAwsRdsIamProviderRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamRegion">resetAwsRdsIamRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAzureIdentityAuth">resetAzureIdentityAuth</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAzureTenantId">resetAzureTenantId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetClientcert">resetClientcert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetConnectTimeout">resetConnectTimeout</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetDatabase">resetDatabase</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetDatabaseUsername">resetDatabaseUsername</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetExpectedVersion">resetExpectedVersion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetGcpIamImpersonateServiceAccount">resetGcpIamImpersonateServiceAccount</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetHost">resetHost</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetMaxConnections">resetMaxConnections</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetPassword">resetPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetPort">resetPort</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetScheme">resetScheme</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSslmode">resetSslmode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSslMode">resetSslMode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSslrootcert">resetSslrootcert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSuperuser">resetSuperuser</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetUsername">resetUsername</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAlias">resetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamAuth">resetAwsRdsIamAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProfile">resetAwsRdsIamProfile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProviderRoleArn">resetAwsRdsIamProviderRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamRegion">resetAwsRdsIamRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAzureIdentityAuth">resetAzureIdentityAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAzureTenantId">resetAzureTenantId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetClientcert">resetClientcert</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetConnectTimeout">resetConnectTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetDatabase">resetDatabase</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetDatabaseUsername">resetDatabaseUsername</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetExpectedVersion">resetExpectedVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetGcpIamImpersonateServiceAccount">resetGcpIamImpersonateServiceAccount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetHost">resetHost</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetMaxConnections">resetMaxConnections</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetPassword">resetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetPort">resetPort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetScheme">resetScheme</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSslmode">resetSslmode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSslMode">resetSslMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSslrootcert">resetSslrootcert</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSuperuser">resetSuperuser</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetUsername">resetUsername</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.toString"></a>
 
 ```typescript
 public toString(): string
@@ -91,25 +91,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -117,7 +117,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -125,7 +125,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -133,19 +133,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -153,139 +153,139 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `resetAlias` <a name="resetAlias" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAlias"></a>
+##### `resetAlias` <a name="resetAlias" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAlias"></a>
 
 ```typescript
 public resetAlias(): void
 ```
 
-##### `resetAwsRdsIamAuth` <a name="resetAwsRdsIamAuth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamAuth"></a>
+##### `resetAwsRdsIamAuth` <a name="resetAwsRdsIamAuth" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamAuth"></a>
 
 ```typescript
 public resetAwsRdsIamAuth(): void
 ```
 
-##### `resetAwsRdsIamProfile` <a name="resetAwsRdsIamProfile" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProfile"></a>
+##### `resetAwsRdsIamProfile` <a name="resetAwsRdsIamProfile" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProfile"></a>
 
 ```typescript
 public resetAwsRdsIamProfile(): void
 ```
 
-##### `resetAwsRdsIamProviderRoleArn` <a name="resetAwsRdsIamProviderRoleArn" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProviderRoleArn"></a>
+##### `resetAwsRdsIamProviderRoleArn` <a name="resetAwsRdsIamProviderRoleArn" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProviderRoleArn"></a>
 
 ```typescript
 public resetAwsRdsIamProviderRoleArn(): void
 ```
 
-##### `resetAwsRdsIamRegion` <a name="resetAwsRdsIamRegion" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamRegion"></a>
+##### `resetAwsRdsIamRegion` <a name="resetAwsRdsIamRegion" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamRegion"></a>
 
 ```typescript
 public resetAwsRdsIamRegion(): void
 ```
 
-##### `resetAzureIdentityAuth` <a name="resetAzureIdentityAuth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAzureIdentityAuth"></a>
+##### `resetAzureIdentityAuth` <a name="resetAzureIdentityAuth" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAzureIdentityAuth"></a>
 
 ```typescript
 public resetAzureIdentityAuth(): void
 ```
 
-##### `resetAzureTenantId` <a name="resetAzureTenantId" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAzureTenantId"></a>
+##### `resetAzureTenantId` <a name="resetAzureTenantId" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAzureTenantId"></a>
 
 ```typescript
 public resetAzureTenantId(): void
 ```
 
-##### `resetClientcert` <a name="resetClientcert" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetClientcert"></a>
+##### `resetClientcert` <a name="resetClientcert" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetClientcert"></a>
 
 ```typescript
 public resetClientcert(): void
 ```
 
-##### `resetConnectTimeout` <a name="resetConnectTimeout" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetConnectTimeout"></a>
+##### `resetConnectTimeout` <a name="resetConnectTimeout" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetConnectTimeout"></a>
 
 ```typescript
 public resetConnectTimeout(): void
 ```
 
-##### `resetDatabase` <a name="resetDatabase" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetDatabase"></a>
+##### `resetDatabase` <a name="resetDatabase" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetDatabase"></a>
 
 ```typescript
 public resetDatabase(): void
 ```
 
-##### `resetDatabaseUsername` <a name="resetDatabaseUsername" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetDatabaseUsername"></a>
+##### `resetDatabaseUsername` <a name="resetDatabaseUsername" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetDatabaseUsername"></a>
 
 ```typescript
 public resetDatabaseUsername(): void
 ```
 
-##### `resetExpectedVersion` <a name="resetExpectedVersion" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetExpectedVersion"></a>
+##### `resetExpectedVersion` <a name="resetExpectedVersion" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetExpectedVersion"></a>
 
 ```typescript
 public resetExpectedVersion(): void
 ```
 
-##### `resetGcpIamImpersonateServiceAccount` <a name="resetGcpIamImpersonateServiceAccount" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetGcpIamImpersonateServiceAccount"></a>
+##### `resetGcpIamImpersonateServiceAccount` <a name="resetGcpIamImpersonateServiceAccount" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetGcpIamImpersonateServiceAccount"></a>
 
 ```typescript
 public resetGcpIamImpersonateServiceAccount(): void
 ```
 
-##### `resetHost` <a name="resetHost" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetHost"></a>
+##### `resetHost` <a name="resetHost" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetHost"></a>
 
 ```typescript
 public resetHost(): void
 ```
 
-##### `resetMaxConnections` <a name="resetMaxConnections" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetMaxConnections"></a>
+##### `resetMaxConnections` <a name="resetMaxConnections" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetMaxConnections"></a>
 
 ```typescript
 public resetMaxConnections(): void
 ```
 
-##### `resetPassword` <a name="resetPassword" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetPassword"></a>
+##### `resetPassword` <a name="resetPassword" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetPassword"></a>
 
 ```typescript
 public resetPassword(): void
 ```
 
-##### `resetPort` <a name="resetPort" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetPort"></a>
+##### `resetPort` <a name="resetPort" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetPort"></a>
 
 ```typescript
 public resetPort(): void
 ```
 
-##### `resetScheme` <a name="resetScheme" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetScheme"></a>
+##### `resetScheme` <a name="resetScheme" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetScheme"></a>
 
 ```typescript
 public resetScheme(): void
 ```
 
-##### `resetSslmode` <a name="resetSslmode" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSslmode"></a>
+##### `resetSslmode` <a name="resetSslmode" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSslmode"></a>
 
 ```typescript
 public resetSslmode(): void
 ```
 
-##### `resetSslMode` <a name="resetSslMode" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSslMode"></a>
+##### `resetSslMode` <a name="resetSslMode" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSslMode"></a>
 
 ```typescript
 public resetSslMode(): void
 ```
 
-##### `resetSslrootcert` <a name="resetSslrootcert" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSslrootcert"></a>
+##### `resetSslrootcert` <a name="resetSslrootcert" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSslrootcert"></a>
 
 ```typescript
 public resetSslrootcert(): void
 ```
 
-##### `resetSuperuser` <a name="resetSuperuser" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSuperuser"></a>
+##### `resetSuperuser` <a name="resetSuperuser" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSuperuser"></a>
 
 ```typescript
 public resetSuperuser(): void
 ```
 
-##### `resetUsername` <a name="resetUsername" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetUsername"></a>
+##### `resetUsername` <a name="resetUsername" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetUsername"></a>
 
 ```typescript
 public resetUsername(): void
@@ -295,17 +295,17 @@ public resetUsername(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a PostgresqlProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a PostgresqlProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isConstruct"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-postgresql'
+import { provider } from '@cdktn/provider-postgresql'
 
 provider.PostgresqlProvider.isConstruct(x: any)
 ```
@@ -326,7 +326,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -334,45 +334,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformElement"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-postgresql'
+import { provider } from '@cdktn/provider-postgresql'
 
 provider.PostgresqlProvider.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider"></a>
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-postgresql'
+import { provider } from '@cdktn/provider-postgresql'
 
 provider.PostgresqlProvider.isTerraformProvider(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-postgresql'
+import { provider } from '@cdktn/provider-postgresql'
 
 provider.PostgresqlProvider.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a PostgresqlProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a PostgresqlProvider resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -380,7 +380,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -388,7 +388,7 @@ The construct id used in the generated config for the PostgresqlProvider to impo
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -398,9 +398,9 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the PostgresqlProvider to import is found.
 
@@ -410,64 +410,64 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput">awsRdsIamAuthInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfileInput">awsRdsIamProfileInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArnInput">awsRdsIamProviderRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegionInput">awsRdsIamRegionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput">azureIdentityAuthInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureTenantIdInput">azureTenantIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.clientcertInput">clientcertInput</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.connectTimeoutInput">connectTimeoutInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.databaseUsernameInput">databaseUsernameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.expectedVersionInput">expectedVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccountInput">gcpIamImpersonateServiceAccountInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.hostInput">hostInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.maxConnectionsInput">maxConnectionsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.portInput">portInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.schemeInput">schemeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslmodeInput">sslmodeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslModeInput">sslModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslrootcertInput">sslrootcertInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuserInput">superuserInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth">awsRdsIamAuth</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfile">awsRdsIamProfile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArn">awsRdsIamProviderRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegion">awsRdsIamRegion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth">azureIdentityAuth</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureTenantId">azureTenantId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.clientcert">clientcert</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.connectTimeout">connectTimeout</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.databaseUsername">databaseUsername</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.expectedVersion">expectedVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccount">gcpIamImpersonateServiceAccount</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.host">host</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.maxConnections">maxConnections</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.password">password</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.port">port</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.scheme">scheme</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslmode">sslmode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslMode">sslMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslrootcert">sslrootcert</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuser">superuser</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.username">username</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput">awsRdsIamAuthInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfileInput">awsRdsIamProfileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArnInput">awsRdsIamProviderRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegionInput">awsRdsIamRegionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput">azureIdentityAuthInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureTenantIdInput">azureTenantIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.clientcertInput">clientcertInput</a></code> | <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.connectTimeoutInput">connectTimeoutInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.databaseUsernameInput">databaseUsernameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.expectedVersionInput">expectedVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccountInput">gcpIamImpersonateServiceAccountInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.hostInput">hostInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.maxConnectionsInput">maxConnectionsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.portInput">portInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.schemeInput">schemeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslmodeInput">sslmodeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslModeInput">sslModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslrootcertInput">sslrootcertInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.superuserInput">superuserInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth">awsRdsIamAuth</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfile">awsRdsIamProfile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArn">awsRdsIamProviderRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegion">awsRdsIamRegion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth">azureIdentityAuth</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureTenantId">azureTenantId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.clientcert">clientcert</a></code> | <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.connectTimeout">connectTimeout</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.databaseUsername">databaseUsername</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.expectedVersion">expectedVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccount">gcpIamImpersonateServiceAccount</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.host">host</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.maxConnections">maxConnections</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.password">password</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.port">port</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.scheme">scheme</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslmode">sslmode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslMode">sslMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslrootcert">sslrootcert</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.superuser">superuser</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.username">username</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -479,17 +479,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -499,7 +499,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -509,7 +509,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `metaAttributes`<sup>Required</sup> <a name="metaAttributes" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.metaAttributes"></a>
+##### `metaAttributes`<sup>Required</sup> <a name="metaAttributes" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.metaAttributes"></a>
 
 ```typescript
 public readonly metaAttributes: {[ key: string ]: any};
@@ -519,7 +519,7 @@ public readonly metaAttributes: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -529,17 +529,17 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `terraformProviderSource`<sup>Optional</sup> <a name="terraformProviderSource" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformProviderSource"></a>
+##### `terraformProviderSource`<sup>Optional</sup> <a name="terraformProviderSource" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.terraformProviderSource"></a>
 
 ```typescript
 public readonly terraformProviderSource: string;
@@ -549,7 +549,7 @@ public readonly terraformProviderSource: string;
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.alias"></a>
 
 ```typescript
 public readonly alias: string;
@@ -559,7 +559,7 @@ public readonly alias: string;
 
 ---
 
-##### `aliasInput`<sup>Optional</sup> <a name="aliasInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.aliasInput"></a>
+##### `aliasInput`<sup>Optional</sup> <a name="aliasInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.aliasInput"></a>
 
 ```typescript
 public readonly aliasInput: string;
@@ -569,17 +569,17 @@ public readonly aliasInput: string;
 
 ---
 
-##### `awsRdsIamAuthInput`<sup>Optional</sup> <a name="awsRdsIamAuthInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput"></a>
+##### `awsRdsIamAuthInput`<sup>Optional</sup> <a name="awsRdsIamAuthInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput"></a>
 
 ```typescript
 public readonly awsRdsIamAuthInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `awsRdsIamProfileInput`<sup>Optional</sup> <a name="awsRdsIamProfileInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfileInput"></a>
+##### `awsRdsIamProfileInput`<sup>Optional</sup> <a name="awsRdsIamProfileInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfileInput"></a>
 
 ```typescript
 public readonly awsRdsIamProfileInput: string;
@@ -589,7 +589,7 @@ public readonly awsRdsIamProfileInput: string;
 
 ---
 
-##### `awsRdsIamProviderRoleArnInput`<sup>Optional</sup> <a name="awsRdsIamProviderRoleArnInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArnInput"></a>
+##### `awsRdsIamProviderRoleArnInput`<sup>Optional</sup> <a name="awsRdsIamProviderRoleArnInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArnInput"></a>
 
 ```typescript
 public readonly awsRdsIamProviderRoleArnInput: string;
@@ -599,7 +599,7 @@ public readonly awsRdsIamProviderRoleArnInput: string;
 
 ---
 
-##### `awsRdsIamRegionInput`<sup>Optional</sup> <a name="awsRdsIamRegionInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegionInput"></a>
+##### `awsRdsIamRegionInput`<sup>Optional</sup> <a name="awsRdsIamRegionInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegionInput"></a>
 
 ```typescript
 public readonly awsRdsIamRegionInput: string;
@@ -609,17 +609,17 @@ public readonly awsRdsIamRegionInput: string;
 
 ---
 
-##### `azureIdentityAuthInput`<sup>Optional</sup> <a name="azureIdentityAuthInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput"></a>
+##### `azureIdentityAuthInput`<sup>Optional</sup> <a name="azureIdentityAuthInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput"></a>
 
 ```typescript
 public readonly azureIdentityAuthInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `azureTenantIdInput`<sup>Optional</sup> <a name="azureTenantIdInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureTenantIdInput"></a>
+##### `azureTenantIdInput`<sup>Optional</sup> <a name="azureTenantIdInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureTenantIdInput"></a>
 
 ```typescript
 public readonly azureTenantIdInput: string;
@@ -629,17 +629,17 @@ public readonly azureTenantIdInput: string;
 
 ---
 
-##### `clientcertInput`<sup>Optional</sup> <a name="clientcertInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.clientcertInput"></a>
+##### `clientcertInput`<sup>Optional</sup> <a name="clientcertInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.clientcertInput"></a>
 
 ```typescript
 public readonly clientcertInput: PostgresqlProviderClientcert;
 ```
 
-- *Type:* <a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
 
 ---
 
-##### `connectTimeoutInput`<sup>Optional</sup> <a name="connectTimeoutInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.connectTimeoutInput"></a>
+##### `connectTimeoutInput`<sup>Optional</sup> <a name="connectTimeoutInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.connectTimeoutInput"></a>
 
 ```typescript
 public readonly connectTimeoutInput: number;
@@ -649,7 +649,7 @@ public readonly connectTimeoutInput: number;
 
 ---
 
-##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.databaseInput"></a>
+##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.databaseInput"></a>
 
 ```typescript
 public readonly databaseInput: string;
@@ -659,7 +659,7 @@ public readonly databaseInput: string;
 
 ---
 
-##### `databaseUsernameInput`<sup>Optional</sup> <a name="databaseUsernameInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.databaseUsernameInput"></a>
+##### `databaseUsernameInput`<sup>Optional</sup> <a name="databaseUsernameInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.databaseUsernameInput"></a>
 
 ```typescript
 public readonly databaseUsernameInput: string;
@@ -669,7 +669,7 @@ public readonly databaseUsernameInput: string;
 
 ---
 
-##### `expectedVersionInput`<sup>Optional</sup> <a name="expectedVersionInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.expectedVersionInput"></a>
+##### `expectedVersionInput`<sup>Optional</sup> <a name="expectedVersionInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.expectedVersionInput"></a>
 
 ```typescript
 public readonly expectedVersionInput: string;
@@ -679,7 +679,7 @@ public readonly expectedVersionInput: string;
 
 ---
 
-##### `gcpIamImpersonateServiceAccountInput`<sup>Optional</sup> <a name="gcpIamImpersonateServiceAccountInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccountInput"></a>
+##### `gcpIamImpersonateServiceAccountInput`<sup>Optional</sup> <a name="gcpIamImpersonateServiceAccountInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccountInput"></a>
 
 ```typescript
 public readonly gcpIamImpersonateServiceAccountInput: string;
@@ -689,7 +689,7 @@ public readonly gcpIamImpersonateServiceAccountInput: string;
 
 ---
 
-##### `hostInput`<sup>Optional</sup> <a name="hostInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.hostInput"></a>
+##### `hostInput`<sup>Optional</sup> <a name="hostInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.hostInput"></a>
 
 ```typescript
 public readonly hostInput: string;
@@ -699,7 +699,7 @@ public readonly hostInput: string;
 
 ---
 
-##### `maxConnectionsInput`<sup>Optional</sup> <a name="maxConnectionsInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.maxConnectionsInput"></a>
+##### `maxConnectionsInput`<sup>Optional</sup> <a name="maxConnectionsInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.maxConnectionsInput"></a>
 
 ```typescript
 public readonly maxConnectionsInput: number;
@@ -709,7 +709,7 @@ public readonly maxConnectionsInput: number;
 
 ---
 
-##### `passwordInput`<sup>Optional</sup> <a name="passwordInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.passwordInput"></a>
+##### `passwordInput`<sup>Optional</sup> <a name="passwordInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.passwordInput"></a>
 
 ```typescript
 public readonly passwordInput: string;
@@ -719,7 +719,7 @@ public readonly passwordInput: string;
 
 ---
 
-##### `portInput`<sup>Optional</sup> <a name="portInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.portInput"></a>
+##### `portInput`<sup>Optional</sup> <a name="portInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.portInput"></a>
 
 ```typescript
 public readonly portInput: number;
@@ -729,7 +729,7 @@ public readonly portInput: number;
 
 ---
 
-##### `schemeInput`<sup>Optional</sup> <a name="schemeInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.schemeInput"></a>
+##### `schemeInput`<sup>Optional</sup> <a name="schemeInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.schemeInput"></a>
 
 ```typescript
 public readonly schemeInput: string;
@@ -739,7 +739,7 @@ public readonly schemeInput: string;
 
 ---
 
-##### `sslmodeInput`<sup>Optional</sup> <a name="sslmodeInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslmodeInput"></a>
+##### `sslmodeInput`<sup>Optional</sup> <a name="sslmodeInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslmodeInput"></a>
 
 ```typescript
 public readonly sslmodeInput: string;
@@ -749,7 +749,7 @@ public readonly sslmodeInput: string;
 
 ---
 
-##### `sslModeInput`<sup>Optional</sup> <a name="sslModeInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslModeInput"></a>
+##### `sslModeInput`<sup>Optional</sup> <a name="sslModeInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslModeInput"></a>
 
 ```typescript
 public readonly sslModeInput: string;
@@ -759,7 +759,7 @@ public readonly sslModeInput: string;
 
 ---
 
-##### `sslrootcertInput`<sup>Optional</sup> <a name="sslrootcertInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslrootcertInput"></a>
+##### `sslrootcertInput`<sup>Optional</sup> <a name="sslrootcertInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslrootcertInput"></a>
 
 ```typescript
 public readonly sslrootcertInput: string;
@@ -769,17 +769,17 @@ public readonly sslrootcertInput: string;
 
 ---
 
-##### `superuserInput`<sup>Optional</sup> <a name="superuserInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuserInput"></a>
+##### `superuserInput`<sup>Optional</sup> <a name="superuserInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.superuserInput"></a>
 
 ```typescript
 public readonly superuserInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `usernameInput`<sup>Optional</sup> <a name="usernameInput" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.usernameInput"></a>
+##### `usernameInput`<sup>Optional</sup> <a name="usernameInput" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.usernameInput"></a>
 
 ```typescript
 public readonly usernameInput: string;
@@ -789,17 +789,17 @@ public readonly usernameInput: string;
 
 ---
 
-##### `awsRdsIamAuth`<sup>Optional</sup> <a name="awsRdsIamAuth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth"></a>
+##### `awsRdsIamAuth`<sup>Optional</sup> <a name="awsRdsIamAuth" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth"></a>
 
 ```typescript
 public readonly awsRdsIamAuth: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `awsRdsIamProfile`<sup>Optional</sup> <a name="awsRdsIamProfile" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfile"></a>
+##### `awsRdsIamProfile`<sup>Optional</sup> <a name="awsRdsIamProfile" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfile"></a>
 
 ```typescript
 public readonly awsRdsIamProfile: string;
@@ -809,7 +809,7 @@ public readonly awsRdsIamProfile: string;
 
 ---
 
-##### `awsRdsIamProviderRoleArn`<sup>Optional</sup> <a name="awsRdsIamProviderRoleArn" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArn"></a>
+##### `awsRdsIamProviderRoleArn`<sup>Optional</sup> <a name="awsRdsIamProviderRoleArn" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArn"></a>
 
 ```typescript
 public readonly awsRdsIamProviderRoleArn: string;
@@ -819,7 +819,7 @@ public readonly awsRdsIamProviderRoleArn: string;
 
 ---
 
-##### `awsRdsIamRegion`<sup>Optional</sup> <a name="awsRdsIamRegion" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegion"></a>
+##### `awsRdsIamRegion`<sup>Optional</sup> <a name="awsRdsIamRegion" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegion"></a>
 
 ```typescript
 public readonly awsRdsIamRegion: string;
@@ -829,17 +829,17 @@ public readonly awsRdsIamRegion: string;
 
 ---
 
-##### `azureIdentityAuth`<sup>Optional</sup> <a name="azureIdentityAuth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth"></a>
+##### `azureIdentityAuth`<sup>Optional</sup> <a name="azureIdentityAuth" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth"></a>
 
 ```typescript
 public readonly azureIdentityAuth: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `azureTenantId`<sup>Optional</sup> <a name="azureTenantId" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureTenantId"></a>
+##### `azureTenantId`<sup>Optional</sup> <a name="azureTenantId" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureTenantId"></a>
 
 ```typescript
 public readonly azureTenantId: string;
@@ -849,17 +849,17 @@ public readonly azureTenantId: string;
 
 ---
 
-##### `clientcert`<sup>Optional</sup> <a name="clientcert" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.clientcert"></a>
+##### `clientcert`<sup>Optional</sup> <a name="clientcert" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.clientcert"></a>
 
 ```typescript
 public readonly clientcert: PostgresqlProviderClientcert;
 ```
 
-- *Type:* <a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
 
 ---
 
-##### `connectTimeout`<sup>Optional</sup> <a name="connectTimeout" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.connectTimeout"></a>
+##### `connectTimeout`<sup>Optional</sup> <a name="connectTimeout" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.connectTimeout"></a>
 
 ```typescript
 public readonly connectTimeout: number;
@@ -869,7 +869,7 @@ public readonly connectTimeout: number;
 
 ---
 
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.database"></a>
+##### `database`<sup>Optional</sup> <a name="database" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -879,7 +879,7 @@ public readonly database: string;
 
 ---
 
-##### `databaseUsername`<sup>Optional</sup> <a name="databaseUsername" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.databaseUsername"></a>
+##### `databaseUsername`<sup>Optional</sup> <a name="databaseUsername" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.databaseUsername"></a>
 
 ```typescript
 public readonly databaseUsername: string;
@@ -889,7 +889,7 @@ public readonly databaseUsername: string;
 
 ---
 
-##### `expectedVersion`<sup>Optional</sup> <a name="expectedVersion" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.expectedVersion"></a>
+##### `expectedVersion`<sup>Optional</sup> <a name="expectedVersion" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.expectedVersion"></a>
 
 ```typescript
 public readonly expectedVersion: string;
@@ -899,7 +899,7 @@ public readonly expectedVersion: string;
 
 ---
 
-##### `gcpIamImpersonateServiceAccount`<sup>Optional</sup> <a name="gcpIamImpersonateServiceAccount" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccount"></a>
+##### `gcpIamImpersonateServiceAccount`<sup>Optional</sup> <a name="gcpIamImpersonateServiceAccount" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccount"></a>
 
 ```typescript
 public readonly gcpIamImpersonateServiceAccount: string;
@@ -909,7 +909,7 @@ public readonly gcpIamImpersonateServiceAccount: string;
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.host"></a>
 
 ```typescript
 public readonly host: string;
@@ -919,7 +919,7 @@ public readonly host: string;
 
 ---
 
-##### `maxConnections`<sup>Optional</sup> <a name="maxConnections" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.maxConnections"></a>
+##### `maxConnections`<sup>Optional</sup> <a name="maxConnections" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.maxConnections"></a>
 
 ```typescript
 public readonly maxConnections: number;
@@ -929,7 +929,7 @@ public readonly maxConnections: number;
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.password"></a>
 
 ```typescript
 public readonly password: string;
@@ -939,7 +939,7 @@ public readonly password: string;
 
 ---
 
-##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.port"></a>
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.port"></a>
 
 ```typescript
 public readonly port: number;
@@ -949,7 +949,7 @@ public readonly port: number;
 
 ---
 
-##### `scheme`<sup>Optional</sup> <a name="scheme" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.scheme"></a>
+##### `scheme`<sup>Optional</sup> <a name="scheme" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.scheme"></a>
 
 ```typescript
 public readonly scheme: string;
@@ -959,7 +959,7 @@ public readonly scheme: string;
 
 ---
 
-##### `sslmode`<sup>Optional</sup> <a name="sslmode" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslmode"></a>
+##### `sslmode`<sup>Optional</sup> <a name="sslmode" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslmode"></a>
 
 ```typescript
 public readonly sslmode: string;
@@ -969,7 +969,7 @@ public readonly sslmode: string;
 
 ---
 
-##### `sslMode`<sup>Optional</sup> <a name="sslMode" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslMode"></a>
+##### `sslMode`<sup>Optional</sup> <a name="sslMode" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslMode"></a>
 
 ```typescript
 public readonly sslMode: string;
@@ -979,7 +979,7 @@ public readonly sslMode: string;
 
 ---
 
-##### `sslrootcert`<sup>Optional</sup> <a name="sslrootcert" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslrootcert"></a>
+##### `sslrootcert`<sup>Optional</sup> <a name="sslrootcert" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslrootcert"></a>
 
 ```typescript
 public readonly sslrootcert: string;
@@ -989,17 +989,17 @@ public readonly sslrootcert: string;
 
 ---
 
-##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuser"></a>
+##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.superuser"></a>
 
 ```typescript
 public readonly superuser: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.username"></a>
 
 ```typescript
 public readonly username: string;
@@ -1013,11 +1013,11 @@ public readonly username: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1029,12 +1029,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### PostgresqlProviderClientcert <a name="PostgresqlProviderClientcert" id="@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert"></a>
+### PostgresqlProviderClientcert <a name="PostgresqlProviderClientcert" id="@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-postgresql'
+import { provider } from '@cdktn/provider-postgresql'
 
 const postgresqlProviderClientcert: provider.PostgresqlProviderClientcert = { ... }
 ```
@@ -1043,13 +1043,13 @@ const postgresqlProviderClientcert: provider.PostgresqlProviderClientcert = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.cert">cert</a></code> | <code>string</code> | The SSL client certificate file path. The file must contain PEM encoded data. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.key">key</a></code> | <code>string</code> | The SSL client certificate private key file path. The file must contain PEM encoded data. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline">sslinline</a></code> | <code>boolean \| cdktf.IResolvable</code> | Must be set to true if you are inlining the cert/key instead of using a file path. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.property.cert">cert</a></code> | <code>string</code> | The SSL client certificate file path. The file must contain PEM encoded data. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.property.key">key</a></code> | <code>string</code> | The SSL client certificate private key file path. The file must contain PEM encoded data. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline">sslinline</a></code> | <code>boolean \| cdktn.IResolvable</code> | Must be set to true if you are inlining the cert/key instead of using a file path. |
 
 ---
 
-##### `cert`<sup>Required</sup> <a name="cert" id="@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.cert"></a>
+##### `cert`<sup>Required</sup> <a name="cert" id="@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.property.cert"></a>
 
 ```typescript
 public readonly cert: string;
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.property.key"></a>
 
 ```typescript
 public readonly key: string;
@@ -1077,13 +1077,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `sslinline`<sup>Optional</sup> <a name="sslinline" id="@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline"></a>
+##### `sslinline`<sup>Optional</sup> <a name="sslinline" id="@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline"></a>
 
 ```typescript
 public readonly sslinline: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Must be set to true if you are inlining the cert/key instead of using a file path.
 
@@ -1091,12 +1091,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-### PostgresqlProviderConfig <a name="PostgresqlProviderConfig" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig"></a>
+### PostgresqlProviderConfig <a name="PostgresqlProviderConfig" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-postgresql'
+import { provider } from '@cdktn/provider-postgresql'
 
 const postgresqlProviderConfig: provider.PostgresqlProviderConfig = { ... }
 ```
@@ -1105,33 +1105,33 @@ const postgresqlProviderConfig: provider.PostgresqlProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth">awsRdsIamAuth</a></code> | <code>boolean \| cdktf.IResolvable</code> | Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProfile">awsRdsIamProfile</a></code> | <code>string</code> | AWS profile to use for IAM auth. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProviderRoleArn">awsRdsIamProviderRoleArn</a></code> | <code>string</code> | AWS IAM role to assume for IAM auth. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamRegion">awsRdsIamRegion</a></code> | <code>string</code> | AWS region to use for IAM auth. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth">azureIdentityAuth</a></code> | <code>boolean \| cdktf.IResolvable</code> | Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureTenantId">azureTenantId</a></code> | <code>string</code> | MS Azure tenant ID (see: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config.html). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.clientcert">clientcert</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | clientcert block. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.connectTimeout">connectTimeout</a></code> | <code>number</code> | Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.database">database</a></code> | <code>string</code> | The name of the database to connect to in order to connect to (defaults to `postgres`). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.databaseUsername">databaseUsername</a></code> | <code>string</code> | Database username associated to the connected user (for user name maps). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.expectedVersion">expectedVersion</a></code> | <code>string</code> | Specify the expected version of PostgreSQL. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.gcpIamImpersonateServiceAccount">gcpIamImpersonateServiceAccount</a></code> | <code>string</code> | Service account to impersonate when using GCP IAM authentication. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.host">host</a></code> | <code>string</code> | Name of PostgreSQL server address to connect to. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.maxConnections">maxConnections</a></code> | <code>number</code> | Maximum number of connections to establish to the database. Zero means unlimited. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.password">password</a></code> | <code>string</code> | Password to be used if the PostgreSQL server demands password authentication. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.port">port</a></code> | <code>number</code> | The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.scheme">scheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#scheme PostgresqlProvider#scheme}. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslmode">sslmode</a></code> | <code>string</code> | This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the PostgreSQL server. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslMode">sslMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#ssl_mode PostgresqlProvider#ssl_mode}. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslrootcert">sslrootcert</a></code> | <code>string</code> | The SSL server root certificate file path. The file must contain PEM encoded data. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser">superuser</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.username">username</a></code> | <code>string</code> | PostgreSQL user name to connect as. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth">awsRdsIamAuth</a></code> | <code>boolean \| cdktn.IResolvable</code> | Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProfile">awsRdsIamProfile</a></code> | <code>string</code> | AWS profile to use for IAM auth. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProviderRoleArn">awsRdsIamProviderRoleArn</a></code> | <code>string</code> | AWS IAM role to assume for IAM auth. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamRegion">awsRdsIamRegion</a></code> | <code>string</code> | AWS region to use for IAM auth. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth">azureIdentityAuth</a></code> | <code>boolean \| cdktn.IResolvable</code> | Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.azureTenantId">azureTenantId</a></code> | <code>string</code> | MS Azure tenant ID (see: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config.html). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.clientcert">clientcert</a></code> | <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | clientcert block. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.connectTimeout">connectTimeout</a></code> | <code>number</code> | Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.database">database</a></code> | <code>string</code> | The name of the database to connect to in order to connect to (defaults to `postgres`). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.databaseUsername">databaseUsername</a></code> | <code>string</code> | Database username associated to the connected user (for user name maps). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.expectedVersion">expectedVersion</a></code> | <code>string</code> | Specify the expected version of PostgreSQL. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.gcpIamImpersonateServiceAccount">gcpIamImpersonateServiceAccount</a></code> | <code>string</code> | Service account to impersonate when using GCP IAM authentication. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.host">host</a></code> | <code>string</code> | Name of PostgreSQL server address to connect to. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.maxConnections">maxConnections</a></code> | <code>number</code> | Maximum number of connections to establish to the database. Zero means unlimited. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.password">password</a></code> | <code>string</code> | Password to be used if the PostgreSQL server demands password authentication. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.port">port</a></code> | <code>number</code> | The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.scheme">scheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#scheme PostgresqlProvider#scheme}. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.sslmode">sslmode</a></code> | <code>string</code> | This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the PostgreSQL server. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.sslMode">sslMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#ssl_mode PostgresqlProvider#ssl_mode}. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.sslrootcert">sslrootcert</a></code> | <code>string</code> | The SSL server root certificate file path. The file must contain PEM encoded data. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser">superuser</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.username">username</a></code> | <code>string</code> | PostgreSQL user name to connect as. |
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.alias"></a>
 
 ```typescript
 public readonly alias: string;
@@ -1145,13 +1145,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `awsRdsIamAuth`<sup>Optional</sup> <a name="awsRdsIamAuth" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth"></a>
+##### `awsRdsIamAuth`<sup>Optional</sup> <a name="awsRdsIamAuth" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth"></a>
 
 ```typescript
 public readonly awsRdsIamAuth: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html).
 
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `awsRdsIamProfile`<sup>Optional</sup> <a name="awsRdsIamProfile" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProfile"></a>
+##### `awsRdsIamProfile`<sup>Optional</sup> <a name="awsRdsIamProfile" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProfile"></a>
 
 ```typescript
 public readonly awsRdsIamProfile: string;
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `awsRdsIamProviderRoleArn`<sup>Optional</sup> <a name="awsRdsIamProviderRoleArn" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProviderRoleArn"></a>
+##### `awsRdsIamProviderRoleArn`<sup>Optional</sup> <a name="awsRdsIamProviderRoleArn" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProviderRoleArn"></a>
 
 ```typescript
 public readonly awsRdsIamProviderRoleArn: string;
@@ -1187,7 +1187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `awsRdsIamRegion`<sup>Optional</sup> <a name="awsRdsIamRegion" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamRegion"></a>
+##### `awsRdsIamRegion`<sup>Optional</sup> <a name="awsRdsIamRegion" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamRegion"></a>
 
 ```typescript
 public readonly awsRdsIamRegion: string;
@@ -1201,13 +1201,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `azureIdentityAuth`<sup>Optional</sup> <a name="azureIdentityAuth" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth"></a>
+##### `azureIdentityAuth`<sup>Optional</sup> <a name="azureIdentityAuth" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth"></a>
 
 ```typescript
 public readonly azureIdentityAuth: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
 
@@ -1215,7 +1215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `azureTenantId`<sup>Optional</sup> <a name="azureTenantId" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureTenantId"></a>
+##### `azureTenantId`<sup>Optional</sup> <a name="azureTenantId" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.azureTenantId"></a>
 
 ```typescript
 public readonly azureTenantId: string;
@@ -1229,13 +1229,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `clientcert`<sup>Optional</sup> <a name="clientcert" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.clientcert"></a>
+##### `clientcert`<sup>Optional</sup> <a name="clientcert" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.clientcert"></a>
 
 ```typescript
 public readonly clientcert: PostgresqlProviderClientcert;
 ```
 
-- *Type:* <a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
 
 clientcert block.
 
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `connectTimeout`<sup>Optional</sup> <a name="connectTimeout" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.connectTimeout"></a>
+##### `connectTimeout`<sup>Optional</sup> <a name="connectTimeout" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.connectTimeout"></a>
 
 ```typescript
 public readonly connectTimeout: number;
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.database"></a>
+##### `database`<sup>Optional</sup> <a name="database" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -1271,7 +1271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `databaseUsername`<sup>Optional</sup> <a name="databaseUsername" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.databaseUsername"></a>
+##### `databaseUsername`<sup>Optional</sup> <a name="databaseUsername" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.databaseUsername"></a>
 
 ```typescript
 public readonly databaseUsername: string;
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `expectedVersion`<sup>Optional</sup> <a name="expectedVersion" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.expectedVersion"></a>
+##### `expectedVersion`<sup>Optional</sup> <a name="expectedVersion" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.expectedVersion"></a>
 
 ```typescript
 public readonly expectedVersion: string;
@@ -1299,7 +1299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `gcpIamImpersonateServiceAccount`<sup>Optional</sup> <a name="gcpIamImpersonateServiceAccount" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.gcpIamImpersonateServiceAccount"></a>
+##### `gcpIamImpersonateServiceAccount`<sup>Optional</sup> <a name="gcpIamImpersonateServiceAccount" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.gcpIamImpersonateServiceAccount"></a>
 
 ```typescript
 public readonly gcpIamImpersonateServiceAccount: string;
@@ -1313,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.host"></a>
 
 ```typescript
 public readonly host: string;
@@ -1327,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `maxConnections`<sup>Optional</sup> <a name="maxConnections" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.maxConnections"></a>
+##### `maxConnections`<sup>Optional</sup> <a name="maxConnections" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.maxConnections"></a>
 
 ```typescript
 public readonly maxConnections: number;
@@ -1341,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.password"></a>
 
 ```typescript
 public readonly password: string;
@@ -1355,7 +1355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.port"></a>
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.port"></a>
 
 ```typescript
 public readonly port: number;
@@ -1369,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `scheme`<sup>Optional</sup> <a name="scheme" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.scheme"></a>
+##### `scheme`<sup>Optional</sup> <a name="scheme" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.scheme"></a>
 
 ```typescript
 public readonly scheme: string;
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `sslmode`<sup>Optional</sup> <a name="sslmode" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslmode"></a>
+##### `sslmode`<sup>Optional</sup> <a name="sslmode" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.sslmode"></a>
 
 ```typescript
 public readonly sslmode: string;
@@ -1395,7 +1395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `sslMode`<sup>Optional</sup> <a name="sslMode" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslMode"></a>
+##### `sslMode`<sup>Optional</sup> <a name="sslMode" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.sslMode"></a>
 
 ```typescript
 public readonly sslMode: string;
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `sslrootcert`<sup>Optional</sup> <a name="sslrootcert" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslrootcert"></a>
+##### `sslrootcert`<sup>Optional</sup> <a name="sslrootcert" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.sslrootcert"></a>
 
 ```typescript
 public readonly sslrootcert: string;
@@ -1421,13 +1421,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser"></a>
+##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser"></a>
 
 ```typescript
 public readonly superuser: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres).
 
@@ -1435,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.username"></a>
 
 ```typescript
 public readonly username: string;

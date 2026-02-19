@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,23 +7,23 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface DatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * If false then no one can connect to this database
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/database#allow_connections Database#allow_connections}
   */
-  readonly allowConnections?: boolean | cdktf.IResolvable;
+  readonly allowConnections?: boolean | cdktn.IResolvable;
   /**
   * If true, the owner of already existing objects will change if the owner changes
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/database#alter_object_ownership Database#alter_object_ownership}
   */
-  readonly alterObjectOwnership?: boolean | cdktf.IResolvable;
+  readonly alterObjectOwnership?: boolean | cdktn.IResolvable;
   /**
   * How many concurrent connections can be made to this database
   *
@@ -48,7 +48,7 @@ export interface DatabaseConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/database#is_template Database#is_template}
   */
-  readonly isTemplate?: boolean | cdktf.IResolvable;
+  readonly isTemplate?: boolean | cdktn.IResolvable;
   /**
   * Collation order (LC_COLLATE) to use in the new database
   *
@@ -90,7 +90,7 @@ export interface DatabaseConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/database postgresql_database}
 */
-export class Database extends cdktf.TerraformResource {
+export class Database extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -101,14 +101,14 @@ export class Database extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Database resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Database resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Database to import
   * @param importFromId The id of the existing Database that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Database to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_database", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_database", importId: importFromId, provider });
       }
 
   // ===========
@@ -157,11 +157,11 @@ export class Database extends cdktf.TerraformResource {
   // ==========
 
   // allow_connections - computed: false, optional: true, required: false
-  private _allowConnections?: boolean | cdktf.IResolvable; 
+  private _allowConnections?: boolean | cdktn.IResolvable; 
   public get allowConnections() {
     return this.getBooleanAttribute('allow_connections');
   }
-  public set allowConnections(value: boolean | cdktf.IResolvable) {
+  public set allowConnections(value: boolean | cdktn.IResolvable) {
     this._allowConnections = value;
   }
   public resetAllowConnections() {
@@ -173,11 +173,11 @@ export class Database extends cdktf.TerraformResource {
   }
 
   // alter_object_ownership - computed: false, optional: true, required: false
-  private _alterObjectOwnership?: boolean | cdktf.IResolvable; 
+  private _alterObjectOwnership?: boolean | cdktn.IResolvable; 
   public get alterObjectOwnership() {
     return this.getBooleanAttribute('alter_object_ownership');
   }
-  public set alterObjectOwnership(value: boolean | cdktf.IResolvable) {
+  public set alterObjectOwnership(value: boolean | cdktn.IResolvable) {
     this._alterObjectOwnership = value;
   }
   public resetAlterObjectOwnership() {
@@ -237,11 +237,11 @@ export class Database extends cdktf.TerraformResource {
   }
 
   // is_template - computed: true, optional: true, required: false
-  private _isTemplate?: boolean | cdktf.IResolvable; 
+  private _isTemplate?: boolean | cdktn.IResolvable; 
   public get isTemplate() {
     return this.getBooleanAttribute('is_template');
   }
-  public set isTemplate(value: boolean | cdktf.IResolvable) {
+  public set isTemplate(value: boolean | cdktn.IResolvable) {
     this._isTemplate = value;
   }
   public resetIsTemplate() {
@@ -351,91 +351,91 @@ export class Database extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_connections: cdktf.booleanToTerraform(this._allowConnections),
-      alter_object_ownership: cdktf.booleanToTerraform(this._alterObjectOwnership),
-      connection_limit: cdktf.numberToTerraform(this._connectionLimit),
-      encoding: cdktf.stringToTerraform(this._encoding),
-      id: cdktf.stringToTerraform(this._id),
-      is_template: cdktf.booleanToTerraform(this._isTemplate),
-      lc_collate: cdktf.stringToTerraform(this._lcCollate),
-      lc_ctype: cdktf.stringToTerraform(this._lcCtype),
-      name: cdktf.stringToTerraform(this._name),
-      owner: cdktf.stringToTerraform(this._owner),
-      tablespace_name: cdktf.stringToTerraform(this._tablespaceName),
-      template: cdktf.stringToTerraform(this._template),
+      allow_connections: cdktn.booleanToTerraform(this._allowConnections),
+      alter_object_ownership: cdktn.booleanToTerraform(this._alterObjectOwnership),
+      connection_limit: cdktn.numberToTerraform(this._connectionLimit),
+      encoding: cdktn.stringToTerraform(this._encoding),
+      id: cdktn.stringToTerraform(this._id),
+      is_template: cdktn.booleanToTerraform(this._isTemplate),
+      lc_collate: cdktn.stringToTerraform(this._lcCollate),
+      lc_ctype: cdktn.stringToTerraform(this._lcCtype),
+      name: cdktn.stringToTerraform(this._name),
+      owner: cdktn.stringToTerraform(this._owner),
+      tablespace_name: cdktn.stringToTerraform(this._tablespaceName),
+      template: cdktn.stringToTerraform(this._template),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_connections: {
-        value: cdktf.booleanToHclTerraform(this._allowConnections),
+        value: cdktn.booleanToHclTerraform(this._allowConnections),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       alter_object_ownership: {
-        value: cdktf.booleanToHclTerraform(this._alterObjectOwnership),
+        value: cdktn.booleanToHclTerraform(this._alterObjectOwnership),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       connection_limit: {
-        value: cdktf.numberToHclTerraform(this._connectionLimit),
+        value: cdktn.numberToHclTerraform(this._connectionLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       encoding: {
-        value: cdktf.stringToHclTerraform(this._encoding),
+        value: cdktn.stringToHclTerraform(this._encoding),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_template: {
-        value: cdktf.booleanToHclTerraform(this._isTemplate),
+        value: cdktn.booleanToHclTerraform(this._isTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       lc_collate: {
-        value: cdktf.stringToHclTerraform(this._lcCollate),
+        value: cdktn.stringToHclTerraform(this._lcCollate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lc_ctype: {
-        value: cdktf.stringToHclTerraform(this._lcCtype),
+        value: cdktn.stringToHclTerraform(this._lcCtype),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
+        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tablespace_name: {
-        value: cdktf.stringToHclTerraform(this._tablespaceName),
+        value: cdktn.stringToHclTerraform(this._tablespaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template: {
-        value: cdktf.stringToHclTerraform(this._template),
+        value: cdktn.stringToHclTerraform(this._template),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

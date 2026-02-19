@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,7 +7,7 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
@@ -17,7 +17,7 @@ export interface PostgresqlProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#aws_rds_iam_auth PostgresqlProvider#aws_rds_iam_auth}
   */
-  readonly awsRdsIamAuth?: boolean | cdktf.IResolvable;
+  readonly awsRdsIamAuth?: boolean | cdktn.IResolvable;
   /**
   * AWS profile to use for IAM auth
   *
@@ -41,7 +41,7 @@ export interface PostgresqlProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#azure_identity_auth PostgresqlProvider#azure_identity_auth}
   */
-  readonly azureIdentityAuth?: boolean | cdktf.IResolvable;
+  readonly azureIdentityAuth?: boolean | cdktn.IResolvable;
   /**
   * MS Azure tenant ID (see: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config.html)
   *
@@ -127,7 +127,7 @@ export interface PostgresqlProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#superuser PostgresqlProvider#superuser}
   */
-  readonly superuser?: boolean | cdktf.IResolvable;
+  readonly superuser?: boolean | cdktn.IResolvable;
   /**
   * PostgreSQL user name to connect as
   *
@@ -165,42 +165,42 @@ export interface PostgresqlProviderClientcert {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#sslinline PostgresqlProvider#sslinline}
   */
-  readonly sslinline?: boolean | cdktf.IResolvable;
+  readonly sslinline?: boolean | cdktn.IResolvable;
 }
 
 export function postgresqlProviderClientcertToTerraform(struct?: PostgresqlProviderClientcert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cert: cdktf.stringToTerraform(struct!.cert),
-    key: cdktf.stringToTerraform(struct!.key),
-    sslinline: cdktf.booleanToTerraform(struct!.sslinline),
+    cert: cdktn.stringToTerraform(struct!.cert),
+    key: cdktn.stringToTerraform(struct!.key),
+    sslinline: cdktn.booleanToTerraform(struct!.sslinline),
   }
 }
 
 
 export function postgresqlProviderClientcertToHclTerraform(struct?: PostgresqlProviderClientcert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cert: {
-      value: cdktf.stringToHclTerraform(struct!.cert),
+      value: cdktn.stringToHclTerraform(struct!.cert),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sslinline: {
-      value: cdktf.booleanToHclTerraform(struct!.sslinline),
+      value: cdktn.booleanToHclTerraform(struct!.sslinline),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -215,7 +215,7 @@ export function postgresqlProviderClientcertToHclTerraform(struct?: PostgresqlPr
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs postgresql}
 */
-export class PostgresqlProvider extends cdktf.TerraformProvider {
+export class PostgresqlProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -226,14 +226,14 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PostgresqlProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PostgresqlProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PostgresqlProvider to import
   * @param importFromId The id of the existing PostgresqlProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PostgresqlProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql", importId: importFromId, provider });
       }
 
   // ===========
@@ -287,11 +287,11 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   // ==========
 
   // aws_rds_iam_auth - computed: false, optional: true, required: false
-  private _awsRdsIamAuth?: boolean | cdktf.IResolvable; 
+  private _awsRdsIamAuth?: boolean | cdktn.IResolvable; 
   public get awsRdsIamAuth() {
     return this._awsRdsIamAuth;
   }
-  public set awsRdsIamAuth(value: boolean | cdktf.IResolvable | undefined) {
+  public set awsRdsIamAuth(value: boolean | cdktn.IResolvable | undefined) {
     this._awsRdsIamAuth = value;
   }
   public resetAwsRdsIamAuth() {
@@ -351,11 +351,11 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
 
   // azure_identity_auth - computed: false, optional: true, required: false
-  private _azureIdentityAuth?: boolean | cdktf.IResolvable; 
+  private _azureIdentityAuth?: boolean | cdktn.IResolvable; 
   public get azureIdentityAuth() {
     return this._azureIdentityAuth;
   }
-  public set azureIdentityAuth(value: boolean | cdktf.IResolvable | undefined) {
+  public set azureIdentityAuth(value: boolean | cdktn.IResolvable | undefined) {
     this._azureIdentityAuth = value;
   }
   public resetAzureIdentityAuth() {
@@ -591,11 +591,11 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   }
 
   // superuser - computed: false, optional: true, required: false
-  private _superuser?: boolean | cdktf.IResolvable; 
+  private _superuser?: boolean | cdktn.IResolvable; 
   public get superuser() {
     return this._superuser;
   }
-  public set superuser(value: boolean | cdktf.IResolvable | undefined) {
+  public set superuser(value: boolean | cdktn.IResolvable | undefined) {
     this._superuser = value;
   }
   public resetSuperuser() {
@@ -660,28 +660,28 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_rds_iam_auth: cdktf.booleanToTerraform(this._awsRdsIamAuth),
-      aws_rds_iam_profile: cdktf.stringToTerraform(this._awsRdsIamProfile),
-      aws_rds_iam_provider_role_arn: cdktf.stringToTerraform(this._awsRdsIamProviderRoleArn),
-      aws_rds_iam_region: cdktf.stringToTerraform(this._awsRdsIamRegion),
-      azure_identity_auth: cdktf.booleanToTerraform(this._azureIdentityAuth),
-      azure_tenant_id: cdktf.stringToTerraform(this._azureTenantId),
-      connect_timeout: cdktf.numberToTerraform(this._connectTimeout),
-      database: cdktf.stringToTerraform(this._database),
-      database_username: cdktf.stringToTerraform(this._databaseUsername),
-      expected_version: cdktf.stringToTerraform(this._expectedVersion),
-      gcp_iam_impersonate_service_account: cdktf.stringToTerraform(this._gcpIamImpersonateServiceAccount),
-      host: cdktf.stringToTerraform(this._host),
-      max_connections: cdktf.numberToTerraform(this._maxConnections),
-      password: cdktf.stringToTerraform(this._password),
-      port: cdktf.numberToTerraform(this._port),
-      scheme: cdktf.stringToTerraform(this._scheme),
-      ssl_mode: cdktf.stringToTerraform(this._sslMode),
-      sslmode: cdktf.stringToTerraform(this._sslmode),
-      sslrootcert: cdktf.stringToTerraform(this._sslrootcert),
-      superuser: cdktf.booleanToTerraform(this._superuser),
-      username: cdktf.stringToTerraform(this._username),
-      alias: cdktf.stringToTerraform(this._alias),
+      aws_rds_iam_auth: cdktn.booleanToTerraform(this._awsRdsIamAuth),
+      aws_rds_iam_profile: cdktn.stringToTerraform(this._awsRdsIamProfile),
+      aws_rds_iam_provider_role_arn: cdktn.stringToTerraform(this._awsRdsIamProviderRoleArn),
+      aws_rds_iam_region: cdktn.stringToTerraform(this._awsRdsIamRegion),
+      azure_identity_auth: cdktn.booleanToTerraform(this._azureIdentityAuth),
+      azure_tenant_id: cdktn.stringToTerraform(this._azureTenantId),
+      connect_timeout: cdktn.numberToTerraform(this._connectTimeout),
+      database: cdktn.stringToTerraform(this._database),
+      database_username: cdktn.stringToTerraform(this._databaseUsername),
+      expected_version: cdktn.stringToTerraform(this._expectedVersion),
+      gcp_iam_impersonate_service_account: cdktn.stringToTerraform(this._gcpIamImpersonateServiceAccount),
+      host: cdktn.stringToTerraform(this._host),
+      max_connections: cdktn.numberToTerraform(this._maxConnections),
+      password: cdktn.stringToTerraform(this._password),
+      port: cdktn.numberToTerraform(this._port),
+      scheme: cdktn.stringToTerraform(this._scheme),
+      ssl_mode: cdktn.stringToTerraform(this._sslMode),
+      sslmode: cdktn.stringToTerraform(this._sslmode),
+      sslrootcert: cdktn.stringToTerraform(this._sslrootcert),
+      superuser: cdktn.booleanToTerraform(this._superuser),
+      username: cdktn.stringToTerraform(this._username),
+      alias: cdktn.stringToTerraform(this._alias),
       clientcert: postgresqlProviderClientcertToTerraform(this._clientcert),
     };
   }
@@ -689,133 +689,133 @@ export class PostgresqlProvider extends cdktf.TerraformProvider {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_rds_iam_auth: {
-        value: cdktf.booleanToHclTerraform(this._awsRdsIamAuth),
+        value: cdktn.booleanToHclTerraform(this._awsRdsIamAuth),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       aws_rds_iam_profile: {
-        value: cdktf.stringToHclTerraform(this._awsRdsIamProfile),
+        value: cdktn.stringToHclTerraform(this._awsRdsIamProfile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_rds_iam_provider_role_arn: {
-        value: cdktf.stringToHclTerraform(this._awsRdsIamProviderRoleArn),
+        value: cdktn.stringToHclTerraform(this._awsRdsIamProviderRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_rds_iam_region: {
-        value: cdktf.stringToHclTerraform(this._awsRdsIamRegion),
+        value: cdktn.stringToHclTerraform(this._awsRdsIamRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_identity_auth: {
-        value: cdktf.booleanToHclTerraform(this._azureIdentityAuth),
+        value: cdktn.booleanToHclTerraform(this._azureIdentityAuth),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       azure_tenant_id: {
-        value: cdktf.stringToHclTerraform(this._azureTenantId),
+        value: cdktn.stringToHclTerraform(this._azureTenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connect_timeout: {
-        value: cdktf.numberToHclTerraform(this._connectTimeout),
+        value: cdktn.numberToHclTerraform(this._connectTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_username: {
-        value: cdktf.stringToHclTerraform(this._databaseUsername),
+        value: cdktn.stringToHclTerraform(this._databaseUsername),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expected_version: {
-        value: cdktf.stringToHclTerraform(this._expectedVersion),
+        value: cdktn.stringToHclTerraform(this._expectedVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gcp_iam_impersonate_service_account: {
-        value: cdktf.stringToHclTerraform(this._gcpIamImpersonateServiceAccount),
+        value: cdktn.stringToHclTerraform(this._gcpIamImpersonateServiceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host: {
-        value: cdktf.stringToHclTerraform(this._host),
+        value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_connections: {
-        value: cdktf.numberToHclTerraform(this._maxConnections),
+        value: cdktn.numberToHclTerraform(this._maxConnections),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       scheme: {
-        value: cdktf.stringToHclTerraform(this._scheme),
+        value: cdktn.stringToHclTerraform(this._scheme),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ssl_mode: {
-        value: cdktf.stringToHclTerraform(this._sslMode),
+        value: cdktn.stringToHclTerraform(this._sslMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sslmode: {
-        value: cdktf.stringToHclTerraform(this._sslmode),
+        value: cdktn.stringToHclTerraform(this._sslmode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sslrootcert: {
-        value: cdktf.stringToHclTerraform(this._sslrootcert),
+        value: cdktn.stringToHclTerraform(this._sslrootcert),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       superuser: {
-        value: cdktf.booleanToHclTerraform(this._superuser),
+        value: cdktn.booleanToHclTerraform(this._superuser),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

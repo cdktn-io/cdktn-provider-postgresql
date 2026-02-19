@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PublicationConfig extends cdktf.TerraformMetaArguments {
+export interface PublicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Sets the tables list to publish to ALL tables
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/publication#all_tables Publication#all_tables}
   */
-  readonly allTables?: boolean | cdktf.IResolvable;
+  readonly allTables?: boolean | cdktn.IResolvable;
   /**
   * Sets the database to add the publication for
   *
@@ -29,7 +29,7 @@ export interface PublicationConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/publication#drop_cascade Publication#drop_cascade}
   */
-  readonly dropCascade?: boolean | cdktf.IResolvable;
+  readonly dropCascade?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/publication#id Publication#id}
   *
@@ -58,7 +58,7 @@ export interface PublicationConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/publication#publish_via_partition_root_param Publication#publish_via_partition_root_param}
   */
-  readonly publishViaPartitionRootParam?: boolean | cdktf.IResolvable;
+  readonly publishViaPartitionRootParam?: boolean | cdktn.IResolvable;
   /**
   * Sets the tables list to publish
   *
@@ -70,7 +70,7 @@ export interface PublicationConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/publication postgresql_publication}
 */
-export class Publication extends cdktf.TerraformResource {
+export class Publication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -81,14 +81,14 @@ export class Publication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Publication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Publication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Publication to import
   * @param importFromId The id of the existing Publication that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/publication#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Publication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_publication", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_publication", importId: importFromId, provider });
       }
 
   // ===========
@@ -134,11 +134,11 @@ export class Publication extends cdktf.TerraformResource {
   // ==========
 
   // all_tables - computed: true, optional: true, required: false
-  private _allTables?: boolean | cdktf.IResolvable; 
+  private _allTables?: boolean | cdktn.IResolvable; 
   public get allTables() {
     return this.getBooleanAttribute('all_tables');
   }
-  public set allTables(value: boolean | cdktf.IResolvable) {
+  public set allTables(value: boolean | cdktn.IResolvable) {
     this._allTables = value;
   }
   public resetAllTables() {
@@ -166,11 +166,11 @@ export class Publication extends cdktf.TerraformResource {
   }
 
   // drop_cascade - computed: false, optional: true, required: false
-  private _dropCascade?: boolean | cdktf.IResolvable; 
+  private _dropCascade?: boolean | cdktn.IResolvable; 
   public get dropCascade() {
     return this.getBooleanAttribute('drop_cascade');
   }
-  public set dropCascade(value: boolean | cdktf.IResolvable) {
+  public set dropCascade(value: boolean | cdktn.IResolvable) {
     this._dropCascade = value;
   }
   public resetDropCascade() {
@@ -243,11 +243,11 @@ export class Publication extends cdktf.TerraformResource {
   }
 
   // publish_via_partition_root_param - computed: false, optional: true, required: false
-  private _publishViaPartitionRootParam?: boolean | cdktf.IResolvable; 
+  private _publishViaPartitionRootParam?: boolean | cdktn.IResolvable; 
   public get publishViaPartitionRootParam() {
     return this.getBooleanAttribute('publish_via_partition_root_param');
   }
-  public set publishViaPartitionRootParam(value: boolean | cdktf.IResolvable) {
+  public set publishViaPartitionRootParam(value: boolean | cdktn.IResolvable) {
     this._publishViaPartitionRootParam = value;
   }
   public resetPublishViaPartitionRootParam() {
@@ -261,7 +261,7 @@ export class Publication extends cdktf.TerraformResource {
   // tables - computed: true, optional: true, required: false
   private _tables?: string[]; 
   public get tables() {
-    return cdktf.Fn.tolist(this.getListAttribute('tables'));
+    return cdktn.Fn.tolist(this.getListAttribute('tables'));
   }
   public set tables(value: string[]) {
     this._tables = value;
@@ -280,70 +280,70 @@ export class Publication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      all_tables: cdktf.booleanToTerraform(this._allTables),
-      database: cdktf.stringToTerraform(this._database),
-      drop_cascade: cdktf.booleanToTerraform(this._dropCascade),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      owner: cdktf.stringToTerraform(this._owner),
-      publish_param: cdktf.listMapper(cdktf.stringToTerraform, false)(this._publishParam),
-      publish_via_partition_root_param: cdktf.booleanToTerraform(this._publishViaPartitionRootParam),
-      tables: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tables),
+      all_tables: cdktn.booleanToTerraform(this._allTables),
+      database: cdktn.stringToTerraform(this._database),
+      drop_cascade: cdktn.booleanToTerraform(this._dropCascade),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      owner: cdktn.stringToTerraform(this._owner),
+      publish_param: cdktn.listMapper(cdktn.stringToTerraform, false)(this._publishParam),
+      publish_via_partition_root_param: cdktn.booleanToTerraform(this._publishViaPartitionRootParam),
+      tables: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tables),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       all_tables: {
-        value: cdktf.booleanToHclTerraform(this._allTables),
+        value: cdktn.booleanToHclTerraform(this._allTables),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       drop_cascade: {
-        value: cdktf.booleanToHclTerraform(this._dropCascade),
+        value: cdktn.booleanToHclTerraform(this._dropCascade),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
+        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publish_param: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._publishParam),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._publishParam),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       publish_via_partition_root_param: {
-        value: cdktf.booleanToHclTerraform(this._publishViaPartitionRootParam),
+        value: cdktn.booleanToHclTerraform(this._publishViaPartitionRootParam),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tables: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tables),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tables),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

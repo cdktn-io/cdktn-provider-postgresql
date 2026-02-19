@@ -1,15 +1,15 @@
-# `role` Submodule <a name="`role` Submodule" id="@cdktf/provider-postgresql.role"></a>
+# `role` Submodule <a name="`role` Submodule" id="@cdktn/provider-postgresql.role"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Role <a name="Role" id="@cdktf/provider-postgresql.role.Role"></a>
+### Role <a name="Role" id="@cdktn/provider-postgresql.role.Role"></a>
 
 Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role postgresql_role}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.role.Role.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.role.Role.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import role
+from cdktn_provider_postgresql import role
 
 role.Role(
   scope: Construct,
@@ -49,42 +49,42 @@ role.Role(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the role. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.assumeRole">assume_role</a></code> | <code>str</code> | Role to switch to at login. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.bypassRowLevelSecurity">bypass_row_level_security</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | How many concurrent connections can be made with this role. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.createDatabase">create_database</a></code> | <code>bool \| cdktf.IResolvable</code> | Define a role's ability to create databases. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.createRole">create_role</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether this role will be permitted to create new roles. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.encrypted">encrypted</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted Role#encrypted}. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.encryptedPassword">encrypted_password</a></code> | <code>bool \| cdktf.IResolvable</code> | Control whether the password is stored encrypted in the system catalogs. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#id Role#id}. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.idleInTransactionSessionTimeout">idle_in_transaction_session_timeout</a></code> | <code>typing.Union[int, float]</code> | Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.inherit">inherit</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.login">login</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role is allowed to log in. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.password">password</a></code> | <code>str</code> | Sets the role's password. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.passwordWo">password_wo</a></code> | <code>str</code> | Sets the role's password without storing it in the state file. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.passwordWoVersion">password_wo_version</a></code> | <code>str</code> | Prevents applies from updating the role password on every apply unless the value changes. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.replication">replication</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | Role(s) to grant to this new role. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.searchPath">search_path</a></code> | <code>typing.List[str]</code> | Sets the role's search path. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipDropRole">skip_drop_role</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipReassignOwned">skip_reassign_owned</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.statementTimeout">statement_timeout</a></code> | <code>typing.Union[int, float]</code> | Abort any statement that takes more than the specified number of milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.superuser">superuser</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether the new role is a "superuser". |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.Initializer.parameter.validUntil">valid_until</a></code> | <code>str</code> | Sets a date and time after which the role's password is no longer valid. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the role. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.assumeRole">assume_role</a></code> | <code>str</code> | Role to switch to at login. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.bypassRowLevelSecurity">bypass_row_level_security</a></code> | <code>bool \| cdktn.IResolvable</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | How many concurrent connections can be made with this role. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.createDatabase">create_database</a></code> | <code>bool \| cdktn.IResolvable</code> | Define a role's ability to create databases. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.createRole">create_role</a></code> | <code>bool \| cdktn.IResolvable</code> | Determine whether this role will be permitted to create new roles. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.encrypted">encrypted</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted Role#encrypted}. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.encryptedPassword">encrypted_password</a></code> | <code>bool \| cdktn.IResolvable</code> | Control whether the password is stored encrypted in the system catalogs. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#id Role#id}. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.idleInTransactionSessionTimeout">idle_in_transaction_session_timeout</a></code> | <code>typing.Union[int, float]</code> | Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.inherit">inherit</a></code> | <code>bool \| cdktn.IResolvable</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.login">login</a></code> | <code>bool \| cdktn.IResolvable</code> | Determine whether a role is allowed to log in. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.password">password</a></code> | <code>str</code> | Sets the role's password. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.passwordWo">password_wo</a></code> | <code>str</code> | Sets the role's password without storing it in the state file. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.passwordWoVersion">password_wo_version</a></code> | <code>str</code> | Prevents applies from updating the role password on every apply unless the value changes. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.replication">replication</a></code> | <code>bool \| cdktn.IResolvable</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | Role(s) to grant to this new role. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.searchPath">search_path</a></code> | <code>typing.List[str]</code> | Sets the role's search path. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.skipDropRole">skip_drop_role</a></code> | <code>bool \| cdktn.IResolvable</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.skipReassignOwned">skip_reassign_owned</a></code> | <code>bool \| cdktn.IResolvable</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.statementTimeout">statement_timeout</a></code> | <code>typing.Union[int, float]</code> | Abort any statement that takes more than the specified number of milliseconds. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.superuser">superuser</a></code> | <code>bool \| cdktn.IResolvable</code> | Determine whether the new role is a "superuser". |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.Initializer.parameter.validUntil">valid_until</a></code> | <code>str</code> | Sets a date and time after which the role's password is no longer valid. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -92,7 +92,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -102,49 +102,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.name"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.name"></a>
 
 - *Type:* str
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `assume_role`<sup>Optional</sup> <a name="assume_role" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.assumeRole"></a>
+##### `assume_role`<sup>Optional</sup> <a name="assume_role" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.assumeRole"></a>
 
 - *Type:* str
 
@@ -164,9 +164,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `bypass_row_level_security`<sup>Optional</sup> <a name="bypass_row_level_security" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.bypassRowLevelSecurity"></a>
+##### `bypass_row_level_security`<sup>Optional</sup> <a name="bypass_row_level_security" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.bypassRowLevelSecurity"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determine whether a role bypasses every row-level security (RLS) policy.
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `connection_limit`<sup>Optional</sup> <a name="connection_limit" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.connectionLimit"></a>
+##### `connection_limit`<sup>Optional</sup> <a name="connection_limit" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.connectionLimit"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -184,9 +184,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `create_database`<sup>Optional</sup> <a name="create_database" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.createDatabase"></a>
+##### `create_database`<sup>Optional</sup> <a name="create_database" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.createDatabase"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Define a role's ability to create databases.
 
@@ -194,9 +194,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `create_role`<sup>Optional</sup> <a name="create_role" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.createRole"></a>
+##### `create_role`<sup>Optional</sup> <a name="create_role" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.createRole"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determine whether this role will be permitted to create new roles.
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `encrypted`<sup>Optional</sup> <a name="encrypted" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.encrypted"></a>
+##### `encrypted`<sup>Optional</sup> <a name="encrypted" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.encrypted"></a>
 
 - *Type:* str
 
@@ -212,9 +212,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `encrypted_password`<sup>Optional</sup> <a name="encrypted_password" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.encryptedPassword"></a>
+##### `encrypted_password`<sup>Optional</sup> <a name="encrypted_password" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.encryptedPassword"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Control whether the password is stored encrypted in the system catalogs.
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -233,7 +233,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `idle_in_transaction_session_timeout`<sup>Optional</sup> <a name="idle_in_transaction_session_timeout" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.idleInTransactionSessionTimeout"></a>
+##### `idle_in_transaction_session_timeout`<sup>Optional</sup> <a name="idle_in_transaction_session_timeout" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.idleInTransactionSessionTimeout"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -243,9 +243,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `inherit`<sup>Optional</sup> <a name="inherit" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.inherit"></a>
+##### `inherit`<sup>Optional</sup> <a name="inherit" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.inherit"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determine whether a role "inherits" the privileges of roles it is a member of.
 
@@ -253,9 +253,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `login`<sup>Optional</sup> <a name="login" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.login"></a>
+##### `login`<sup>Optional</sup> <a name="login" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.login"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determine whether a role is allowed to log in.
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.password"></a>
 
 - *Type:* str
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `password_wo`<sup>Optional</sup> <a name="password_wo" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.passwordWo"></a>
+##### `password_wo`<sup>Optional</sup> <a name="password_wo" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.passwordWo"></a>
 
 - *Type:* str
 
@@ -283,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `password_wo_version`<sup>Optional</sup> <a name="password_wo_version" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.passwordWoVersion"></a>
+##### `password_wo_version`<sup>Optional</sup> <a name="password_wo_version" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.passwordWoVersion"></a>
 
 - *Type:* str
 
@@ -293,9 +293,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `replication`<sup>Optional</sup> <a name="replication" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.replication"></a>
+##### `replication`<sup>Optional</sup> <a name="replication" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.replication"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode.
 
@@ -303,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `roles`<sup>Optional</sup> <a name="roles" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.roles"></a>
+##### `roles`<sup>Optional</sup> <a name="roles" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.roles"></a>
 
 - *Type:* typing.List[str]
 
@@ -313,7 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `search_path`<sup>Optional</sup> <a name="search_path" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.searchPath"></a>
+##### `search_path`<sup>Optional</sup> <a name="search_path" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.searchPath"></a>
 
 - *Type:* typing.List[str]
 
@@ -323,9 +323,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `skip_drop_role`<sup>Optional</sup> <a name="skip_drop_role" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipDropRole"></a>
+##### `skip_drop_role`<sup>Optional</sup> <a name="skip_drop_role" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.skipDropRole"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL.
 
@@ -333,9 +333,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `skip_reassign_owned`<sup>Optional</sup> <a name="skip_reassign_owned" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.skipReassignOwned"></a>
+##### `skip_reassign_owned`<sup>Optional</sup> <a name="skip_reassign_owned" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.skipReassignOwned"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL.
 
@@ -343,7 +343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `statement_timeout`<sup>Optional</sup> <a name="statement_timeout" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.statementTimeout"></a>
+##### `statement_timeout`<sup>Optional</sup> <a name="statement_timeout" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.statementTimeout"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -353,9 +353,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.superuser"></a>
+##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.superuser"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determine whether the new role is a "superuser".
 
@@ -363,7 +363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `valid_until`<sup>Optional</sup> <a name="valid_until" id="@cdktf/provider-postgresql.role.Role.Initializer.parameter.validUntil"></a>
+##### `valid_until`<sup>Optional</sup> <a name="valid_until" id="@cdktn/provider-postgresql.role.Role.Initializer.parameter.validUntil"></a>
 
 - *Type:* str
 
@@ -377,55 +377,55 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetAssumeRole">reset_assume_role</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetBypassRowLevelSecurity">reset_bypass_row_level_security</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetConnectionLimit">reset_connection_limit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetCreateDatabase">reset_create_database</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetCreateRole">reset_create_role</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetEncrypted">reset_encrypted</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetEncryptedPassword">reset_encrypted_password</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetIdleInTransactionSessionTimeout">reset_idle_in_transaction_session_timeout</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetInherit">reset_inherit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetLogin">reset_login</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetPassword">reset_password</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetPasswordWo">reset_password_wo</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetPasswordWoVersion">reset_password_wo_version</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetReplication">reset_replication</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetRoles">reset_roles</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetSearchPath">reset_search_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetSkipDropRole">reset_skip_drop_role</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetSkipReassignOwned">reset_skip_reassign_owned</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetStatementTimeout">reset_statement_timeout</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetSuperuser">reset_superuser</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.resetValidUntil">reset_valid_until</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetAssumeRole">reset_assume_role</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetBypassRowLevelSecurity">reset_bypass_row_level_security</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetConnectionLimit">reset_connection_limit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetCreateDatabase">reset_create_database</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetCreateRole">reset_create_role</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetEncrypted">reset_encrypted</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetEncryptedPassword">reset_encrypted_password</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetIdleInTransactionSessionTimeout">reset_idle_in_transaction_session_timeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetInherit">reset_inherit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetLogin">reset_login</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetPassword">reset_password</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetPasswordWo">reset_password_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetPasswordWoVersion">reset_password_wo_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetReplication">reset_replication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetRoles">reset_roles</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetSearchPath">reset_search_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetSkipDropRole">reset_skip_drop_role</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetSkipReassignOwned">reset_skip_reassign_owned</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetStatementTimeout">reset_statement_timeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetSuperuser">reset_superuser</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.resetValidUntil">reset_valid_until</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-postgresql.role.Role.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-postgresql.role.Role.toString"></a>
 
 ```python
 def to_string() -> str
@@ -433,7 +433,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-postgresql.role.Role.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-postgresql.role.Role.addOverride"></a>
 
 ```python
 def add_override(
@@ -442,19 +442,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-postgresql.role.Role.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-postgresql.role.Role.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-postgresql.role.Role.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-postgresql.role.Role.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-postgresql.role.Role.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-postgresql.role.Role.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -464,7 +464,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-postgresql.role.Role.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-postgresql.role.Role.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -472,7 +472,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-postgresql.role.Role.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-postgresql.role.Role.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -480,19 +480,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-postgresql.role.Role.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-postgresql.role.Role.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-postgresql.role.Role.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-postgresql.role.Role.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-postgresql.role.Role.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-postgresql.role.Role.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -500,7 +500,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-postgresql.role.Role.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-postgresql.role.Role.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -510,7 +510,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-postgresql.role.Role.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-postgresql.role.Role.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -518,7 +518,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-postgresql.role.Role.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-postgresql.role.Role.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -526,13 +526,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.role.Role.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.role.Role.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-postgresql.role.Role.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-postgresql.role.Role.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -540,13 +540,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.role.Role.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.role.Role.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-postgresql.role.Role.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-postgresql.role.Role.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -554,13 +554,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.role.Role.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.role.Role.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-postgresql.role.Role.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-postgresql.role.Role.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -568,13 +568,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.role.Role.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.role.Role.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-postgresql.role.Role.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-postgresql.role.Role.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -582,13 +582,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.role.Role.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.role.Role.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-postgresql.role.Role.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-postgresql.role.Role.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -596,13 +596,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.role.Role.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.role.Role.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-postgresql.role.Role.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-postgresql.role.Role.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -610,13 +610,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.role.Role.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.role.Role.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-postgresql.role.Role.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-postgresql.role.Role.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -624,13 +624,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.role.Role.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.role.Role.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-postgresql.role.Role.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-postgresql.role.Role.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -638,19 +638,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.role.Role.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.role.Role.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-postgresql.role.Role.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-postgresql.role.Role.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-postgresql.role.Role.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-postgresql.role.Role.importFrom"></a>
 
 ```python
 def import_from(
@@ -659,19 +659,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.role.Role.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.role.Role.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.role.Role.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.role.Role.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-postgresql.role.Role.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-postgresql.role.Role.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -679,13 +679,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.role.Role.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.role.Role.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-postgresql.role.Role.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-postgresql.role.Role.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -697,7 +697,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.role.Role.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.role.Role.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -705,7 +705,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-postgresql.role.Role.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-postgresql.role.Role.moveTo"></a>
 
 ```python
 def move_to(
@@ -716,7 +716,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-postgresql.role.Role.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-postgresql.role.Role.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -724,7 +724,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-postgresql.role.Role.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-postgresql.role.Role.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -732,7 +732,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-postgresql.role.Role.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-postgresql.role.Role.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -742,7 +742,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.role.Role.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.role.Role.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -750,133 +750,133 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_assume_role` <a name="reset_assume_role" id="@cdktf/provider-postgresql.role.Role.resetAssumeRole"></a>
+##### `reset_assume_role` <a name="reset_assume_role" id="@cdktn/provider-postgresql.role.Role.resetAssumeRole"></a>
 
 ```python
 def reset_assume_role() -> None
 ```
 
-##### `reset_bypass_row_level_security` <a name="reset_bypass_row_level_security" id="@cdktf/provider-postgresql.role.Role.resetBypassRowLevelSecurity"></a>
+##### `reset_bypass_row_level_security` <a name="reset_bypass_row_level_security" id="@cdktn/provider-postgresql.role.Role.resetBypassRowLevelSecurity"></a>
 
 ```python
 def reset_bypass_row_level_security() -> None
 ```
 
-##### `reset_connection_limit` <a name="reset_connection_limit" id="@cdktf/provider-postgresql.role.Role.resetConnectionLimit"></a>
+##### `reset_connection_limit` <a name="reset_connection_limit" id="@cdktn/provider-postgresql.role.Role.resetConnectionLimit"></a>
 
 ```python
 def reset_connection_limit() -> None
 ```
 
-##### `reset_create_database` <a name="reset_create_database" id="@cdktf/provider-postgresql.role.Role.resetCreateDatabase"></a>
+##### `reset_create_database` <a name="reset_create_database" id="@cdktn/provider-postgresql.role.Role.resetCreateDatabase"></a>
 
 ```python
 def reset_create_database() -> None
 ```
 
-##### `reset_create_role` <a name="reset_create_role" id="@cdktf/provider-postgresql.role.Role.resetCreateRole"></a>
+##### `reset_create_role` <a name="reset_create_role" id="@cdktn/provider-postgresql.role.Role.resetCreateRole"></a>
 
 ```python
 def reset_create_role() -> None
 ```
 
-##### `reset_encrypted` <a name="reset_encrypted" id="@cdktf/provider-postgresql.role.Role.resetEncrypted"></a>
+##### `reset_encrypted` <a name="reset_encrypted" id="@cdktn/provider-postgresql.role.Role.resetEncrypted"></a>
 
 ```python
 def reset_encrypted() -> None
 ```
 
-##### `reset_encrypted_password` <a name="reset_encrypted_password" id="@cdktf/provider-postgresql.role.Role.resetEncryptedPassword"></a>
+##### `reset_encrypted_password` <a name="reset_encrypted_password" id="@cdktn/provider-postgresql.role.Role.resetEncryptedPassword"></a>
 
 ```python
 def reset_encrypted_password() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-postgresql.role.Role.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-postgresql.role.Role.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_idle_in_transaction_session_timeout` <a name="reset_idle_in_transaction_session_timeout" id="@cdktf/provider-postgresql.role.Role.resetIdleInTransactionSessionTimeout"></a>
+##### `reset_idle_in_transaction_session_timeout` <a name="reset_idle_in_transaction_session_timeout" id="@cdktn/provider-postgresql.role.Role.resetIdleInTransactionSessionTimeout"></a>
 
 ```python
 def reset_idle_in_transaction_session_timeout() -> None
 ```
 
-##### `reset_inherit` <a name="reset_inherit" id="@cdktf/provider-postgresql.role.Role.resetInherit"></a>
+##### `reset_inherit` <a name="reset_inherit" id="@cdktn/provider-postgresql.role.Role.resetInherit"></a>
 
 ```python
 def reset_inherit() -> None
 ```
 
-##### `reset_login` <a name="reset_login" id="@cdktf/provider-postgresql.role.Role.resetLogin"></a>
+##### `reset_login` <a name="reset_login" id="@cdktn/provider-postgresql.role.Role.resetLogin"></a>
 
 ```python
 def reset_login() -> None
 ```
 
-##### `reset_password` <a name="reset_password" id="@cdktf/provider-postgresql.role.Role.resetPassword"></a>
+##### `reset_password` <a name="reset_password" id="@cdktn/provider-postgresql.role.Role.resetPassword"></a>
 
 ```python
 def reset_password() -> None
 ```
 
-##### `reset_password_wo` <a name="reset_password_wo" id="@cdktf/provider-postgresql.role.Role.resetPasswordWo"></a>
+##### `reset_password_wo` <a name="reset_password_wo" id="@cdktn/provider-postgresql.role.Role.resetPasswordWo"></a>
 
 ```python
 def reset_password_wo() -> None
 ```
 
-##### `reset_password_wo_version` <a name="reset_password_wo_version" id="@cdktf/provider-postgresql.role.Role.resetPasswordWoVersion"></a>
+##### `reset_password_wo_version` <a name="reset_password_wo_version" id="@cdktn/provider-postgresql.role.Role.resetPasswordWoVersion"></a>
 
 ```python
 def reset_password_wo_version() -> None
 ```
 
-##### `reset_replication` <a name="reset_replication" id="@cdktf/provider-postgresql.role.Role.resetReplication"></a>
+##### `reset_replication` <a name="reset_replication" id="@cdktn/provider-postgresql.role.Role.resetReplication"></a>
 
 ```python
 def reset_replication() -> None
 ```
 
-##### `reset_roles` <a name="reset_roles" id="@cdktf/provider-postgresql.role.Role.resetRoles"></a>
+##### `reset_roles` <a name="reset_roles" id="@cdktn/provider-postgresql.role.Role.resetRoles"></a>
 
 ```python
 def reset_roles() -> None
 ```
 
-##### `reset_search_path` <a name="reset_search_path" id="@cdktf/provider-postgresql.role.Role.resetSearchPath"></a>
+##### `reset_search_path` <a name="reset_search_path" id="@cdktn/provider-postgresql.role.Role.resetSearchPath"></a>
 
 ```python
 def reset_search_path() -> None
 ```
 
-##### `reset_skip_drop_role` <a name="reset_skip_drop_role" id="@cdktf/provider-postgresql.role.Role.resetSkipDropRole"></a>
+##### `reset_skip_drop_role` <a name="reset_skip_drop_role" id="@cdktn/provider-postgresql.role.Role.resetSkipDropRole"></a>
 
 ```python
 def reset_skip_drop_role() -> None
 ```
 
-##### `reset_skip_reassign_owned` <a name="reset_skip_reassign_owned" id="@cdktf/provider-postgresql.role.Role.resetSkipReassignOwned"></a>
+##### `reset_skip_reassign_owned` <a name="reset_skip_reassign_owned" id="@cdktn/provider-postgresql.role.Role.resetSkipReassignOwned"></a>
 
 ```python
 def reset_skip_reassign_owned() -> None
 ```
 
-##### `reset_statement_timeout` <a name="reset_statement_timeout" id="@cdktf/provider-postgresql.role.Role.resetStatementTimeout"></a>
+##### `reset_statement_timeout` <a name="reset_statement_timeout" id="@cdktn/provider-postgresql.role.Role.resetStatementTimeout"></a>
 
 ```python
 def reset_statement_timeout() -> None
 ```
 
-##### `reset_superuser` <a name="reset_superuser" id="@cdktf/provider-postgresql.role.Role.resetSuperuser"></a>
+##### `reset_superuser` <a name="reset_superuser" id="@cdktn/provider-postgresql.role.Role.resetSuperuser"></a>
 
 ```python
 def reset_superuser() -> None
 ```
 
-##### `reset_valid_until` <a name="reset_valid_until" id="@cdktf/provider-postgresql.role.Role.resetValidUntil"></a>
+##### `reset_valid_until` <a name="reset_valid_until" id="@cdktn/provider-postgresql.role.Role.resetValidUntil"></a>
 
 ```python
 def reset_valid_until() -> None
@@ -886,17 +886,17 @@ def reset_valid_until() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Role resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a Role resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-postgresql.role.Role.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-postgresql.role.Role.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import role
+from cdktn_provider_postgresql import role
 
 role.Role.is_construct(
   x: typing.Any
@@ -919,7 +919,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.role.Role.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.role.Role.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -927,42 +927,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-postgresql.role.Role.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-postgresql.role.Role.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import role
+from cdktn_provider_postgresql import role
 
 role.Role.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.role.Role.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.role.Role.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-postgresql.role.Role.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-postgresql.role.Role.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import role
+from cdktn_provider_postgresql import role
 
 role.Role.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.role.Role.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.role.Role.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-postgresql.role.Role.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-postgresql.role.Role.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import role
+from cdktn_provider_postgresql import role
 
 role.Role.generate_config_for_import(
   scope: Construct,
@@ -972,9 +972,9 @@ role.Role.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a Role resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a Role resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.role.Role.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.role.Role.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -982,7 +982,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-postgresql.role.Role.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-postgresql.role.Role.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -990,7 +990,7 @@ The construct id used in the generated config for the Role to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-postgresql.role.Role.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-postgresql.role.Role.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -1000,9 +1000,9 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.role.Role.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.role.Role.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the Role to import is found.
 
@@ -1012,70 +1012,70 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.assumeRoleInput">assume_role_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurityInput">bypass_row_level_security_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.connectionLimitInput">connection_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabaseInput">create_database_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRoleInput">create_role_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedInput">encrypted_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPasswordInput">encrypted_password_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.idleInTransactionSessionTimeoutInput">idle_in_transaction_session_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inheritInput">inherit_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.loginInput">login_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoInput">password_wo_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoVersionInput">password_wo_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replicationInput">replication_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.rolesInput">roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.searchPathInput">search_path_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRoleInput">skip_drop_role_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwnedInput">skip_reassign_owned_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.statementTimeoutInput">statement_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuserInput">superuser_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.validUntilInput">valid_until_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.assumeRole">assume_role</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurity">bypass_row_level_security</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createDatabase">create_database</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.createRole">create_role</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encrypted">encrypted</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.encryptedPassword">encrypted_password</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.idleInTransactionSessionTimeout">idle_in_transaction_session_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.inherit">inherit</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.login">login</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.password">password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWo">password_wo</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.passwordWoVersion">password_wo_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.replication">replication</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.roles">roles</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.searchPath">search_path</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipDropRole">skip_drop_role</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.skipReassignOwned">skip_reassign_owned</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.statementTimeout">statement_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.superuser">superuser</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.validUntil">valid_until</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.assumeRoleInput">assume_role_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.bypassRowLevelSecurityInput">bypass_row_level_security_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.connectionLimitInput">connection_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.createDatabaseInput">create_database_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.createRoleInput">create_role_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.encryptedInput">encrypted_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.encryptedPasswordInput">encrypted_password_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.idleInTransactionSessionTimeoutInput">idle_in_transaction_session_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.inheritInput">inherit_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.loginInput">login_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.passwordWoInput">password_wo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.passwordWoVersionInput">password_wo_version_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.replicationInput">replication_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.rolesInput">roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.searchPathInput">search_path_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.skipDropRoleInput">skip_drop_role_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.skipReassignOwnedInput">skip_reassign_owned_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.statementTimeoutInput">statement_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.superuserInput">superuser_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.validUntilInput">valid_until_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.assumeRole">assume_role</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.bypassRowLevelSecurity">bypass_row_level_security</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.createDatabase">create_database</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.createRole">create_role</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.encrypted">encrypted</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.encryptedPassword">encrypted_password</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.idleInTransactionSessionTimeout">idle_in_transaction_session_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.inherit">inherit</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.login">login</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.password">password</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.passwordWo">password_wo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.passwordWoVersion">password_wo_version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.replication">replication</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.roles">roles</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.searchPath">search_path</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.skipDropRole">skip_drop_role</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.skipReassignOwned">skip_reassign_owned</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.statementTimeout">statement_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.superuser">superuser</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.validUntil">valid_until</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-postgresql.role.Role.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-postgresql.role.Role.property.node"></a>
 
 ```python
 node: Node
@@ -1087,17 +1087,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-postgresql.role.Role.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-postgresql.role.Role.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-postgresql.role.Role.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-postgresql.role.Role.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1107,7 +1107,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-postgresql.role.Role.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-postgresql.role.Role.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1117,7 +1117,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-postgresql.role.Role.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-postgresql.role.Role.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1127,7 +1127,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-postgresql.role.Role.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-postgresql.role.Role.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1137,37 +1137,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-postgresql.role.Role.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-postgresql.role.Role.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.role.Role.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.role.Role.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.role.Role.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.role.Role.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-postgresql.role.Role.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-postgresql.role.Role.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1177,47 +1177,47 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-postgresql.role.Role.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-postgresql.role.Role.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.role.Role.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.role.Role.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.role.Role.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.role.Role.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.role.Role.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.role.Role.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `assume_role_input`<sup>Optional</sup> <a name="assume_role_input" id="@cdktf/provider-postgresql.role.Role.property.assumeRoleInput"></a>
+##### `assume_role_input`<sup>Optional</sup> <a name="assume_role_input" id="@cdktn/provider-postgresql.role.Role.property.assumeRoleInput"></a>
 
 ```python
 assume_role_input: str
@@ -1227,17 +1227,17 @@ assume_role_input: str
 
 ---
 
-##### `bypass_row_level_security_input`<sup>Optional</sup> <a name="bypass_row_level_security_input" id="@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurityInput"></a>
+##### `bypass_row_level_security_input`<sup>Optional</sup> <a name="bypass_row_level_security_input" id="@cdktn/provider-postgresql.role.Role.property.bypassRowLevelSecurityInput"></a>
 
 ```python
 bypass_row_level_security_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `connection_limit_input`<sup>Optional</sup> <a name="connection_limit_input" id="@cdktf/provider-postgresql.role.Role.property.connectionLimitInput"></a>
+##### `connection_limit_input`<sup>Optional</sup> <a name="connection_limit_input" id="@cdktn/provider-postgresql.role.Role.property.connectionLimitInput"></a>
 
 ```python
 connection_limit_input: typing.Union[int, float]
@@ -1247,27 +1247,27 @@ connection_limit_input: typing.Union[int, float]
 
 ---
 
-##### `create_database_input`<sup>Optional</sup> <a name="create_database_input" id="@cdktf/provider-postgresql.role.Role.property.createDatabaseInput"></a>
+##### `create_database_input`<sup>Optional</sup> <a name="create_database_input" id="@cdktn/provider-postgresql.role.Role.property.createDatabaseInput"></a>
 
 ```python
 create_database_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `create_role_input`<sup>Optional</sup> <a name="create_role_input" id="@cdktf/provider-postgresql.role.Role.property.createRoleInput"></a>
+##### `create_role_input`<sup>Optional</sup> <a name="create_role_input" id="@cdktn/provider-postgresql.role.Role.property.createRoleInput"></a>
 
 ```python
 create_role_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `encrypted_input`<sup>Optional</sup> <a name="encrypted_input" id="@cdktf/provider-postgresql.role.Role.property.encryptedInput"></a>
+##### `encrypted_input`<sup>Optional</sup> <a name="encrypted_input" id="@cdktn/provider-postgresql.role.Role.property.encryptedInput"></a>
 
 ```python
 encrypted_input: str
@@ -1277,17 +1277,17 @@ encrypted_input: str
 
 ---
 
-##### `encrypted_password_input`<sup>Optional</sup> <a name="encrypted_password_input" id="@cdktf/provider-postgresql.role.Role.property.encryptedPasswordInput"></a>
+##### `encrypted_password_input`<sup>Optional</sup> <a name="encrypted_password_input" id="@cdktn/provider-postgresql.role.Role.property.encryptedPasswordInput"></a>
 
 ```python
 encrypted_password_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-postgresql.role.Role.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-postgresql.role.Role.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1297,7 +1297,7 @@ id_input: str
 
 ---
 
-##### `idle_in_transaction_session_timeout_input`<sup>Optional</sup> <a name="idle_in_transaction_session_timeout_input" id="@cdktf/provider-postgresql.role.Role.property.idleInTransactionSessionTimeoutInput"></a>
+##### `idle_in_transaction_session_timeout_input`<sup>Optional</sup> <a name="idle_in_transaction_session_timeout_input" id="@cdktn/provider-postgresql.role.Role.property.idleInTransactionSessionTimeoutInput"></a>
 
 ```python
 idle_in_transaction_session_timeout_input: typing.Union[int, float]
@@ -1307,27 +1307,27 @@ idle_in_transaction_session_timeout_input: typing.Union[int, float]
 
 ---
 
-##### `inherit_input`<sup>Optional</sup> <a name="inherit_input" id="@cdktf/provider-postgresql.role.Role.property.inheritInput"></a>
+##### `inherit_input`<sup>Optional</sup> <a name="inherit_input" id="@cdktn/provider-postgresql.role.Role.property.inheritInput"></a>
 
 ```python
 inherit_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `login_input`<sup>Optional</sup> <a name="login_input" id="@cdktf/provider-postgresql.role.Role.property.loginInput"></a>
+##### `login_input`<sup>Optional</sup> <a name="login_input" id="@cdktn/provider-postgresql.role.Role.property.loginInput"></a>
 
 ```python
 login_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-postgresql.role.Role.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-postgresql.role.Role.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1337,7 +1337,7 @@ name_input: str
 
 ---
 
-##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktf/provider-postgresql.role.Role.property.passwordInput"></a>
+##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktn/provider-postgresql.role.Role.property.passwordInput"></a>
 
 ```python
 password_input: str
@@ -1347,7 +1347,7 @@ password_input: str
 
 ---
 
-##### `password_wo_input`<sup>Optional</sup> <a name="password_wo_input" id="@cdktf/provider-postgresql.role.Role.property.passwordWoInput"></a>
+##### `password_wo_input`<sup>Optional</sup> <a name="password_wo_input" id="@cdktn/provider-postgresql.role.Role.property.passwordWoInput"></a>
 
 ```python
 password_wo_input: str
@@ -1357,7 +1357,7 @@ password_wo_input: str
 
 ---
 
-##### `password_wo_version_input`<sup>Optional</sup> <a name="password_wo_version_input" id="@cdktf/provider-postgresql.role.Role.property.passwordWoVersionInput"></a>
+##### `password_wo_version_input`<sup>Optional</sup> <a name="password_wo_version_input" id="@cdktn/provider-postgresql.role.Role.property.passwordWoVersionInput"></a>
 
 ```python
 password_wo_version_input: str
@@ -1367,17 +1367,17 @@ password_wo_version_input: str
 
 ---
 
-##### `replication_input`<sup>Optional</sup> <a name="replication_input" id="@cdktf/provider-postgresql.role.Role.property.replicationInput"></a>
+##### `replication_input`<sup>Optional</sup> <a name="replication_input" id="@cdktn/provider-postgresql.role.Role.property.replicationInput"></a>
 
 ```python
 replication_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `roles_input`<sup>Optional</sup> <a name="roles_input" id="@cdktf/provider-postgresql.role.Role.property.rolesInput"></a>
+##### `roles_input`<sup>Optional</sup> <a name="roles_input" id="@cdktn/provider-postgresql.role.Role.property.rolesInput"></a>
 
 ```python
 roles_input: typing.List[str]
@@ -1387,7 +1387,7 @@ roles_input: typing.List[str]
 
 ---
 
-##### `search_path_input`<sup>Optional</sup> <a name="search_path_input" id="@cdktf/provider-postgresql.role.Role.property.searchPathInput"></a>
+##### `search_path_input`<sup>Optional</sup> <a name="search_path_input" id="@cdktn/provider-postgresql.role.Role.property.searchPathInput"></a>
 
 ```python
 search_path_input: typing.List[str]
@@ -1397,27 +1397,27 @@ search_path_input: typing.List[str]
 
 ---
 
-##### `skip_drop_role_input`<sup>Optional</sup> <a name="skip_drop_role_input" id="@cdktf/provider-postgresql.role.Role.property.skipDropRoleInput"></a>
+##### `skip_drop_role_input`<sup>Optional</sup> <a name="skip_drop_role_input" id="@cdktn/provider-postgresql.role.Role.property.skipDropRoleInput"></a>
 
 ```python
 skip_drop_role_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `skip_reassign_owned_input`<sup>Optional</sup> <a name="skip_reassign_owned_input" id="@cdktf/provider-postgresql.role.Role.property.skipReassignOwnedInput"></a>
+##### `skip_reassign_owned_input`<sup>Optional</sup> <a name="skip_reassign_owned_input" id="@cdktn/provider-postgresql.role.Role.property.skipReassignOwnedInput"></a>
 
 ```python
 skip_reassign_owned_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `statement_timeout_input`<sup>Optional</sup> <a name="statement_timeout_input" id="@cdktf/provider-postgresql.role.Role.property.statementTimeoutInput"></a>
+##### `statement_timeout_input`<sup>Optional</sup> <a name="statement_timeout_input" id="@cdktn/provider-postgresql.role.Role.property.statementTimeoutInput"></a>
 
 ```python
 statement_timeout_input: typing.Union[int, float]
@@ -1427,17 +1427,17 @@ statement_timeout_input: typing.Union[int, float]
 
 ---
 
-##### `superuser_input`<sup>Optional</sup> <a name="superuser_input" id="@cdktf/provider-postgresql.role.Role.property.superuserInput"></a>
+##### `superuser_input`<sup>Optional</sup> <a name="superuser_input" id="@cdktn/provider-postgresql.role.Role.property.superuserInput"></a>
 
 ```python
 superuser_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `valid_until_input`<sup>Optional</sup> <a name="valid_until_input" id="@cdktf/provider-postgresql.role.Role.property.validUntilInput"></a>
+##### `valid_until_input`<sup>Optional</sup> <a name="valid_until_input" id="@cdktn/provider-postgresql.role.Role.property.validUntilInput"></a>
 
 ```python
 valid_until_input: str
@@ -1447,7 +1447,7 @@ valid_until_input: str
 
 ---
 
-##### `assume_role`<sup>Required</sup> <a name="assume_role" id="@cdktf/provider-postgresql.role.Role.property.assumeRole"></a>
+##### `assume_role`<sup>Required</sup> <a name="assume_role" id="@cdktn/provider-postgresql.role.Role.property.assumeRole"></a>
 
 ```python
 assume_role: str
@@ -1457,17 +1457,17 @@ assume_role: str
 
 ---
 
-##### `bypass_row_level_security`<sup>Required</sup> <a name="bypass_row_level_security" id="@cdktf/provider-postgresql.role.Role.property.bypassRowLevelSecurity"></a>
+##### `bypass_row_level_security`<sup>Required</sup> <a name="bypass_row_level_security" id="@cdktn/provider-postgresql.role.Role.property.bypassRowLevelSecurity"></a>
 
 ```python
 bypass_row_level_security: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `connection_limit`<sup>Required</sup> <a name="connection_limit" id="@cdktf/provider-postgresql.role.Role.property.connectionLimit"></a>
+##### `connection_limit`<sup>Required</sup> <a name="connection_limit" id="@cdktn/provider-postgresql.role.Role.property.connectionLimit"></a>
 
 ```python
 connection_limit: typing.Union[int, float]
@@ -1477,27 +1477,27 @@ connection_limit: typing.Union[int, float]
 
 ---
 
-##### `create_database`<sup>Required</sup> <a name="create_database" id="@cdktf/provider-postgresql.role.Role.property.createDatabase"></a>
+##### `create_database`<sup>Required</sup> <a name="create_database" id="@cdktn/provider-postgresql.role.Role.property.createDatabase"></a>
 
 ```python
 create_database: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `create_role`<sup>Required</sup> <a name="create_role" id="@cdktf/provider-postgresql.role.Role.property.createRole"></a>
+##### `create_role`<sup>Required</sup> <a name="create_role" id="@cdktn/provider-postgresql.role.Role.property.createRole"></a>
 
 ```python
 create_role: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `encrypted`<sup>Required</sup> <a name="encrypted" id="@cdktf/provider-postgresql.role.Role.property.encrypted"></a>
+##### `encrypted`<sup>Required</sup> <a name="encrypted" id="@cdktn/provider-postgresql.role.Role.property.encrypted"></a>
 
 ```python
 encrypted: str
@@ -1507,17 +1507,17 @@ encrypted: str
 
 ---
 
-##### `encrypted_password`<sup>Required</sup> <a name="encrypted_password" id="@cdktf/provider-postgresql.role.Role.property.encryptedPassword"></a>
+##### `encrypted_password`<sup>Required</sup> <a name="encrypted_password" id="@cdktn/provider-postgresql.role.Role.property.encryptedPassword"></a>
 
 ```python
 encrypted_password: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.role.Role.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.role.Role.property.id"></a>
 
 ```python
 id: str
@@ -1527,7 +1527,7 @@ id: str
 
 ---
 
-##### `idle_in_transaction_session_timeout`<sup>Required</sup> <a name="idle_in_transaction_session_timeout" id="@cdktf/provider-postgresql.role.Role.property.idleInTransactionSessionTimeout"></a>
+##### `idle_in_transaction_session_timeout`<sup>Required</sup> <a name="idle_in_transaction_session_timeout" id="@cdktn/provider-postgresql.role.Role.property.idleInTransactionSessionTimeout"></a>
 
 ```python
 idle_in_transaction_session_timeout: typing.Union[int, float]
@@ -1537,27 +1537,27 @@ idle_in_transaction_session_timeout: typing.Union[int, float]
 
 ---
 
-##### `inherit`<sup>Required</sup> <a name="inherit" id="@cdktf/provider-postgresql.role.Role.property.inherit"></a>
+##### `inherit`<sup>Required</sup> <a name="inherit" id="@cdktn/provider-postgresql.role.Role.property.inherit"></a>
 
 ```python
 inherit: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `login`<sup>Required</sup> <a name="login" id="@cdktf/provider-postgresql.role.Role.property.login"></a>
+##### `login`<sup>Required</sup> <a name="login" id="@cdktn/provider-postgresql.role.Role.property.login"></a>
 
 ```python
 login: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-postgresql.role.Role.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-postgresql.role.Role.property.name"></a>
 
 ```python
 name: str
@@ -1567,7 +1567,7 @@ name: str
 
 ---
 
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-postgresql.role.Role.property.password"></a>
+##### `password`<sup>Required</sup> <a name="password" id="@cdktn/provider-postgresql.role.Role.property.password"></a>
 
 ```python
 password: str
@@ -1577,7 +1577,7 @@ password: str
 
 ---
 
-##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktf/provider-postgresql.role.Role.property.passwordWo"></a>
+##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-postgresql.role.Role.property.passwordWo"></a>
 
 ```python
 password_wo: str
@@ -1587,7 +1587,7 @@ password_wo: str
 
 ---
 
-##### `password_wo_version`<sup>Required</sup> <a name="password_wo_version" id="@cdktf/provider-postgresql.role.Role.property.passwordWoVersion"></a>
+##### `password_wo_version`<sup>Required</sup> <a name="password_wo_version" id="@cdktn/provider-postgresql.role.Role.property.passwordWoVersion"></a>
 
 ```python
 password_wo_version: str
@@ -1597,17 +1597,17 @@ password_wo_version: str
 
 ---
 
-##### `replication`<sup>Required</sup> <a name="replication" id="@cdktf/provider-postgresql.role.Role.property.replication"></a>
+##### `replication`<sup>Required</sup> <a name="replication" id="@cdktn/provider-postgresql.role.Role.property.replication"></a>
 
 ```python
 replication: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `roles`<sup>Required</sup> <a name="roles" id="@cdktf/provider-postgresql.role.Role.property.roles"></a>
+##### `roles`<sup>Required</sup> <a name="roles" id="@cdktn/provider-postgresql.role.Role.property.roles"></a>
 
 ```python
 roles: typing.List[str]
@@ -1617,7 +1617,7 @@ roles: typing.List[str]
 
 ---
 
-##### `search_path`<sup>Required</sup> <a name="search_path" id="@cdktf/provider-postgresql.role.Role.property.searchPath"></a>
+##### `search_path`<sup>Required</sup> <a name="search_path" id="@cdktn/provider-postgresql.role.Role.property.searchPath"></a>
 
 ```python
 search_path: typing.List[str]
@@ -1627,27 +1627,27 @@ search_path: typing.List[str]
 
 ---
 
-##### `skip_drop_role`<sup>Required</sup> <a name="skip_drop_role" id="@cdktf/provider-postgresql.role.Role.property.skipDropRole"></a>
+##### `skip_drop_role`<sup>Required</sup> <a name="skip_drop_role" id="@cdktn/provider-postgresql.role.Role.property.skipDropRole"></a>
 
 ```python
 skip_drop_role: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `skip_reassign_owned`<sup>Required</sup> <a name="skip_reassign_owned" id="@cdktf/provider-postgresql.role.Role.property.skipReassignOwned"></a>
+##### `skip_reassign_owned`<sup>Required</sup> <a name="skip_reassign_owned" id="@cdktn/provider-postgresql.role.Role.property.skipReassignOwned"></a>
 
 ```python
 skip_reassign_owned: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `statement_timeout`<sup>Required</sup> <a name="statement_timeout" id="@cdktf/provider-postgresql.role.Role.property.statementTimeout"></a>
+##### `statement_timeout`<sup>Required</sup> <a name="statement_timeout" id="@cdktn/provider-postgresql.role.Role.property.statementTimeout"></a>
 
 ```python
 statement_timeout: typing.Union[int, float]
@@ -1657,17 +1657,17 @@ statement_timeout: typing.Union[int, float]
 
 ---
 
-##### `superuser`<sup>Required</sup> <a name="superuser" id="@cdktf/provider-postgresql.role.Role.property.superuser"></a>
+##### `superuser`<sup>Required</sup> <a name="superuser" id="@cdktn/provider-postgresql.role.Role.property.superuser"></a>
 
 ```python
 superuser: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `valid_until`<sup>Required</sup> <a name="valid_until" id="@cdktf/provider-postgresql.role.Role.property.validUntil"></a>
+##### `valid_until`<sup>Required</sup> <a name="valid_until" id="@cdktn/provider-postgresql.role.Role.property.validUntil"></a>
 
 ```python
 valid_until: str
@@ -1681,11 +1681,11 @@ valid_until: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.role.Role.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.Role.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-postgresql.role.Role.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-postgresql.role.Role.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1697,12 +1697,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### RoleConfig <a name="RoleConfig" id="@cdktf/provider-postgresql.role.RoleConfig"></a>
+### RoleConfig <a name="RoleConfig" id="@cdktn/provider-postgresql.role.RoleConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.role.RoleConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.role.RoleConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import role
+from cdktn_provider_postgresql import role
 
 role.RoleConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1742,110 +1742,110 @@ role.RoleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.name">name</a></code> | <code>str</code> | The name of the role. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.assumeRole">assume_role</a></code> | <code>str</code> | Role to switch to at login. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.bypassRowLevelSecurity">bypass_row_level_security</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | How many concurrent connections can be made with this role. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createDatabase">create_database</a></code> | <code>bool \| cdktf.IResolvable</code> | Define a role's ability to create databases. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.createRole">create_role</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether this role will be permitted to create new roles. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encrypted">encrypted</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted Role#encrypted}. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.encryptedPassword">encrypted_password</a></code> | <code>bool \| cdktf.IResolvable</code> | Control whether the password is stored encrypted in the system catalogs. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#id Role#id}. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.idleInTransactionSessionTimeout">idle_in_transaction_session_timeout</a></code> | <code>typing.Union[int, float]</code> | Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.inherit">inherit</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.login">login</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role is allowed to log in. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.password">password</a></code> | <code>str</code> | Sets the role's password. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.passwordWo">password_wo</a></code> | <code>str</code> | Sets the role's password without storing it in the state file. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.passwordWoVersion">password_wo_version</a></code> | <code>str</code> | Prevents applies from updating the role password on every apply unless the value changes. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.replication">replication</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | Role(s) to grant to this new role. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.searchPath">search_path</a></code> | <code>typing.List[str]</code> | Sets the role's search path. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipDropRole">skip_drop_role</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.skipReassignOwned">skip_reassign_owned</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.statementTimeout">statement_timeout</a></code> | <code>typing.Union[int, float]</code> | Abort any statement that takes more than the specified number of milliseconds. |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.superuser">superuser</a></code> | <code>bool \| cdktf.IResolvable</code> | Determine whether the new role is a "superuser". |
-| <code><a href="#@cdktf/provider-postgresql.role.RoleConfig.property.validUntil">valid_until</a></code> | <code>str</code> | Sets a date and time after which the role's password is no longer valid. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.name">name</a></code> | <code>str</code> | The name of the role. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.assumeRole">assume_role</a></code> | <code>str</code> | Role to switch to at login. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.bypassRowLevelSecurity">bypass_row_level_security</a></code> | <code>bool \| cdktn.IResolvable</code> | Determine whether a role bypasses every row-level security (RLS) policy. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | How many concurrent connections can be made with this role. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.createDatabase">create_database</a></code> | <code>bool \| cdktn.IResolvable</code> | Define a role's ability to create databases. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.createRole">create_role</a></code> | <code>bool \| cdktn.IResolvable</code> | Determine whether this role will be permitted to create new roles. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.encrypted">encrypted</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted Role#encrypted}. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.encryptedPassword">encrypted_password</a></code> | <code>bool \| cdktn.IResolvable</code> | Control whether the password is stored encrypted in the system catalogs. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#id Role#id}. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.idleInTransactionSessionTimeout">idle_in_transaction_session_timeout</a></code> | <code>typing.Union[int, float]</code> | Terminate any session with an open transaction that has been idle for longer than the specified duration in milliseconds. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.inherit">inherit</a></code> | <code>bool \| cdktn.IResolvable</code> | Determine whether a role "inherits" the privileges of roles it is a member of. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.login">login</a></code> | <code>bool \| cdktn.IResolvable</code> | Determine whether a role is allowed to log in. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.password">password</a></code> | <code>str</code> | Sets the role's password. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.passwordWo">password_wo</a></code> | <code>str</code> | Sets the role's password without storing it in the state file. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.passwordWoVersion">password_wo_version</a></code> | <code>str</code> | Prevents applies from updating the role password on every apply unless the value changes. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.replication">replication</a></code> | <code>bool \| cdktn.IResolvable</code> | Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | Role(s) to grant to this new role. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.searchPath">search_path</a></code> | <code>typing.List[str]</code> | Sets the role's search path. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.skipDropRole">skip_drop_role</a></code> | <code>bool \| cdktn.IResolvable</code> | Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.skipReassignOwned">skip_reassign_owned</a></code> | <code>bool \| cdktn.IResolvable</code> | Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.statementTimeout">statement_timeout</a></code> | <code>typing.Union[int, float]</code> | Abort any statement that takes more than the specified number of milliseconds. |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.superuser">superuser</a></code> | <code>bool \| cdktn.IResolvable</code> | Determine whether the new role is a "superuser". |
+| <code><a href="#@cdktn/provider-postgresql.role.RoleConfig.property.validUntil">valid_until</a></code> | <code>str</code> | Sets a date and time after which the role's password is no longer valid. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.role.RoleConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.role.RoleConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.role.RoleConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.role.RoleConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-postgresql.role.RoleConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-postgresql.role.RoleConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-postgresql.role.RoleConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-postgresql.role.RoleConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.role.RoleConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.role.RoleConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.role.RoleConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.role.RoleConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.role.RoleConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.role.RoleConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-postgresql.role.RoleConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-postgresql.role.RoleConfig.property.name"></a>
 
 ```python
 name: str
@@ -1859,7 +1859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `assume_role`<sup>Optional</sup> <a name="assume_role" id="@cdktf/provider-postgresql.role.RoleConfig.property.assumeRole"></a>
+##### `assume_role`<sup>Optional</sup> <a name="assume_role" id="@cdktn/provider-postgresql.role.RoleConfig.property.assumeRole"></a>
 
 ```python
 assume_role: str
@@ -1873,13 +1873,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `bypass_row_level_security`<sup>Optional</sup> <a name="bypass_row_level_security" id="@cdktf/provider-postgresql.role.RoleConfig.property.bypassRowLevelSecurity"></a>
+##### `bypass_row_level_security`<sup>Optional</sup> <a name="bypass_row_level_security" id="@cdktn/provider-postgresql.role.RoleConfig.property.bypassRowLevelSecurity"></a>
 
 ```python
 bypass_row_level_security: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determine whether a role bypasses every row-level security (RLS) policy.
 
@@ -1887,7 +1887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `connection_limit`<sup>Optional</sup> <a name="connection_limit" id="@cdktf/provider-postgresql.role.RoleConfig.property.connectionLimit"></a>
+##### `connection_limit`<sup>Optional</sup> <a name="connection_limit" id="@cdktn/provider-postgresql.role.RoleConfig.property.connectionLimit"></a>
 
 ```python
 connection_limit: typing.Union[int, float]
@@ -1901,13 +1901,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `create_database`<sup>Optional</sup> <a name="create_database" id="@cdktf/provider-postgresql.role.RoleConfig.property.createDatabase"></a>
+##### `create_database`<sup>Optional</sup> <a name="create_database" id="@cdktn/provider-postgresql.role.RoleConfig.property.createDatabase"></a>
 
 ```python
 create_database: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Define a role's ability to create databases.
 
@@ -1915,13 +1915,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `create_role`<sup>Optional</sup> <a name="create_role" id="@cdktf/provider-postgresql.role.RoleConfig.property.createRole"></a>
+##### `create_role`<sup>Optional</sup> <a name="create_role" id="@cdktn/provider-postgresql.role.RoleConfig.property.createRole"></a>
 
 ```python
 create_role: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determine whether this role will be permitted to create new roles.
 
@@ -1929,7 +1929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `encrypted`<sup>Optional</sup> <a name="encrypted" id="@cdktf/provider-postgresql.role.RoleConfig.property.encrypted"></a>
+##### `encrypted`<sup>Optional</sup> <a name="encrypted" id="@cdktn/provider-postgresql.role.RoleConfig.property.encrypted"></a>
 
 ```python
 encrypted: str
@@ -1941,13 +1941,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `encrypted_password`<sup>Optional</sup> <a name="encrypted_password" id="@cdktf/provider-postgresql.role.RoleConfig.property.encryptedPassword"></a>
+##### `encrypted_password`<sup>Optional</sup> <a name="encrypted_password" id="@cdktn/provider-postgresql.role.RoleConfig.property.encryptedPassword"></a>
 
 ```python
 encrypted_password: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Control whether the password is stored encrypted in the system catalogs.
 
@@ -1955,7 +1955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-postgresql.role.RoleConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-postgresql.role.RoleConfig.property.id"></a>
 
 ```python
 id: str
@@ -1970,7 +1970,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `idle_in_transaction_session_timeout`<sup>Optional</sup> <a name="idle_in_transaction_session_timeout" id="@cdktf/provider-postgresql.role.RoleConfig.property.idleInTransactionSessionTimeout"></a>
+##### `idle_in_transaction_session_timeout`<sup>Optional</sup> <a name="idle_in_transaction_session_timeout" id="@cdktn/provider-postgresql.role.RoleConfig.property.idleInTransactionSessionTimeout"></a>
 
 ```python
 idle_in_transaction_session_timeout: typing.Union[int, float]
@@ -1984,13 +1984,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `inherit`<sup>Optional</sup> <a name="inherit" id="@cdktf/provider-postgresql.role.RoleConfig.property.inherit"></a>
+##### `inherit`<sup>Optional</sup> <a name="inherit" id="@cdktn/provider-postgresql.role.RoleConfig.property.inherit"></a>
 
 ```python
 inherit: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determine whether a role "inherits" the privileges of roles it is a member of.
 
@@ -1998,13 +1998,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `login`<sup>Optional</sup> <a name="login" id="@cdktf/provider-postgresql.role.RoleConfig.property.login"></a>
+##### `login`<sup>Optional</sup> <a name="login" id="@cdktn/provider-postgresql.role.RoleConfig.property.login"></a>
 
 ```python
 login: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determine whether a role is allowed to log in.
 
@@ -2012,7 +2012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-postgresql.role.RoleConfig.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-postgresql.role.RoleConfig.property.password"></a>
 
 ```python
 password: str
@@ -2026,7 +2026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `password_wo`<sup>Optional</sup> <a name="password_wo" id="@cdktf/provider-postgresql.role.RoleConfig.property.passwordWo"></a>
+##### `password_wo`<sup>Optional</sup> <a name="password_wo" id="@cdktn/provider-postgresql.role.RoleConfig.property.passwordWo"></a>
 
 ```python
 password_wo: str
@@ -2040,7 +2040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `password_wo_version`<sup>Optional</sup> <a name="password_wo_version" id="@cdktf/provider-postgresql.role.RoleConfig.property.passwordWoVersion"></a>
+##### `password_wo_version`<sup>Optional</sup> <a name="password_wo_version" id="@cdktn/provider-postgresql.role.RoleConfig.property.passwordWoVersion"></a>
 
 ```python
 password_wo_version: str
@@ -2054,13 +2054,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `replication`<sup>Optional</sup> <a name="replication" id="@cdktf/provider-postgresql.role.RoleConfig.property.replication"></a>
+##### `replication`<sup>Optional</sup> <a name="replication" id="@cdktn/provider-postgresql.role.RoleConfig.property.replication"></a>
 
 ```python
 replication: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode.
 
@@ -2068,7 +2068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `roles`<sup>Optional</sup> <a name="roles" id="@cdktf/provider-postgresql.role.RoleConfig.property.roles"></a>
+##### `roles`<sup>Optional</sup> <a name="roles" id="@cdktn/provider-postgresql.role.RoleConfig.property.roles"></a>
 
 ```python
 roles: typing.List[str]
@@ -2082,7 +2082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `search_path`<sup>Optional</sup> <a name="search_path" id="@cdktf/provider-postgresql.role.RoleConfig.property.searchPath"></a>
+##### `search_path`<sup>Optional</sup> <a name="search_path" id="@cdktn/provider-postgresql.role.RoleConfig.property.searchPath"></a>
 
 ```python
 search_path: typing.List[str]
@@ -2096,13 +2096,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `skip_drop_role`<sup>Optional</sup> <a name="skip_drop_role" id="@cdktf/provider-postgresql.role.RoleConfig.property.skipDropRole"></a>
+##### `skip_drop_role`<sup>Optional</sup> <a name="skip_drop_role" id="@cdktn/provider-postgresql.role.RoleConfig.property.skipDropRole"></a>
 
 ```python
 skip_drop_role: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Skip actually running the DROP ROLE command when removing a ROLE from PostgreSQL.
 
@@ -2110,13 +2110,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `skip_reassign_owned`<sup>Optional</sup> <a name="skip_reassign_owned" id="@cdktf/provider-postgresql.role.RoleConfig.property.skipReassignOwned"></a>
+##### `skip_reassign_owned`<sup>Optional</sup> <a name="skip_reassign_owned" id="@cdktn/provider-postgresql.role.RoleConfig.property.skipReassignOwned"></a>
 
 ```python
 skip_reassign_owned: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL.
 
@@ -2124,7 +2124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `statement_timeout`<sup>Optional</sup> <a name="statement_timeout" id="@cdktf/provider-postgresql.role.RoleConfig.property.statementTimeout"></a>
+##### `statement_timeout`<sup>Optional</sup> <a name="statement_timeout" id="@cdktn/provider-postgresql.role.RoleConfig.property.statementTimeout"></a>
 
 ```python
 statement_timeout: typing.Union[int, float]
@@ -2138,13 +2138,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.role.RoleConfig.property.superuser"></a>
+##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktn/provider-postgresql.role.RoleConfig.property.superuser"></a>
 
 ```python
 superuser: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determine whether the new role is a "superuser".
 
@@ -2152,7 +2152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `valid_until`<sup>Optional</sup> <a name="valid_until" id="@cdktf/provider-postgresql.role.RoleConfig.property.validUntil"></a>
+##### `valid_until`<sup>Optional</sup> <a name="valid_until" id="@cdktn/provider-postgresql.role.RoleConfig.property.validUntil"></a>
 
 ```python
 valid_until: str

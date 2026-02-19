@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RoleConfig extends cdktf.TerraformMetaArguments {
+export interface RoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Role to switch to at login
   *
@@ -23,7 +23,7 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#bypass_row_level_security Role#bypass_row_level_security}
   */
-  readonly bypassRowLevelSecurity?: boolean | cdktf.IResolvable;
+  readonly bypassRowLevelSecurity?: boolean | cdktn.IResolvable;
   /**
   * How many concurrent connections can be made with this role
   *
@@ -35,13 +35,13 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#create_database Role#create_database}
   */
-  readonly createDatabase?: boolean | cdktf.IResolvable;
+  readonly createDatabase?: boolean | cdktn.IResolvable;
   /**
   * Determine whether this role will be permitted to create new roles
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#create_role Role#create_role}
   */
-  readonly createRole?: boolean | cdktf.IResolvable;
+  readonly createRole?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted Role#encrypted}
   */
@@ -51,7 +51,7 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#encrypted_password Role#encrypted_password}
   */
-  readonly encryptedPassword?: boolean | cdktf.IResolvable;
+  readonly encryptedPassword?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#id Role#id}
   *
@@ -70,13 +70,13 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#inherit Role#inherit}
   */
-  readonly inherit?: boolean | cdktf.IResolvable;
+  readonly inherit?: boolean | cdktn.IResolvable;
   /**
   * Determine whether a role is allowed to log in
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#login Role#login}
   */
-  readonly login?: boolean | cdktf.IResolvable;
+  readonly login?: boolean | cdktn.IResolvable;
   /**
   * The name of the role
   *
@@ -106,7 +106,7 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#replication Role#replication}
   */
-  readonly replication?: boolean | cdktf.IResolvable;
+  readonly replication?: boolean | cdktn.IResolvable;
   /**
   * Role(s) to grant to this new role
   *
@@ -124,13 +124,13 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#skip_drop_role Role#skip_drop_role}
   */
-  readonly skipDropRole?: boolean | cdktf.IResolvable;
+  readonly skipDropRole?: boolean | cdktn.IResolvable;
   /**
   * Skip actually running the REASSIGN OWNED command when removing a role from PostgreSQL
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#skip_reassign_owned Role#skip_reassign_owned}
   */
-  readonly skipReassignOwned?: boolean | cdktf.IResolvable;
+  readonly skipReassignOwned?: boolean | cdktn.IResolvable;
   /**
   * Abort any statement that takes more than the specified number of milliseconds
   *
@@ -142,7 +142,7 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#superuser Role#superuser}
   */
-  readonly superuser?: boolean | cdktf.IResolvable;
+  readonly superuser?: boolean | cdktn.IResolvable;
   /**
   * Sets a date and time after which the role's password is no longer valid
   *
@@ -154,7 +154,7 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role postgresql_role}
 */
-export class Role extends cdktf.TerraformResource {
+export class Role extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -165,14 +165,14 @@ export class Role extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Role resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Role resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Role to import
   * @param importFromId The id of the existing Role that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Role to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -248,11 +248,11 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // bypass_row_level_security - computed: false, optional: true, required: false
-  private _bypassRowLevelSecurity?: boolean | cdktf.IResolvable; 
+  private _bypassRowLevelSecurity?: boolean | cdktn.IResolvable; 
   public get bypassRowLevelSecurity() {
     return this.getBooleanAttribute('bypass_row_level_security');
   }
-  public set bypassRowLevelSecurity(value: boolean | cdktf.IResolvable) {
+  public set bypassRowLevelSecurity(value: boolean | cdktn.IResolvable) {
     this._bypassRowLevelSecurity = value;
   }
   public resetBypassRowLevelSecurity() {
@@ -280,11 +280,11 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // create_database - computed: false, optional: true, required: false
-  private _createDatabase?: boolean | cdktf.IResolvable; 
+  private _createDatabase?: boolean | cdktn.IResolvable; 
   public get createDatabase() {
     return this.getBooleanAttribute('create_database');
   }
-  public set createDatabase(value: boolean | cdktf.IResolvable) {
+  public set createDatabase(value: boolean | cdktn.IResolvable) {
     this._createDatabase = value;
   }
   public resetCreateDatabase() {
@@ -296,11 +296,11 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // create_role - computed: false, optional: true, required: false
-  private _createRole?: boolean | cdktf.IResolvable; 
+  private _createRole?: boolean | cdktn.IResolvable; 
   public get createRole() {
     return this.getBooleanAttribute('create_role');
   }
-  public set createRole(value: boolean | cdktf.IResolvable) {
+  public set createRole(value: boolean | cdktn.IResolvable) {
     this._createRole = value;
   }
   public resetCreateRole() {
@@ -328,11 +328,11 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // encrypted_password - computed: false, optional: true, required: false
-  private _encryptedPassword?: boolean | cdktf.IResolvable; 
+  private _encryptedPassword?: boolean | cdktn.IResolvable; 
   public get encryptedPassword() {
     return this.getBooleanAttribute('encrypted_password');
   }
-  public set encryptedPassword(value: boolean | cdktf.IResolvable) {
+  public set encryptedPassword(value: boolean | cdktn.IResolvable) {
     this._encryptedPassword = value;
   }
   public resetEncryptedPassword() {
@@ -376,11 +376,11 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // inherit - computed: false, optional: true, required: false
-  private _inherit?: boolean | cdktf.IResolvable; 
+  private _inherit?: boolean | cdktn.IResolvable; 
   public get inherit() {
     return this.getBooleanAttribute('inherit');
   }
-  public set inherit(value: boolean | cdktf.IResolvable) {
+  public set inherit(value: boolean | cdktn.IResolvable) {
     this._inherit = value;
   }
   public resetInherit() {
@@ -392,11 +392,11 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // login - computed: false, optional: true, required: false
-  private _login?: boolean | cdktf.IResolvable; 
+  private _login?: boolean | cdktn.IResolvable; 
   public get login() {
     return this.getBooleanAttribute('login');
   }
-  public set login(value: boolean | cdktf.IResolvable) {
+  public set login(value: boolean | cdktn.IResolvable) {
     this._login = value;
   }
   public resetLogin() {
@@ -469,11 +469,11 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // replication - computed: false, optional: true, required: false
-  private _replication?: boolean | cdktf.IResolvable; 
+  private _replication?: boolean | cdktn.IResolvable; 
   public get replication() {
     return this.getBooleanAttribute('replication');
   }
-  public set replication(value: boolean | cdktf.IResolvable) {
+  public set replication(value: boolean | cdktn.IResolvable) {
     this._replication = value;
   }
   public resetReplication() {
@@ -487,7 +487,7 @@ export class Role extends cdktf.TerraformResource {
   // roles - computed: false, optional: true, required: false
   private _roles?: string[]; 
   public get roles() {
-    return cdktf.Fn.tolist(this.getListAttribute('roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('roles'));
   }
   public set roles(value: string[]) {
     this._roles = value;
@@ -517,11 +517,11 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // skip_drop_role - computed: false, optional: true, required: false
-  private _skipDropRole?: boolean | cdktf.IResolvable; 
+  private _skipDropRole?: boolean | cdktn.IResolvable; 
   public get skipDropRole() {
     return this.getBooleanAttribute('skip_drop_role');
   }
-  public set skipDropRole(value: boolean | cdktf.IResolvable) {
+  public set skipDropRole(value: boolean | cdktn.IResolvable) {
     this._skipDropRole = value;
   }
   public resetSkipDropRole() {
@@ -533,11 +533,11 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // skip_reassign_owned - computed: false, optional: true, required: false
-  private _skipReassignOwned?: boolean | cdktf.IResolvable; 
+  private _skipReassignOwned?: boolean | cdktn.IResolvable; 
   public get skipReassignOwned() {
     return this.getBooleanAttribute('skip_reassign_owned');
   }
-  public set skipReassignOwned(value: boolean | cdktf.IResolvable) {
+  public set skipReassignOwned(value: boolean | cdktn.IResolvable) {
     this._skipReassignOwned = value;
   }
   public resetSkipReassignOwned() {
@@ -565,11 +565,11 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // superuser - computed: false, optional: true, required: false
-  private _superuser?: boolean | cdktf.IResolvable; 
+  private _superuser?: boolean | cdktn.IResolvable; 
   public get superuser() {
     return this.getBooleanAttribute('superuser');
   }
-  public set superuser(value: boolean | cdktf.IResolvable) {
+  public set superuser(value: boolean | cdktn.IResolvable) {
     this._superuser = value;
   }
   public resetSuperuser() {
@@ -602,168 +602,168 @@ export class Role extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assume_role: cdktf.stringToTerraform(this._assumeRole),
-      bypass_row_level_security: cdktf.booleanToTerraform(this._bypassRowLevelSecurity),
-      connection_limit: cdktf.numberToTerraform(this._connectionLimit),
-      create_database: cdktf.booleanToTerraform(this._createDatabase),
-      create_role: cdktf.booleanToTerraform(this._createRole),
-      encrypted: cdktf.stringToTerraform(this._encrypted),
-      encrypted_password: cdktf.booleanToTerraform(this._encryptedPassword),
-      id: cdktf.stringToTerraform(this._id),
-      idle_in_transaction_session_timeout: cdktf.numberToTerraform(this._idleInTransactionSessionTimeout),
-      inherit: cdktf.booleanToTerraform(this._inherit),
-      login: cdktf.booleanToTerraform(this._login),
-      name: cdktf.stringToTerraform(this._name),
-      password: cdktf.stringToTerraform(this._password),
-      password_wo: cdktf.stringToTerraform(this._passwordWo),
-      password_wo_version: cdktf.stringToTerraform(this._passwordWoVersion),
-      replication: cdktf.booleanToTerraform(this._replication),
-      roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
-      search_path: cdktf.listMapper(cdktf.stringToTerraform, false)(this._searchPath),
-      skip_drop_role: cdktf.booleanToTerraform(this._skipDropRole),
-      skip_reassign_owned: cdktf.booleanToTerraform(this._skipReassignOwned),
-      statement_timeout: cdktf.numberToTerraform(this._statementTimeout),
-      superuser: cdktf.booleanToTerraform(this._superuser),
-      valid_until: cdktf.stringToTerraform(this._validUntil),
+      assume_role: cdktn.stringToTerraform(this._assumeRole),
+      bypass_row_level_security: cdktn.booleanToTerraform(this._bypassRowLevelSecurity),
+      connection_limit: cdktn.numberToTerraform(this._connectionLimit),
+      create_database: cdktn.booleanToTerraform(this._createDatabase),
+      create_role: cdktn.booleanToTerraform(this._createRole),
+      encrypted: cdktn.stringToTerraform(this._encrypted),
+      encrypted_password: cdktn.booleanToTerraform(this._encryptedPassword),
+      id: cdktn.stringToTerraform(this._id),
+      idle_in_transaction_session_timeout: cdktn.numberToTerraform(this._idleInTransactionSessionTimeout),
+      inherit: cdktn.booleanToTerraform(this._inherit),
+      login: cdktn.booleanToTerraform(this._login),
+      name: cdktn.stringToTerraform(this._name),
+      password: cdktn.stringToTerraform(this._password),
+      password_wo: cdktn.stringToTerraform(this._passwordWo),
+      password_wo_version: cdktn.stringToTerraform(this._passwordWoVersion),
+      replication: cdktn.booleanToTerraform(this._replication),
+      roles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._roles),
+      search_path: cdktn.listMapper(cdktn.stringToTerraform, false)(this._searchPath),
+      skip_drop_role: cdktn.booleanToTerraform(this._skipDropRole),
+      skip_reassign_owned: cdktn.booleanToTerraform(this._skipReassignOwned),
+      statement_timeout: cdktn.numberToTerraform(this._statementTimeout),
+      superuser: cdktn.booleanToTerraform(this._superuser),
+      valid_until: cdktn.stringToTerraform(this._validUntil),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       assume_role: {
-        value: cdktf.stringToHclTerraform(this._assumeRole),
+        value: cdktn.stringToHclTerraform(this._assumeRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bypass_row_level_security: {
-        value: cdktf.booleanToHclTerraform(this._bypassRowLevelSecurity),
+        value: cdktn.booleanToHclTerraform(this._bypassRowLevelSecurity),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       connection_limit: {
-        value: cdktf.numberToHclTerraform(this._connectionLimit),
+        value: cdktn.numberToHclTerraform(this._connectionLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       create_database: {
-        value: cdktf.booleanToHclTerraform(this._createDatabase),
+        value: cdktn.booleanToHclTerraform(this._createDatabase),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       create_role: {
-        value: cdktf.booleanToHclTerraform(this._createRole),
+        value: cdktn.booleanToHclTerraform(this._createRole),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       encrypted: {
-        value: cdktf.stringToHclTerraform(this._encrypted),
+        value: cdktn.stringToHclTerraform(this._encrypted),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encrypted_password: {
-        value: cdktf.booleanToHclTerraform(this._encryptedPassword),
+        value: cdktn.booleanToHclTerraform(this._encryptedPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idle_in_transaction_session_timeout: {
-        value: cdktf.numberToHclTerraform(this._idleInTransactionSessionTimeout),
+        value: cdktn.numberToHclTerraform(this._idleInTransactionSessionTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       inherit: {
-        value: cdktf.booleanToHclTerraform(this._inherit),
+        value: cdktn.booleanToHclTerraform(this._inherit),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       login: {
-        value: cdktf.booleanToHclTerraform(this._login),
+        value: cdktn.booleanToHclTerraform(this._login),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password_wo: {
-        value: cdktf.stringToHclTerraform(this._passwordWo),
+        value: cdktn.stringToHclTerraform(this._passwordWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password_wo_version: {
-        value: cdktf.stringToHclTerraform(this._passwordWoVersion),
+        value: cdktn.stringToHclTerraform(this._passwordWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication: {
-        value: cdktf.booleanToHclTerraform(this._replication),
+        value: cdktn.booleanToHclTerraform(this._replication),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       roles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._roles),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       search_path: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._searchPath),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._searchPath),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       skip_drop_role: {
-        value: cdktf.booleanToHclTerraform(this._skipDropRole),
+        value: cdktn.booleanToHclTerraform(this._skipDropRole),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       skip_reassign_owned: {
-        value: cdktf.booleanToHclTerraform(this._skipReassignOwned),
+        value: cdktn.booleanToHclTerraform(this._skipReassignOwned),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       statement_timeout: {
-        value: cdktf.numberToHclTerraform(this._statementTimeout),
+        value: cdktn.numberToHclTerraform(this._statementTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       superuser: {
-        value: cdktf.booleanToHclTerraform(this._superuser),
+        value: cdktn.booleanToHclTerraform(this._superuser),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       valid_until: {
-        value: cdktf.stringToHclTerraform(this._validUntil),
+        value: cdktn.stringToHclTerraform(this._validUntil),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

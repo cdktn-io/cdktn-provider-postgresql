@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface UserMappingConfig extends cdktf.TerraformMetaArguments {
+export interface UserMappingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/user_mapping#id UserMapping#id}
   *
@@ -42,7 +42,7 @@ export interface UserMappingConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/user_mapping postgresql_user_mapping}
 */
-export class UserMapping extends cdktf.TerraformResource {
+export class UserMapping extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class UserMapping extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a UserMapping resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a UserMapping resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserMapping to import
   * @param importFromId The id of the existing UserMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/user_mapping#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserMapping to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_user_mapping", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_user_mapping", importId: importFromId, provider });
       }
 
   // ===========
@@ -164,35 +164,35 @@ export class UserMapping extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
-      server_name: cdktf.stringToTerraform(this._serverName),
-      user_name: cdktf.stringToTerraform(this._userName),
+      id: cdktn.stringToTerraform(this._id),
+      options: cdktn.hashMapper(cdktn.stringToTerraform)(this._options),
+      server_name: cdktn.stringToTerraform(this._serverName),
+      user_name: cdktn.stringToTerraform(this._userName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       options: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._options),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       server_name: {
-        value: cdktf.stringToHclTerraform(this._serverName),
+        value: cdktn.stringToHclTerraform(this._serverName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

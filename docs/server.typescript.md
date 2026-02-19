@@ -1,28 +1,28 @@
-# `server` Submodule <a name="`server` Submodule" id="@cdktf/provider-postgresql.server"></a>
+# `server` Submodule <a name="`server` Submodule" id="@cdktn/provider-postgresql.server"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Server <a name="Server" id="@cdktf/provider-postgresql.server.Server"></a>
+### Server <a name="Server" id="@cdktn/provider-postgresql.server.Server"></a>
 
 Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server postgresql_server}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.server.Server.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.server.Server.Initializer"></a>
 
 ```typescript
-import { server } from '@cdktf/provider-postgresql'
+import { server } from '@cdktn/provider-postgresql'
 
 new server.Server(scope: Construct, id: string, config: ServerConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-postgresql.server.ServerConfig">ServerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-postgresql.server.ServerConfig">ServerConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.server.Server.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.server.Server.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.server.Server.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.server.Server.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-postgresql.server.Server.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-postgresql.server.Server.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-postgresql.server.ServerConfig">ServerConfig</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.server.ServerConfig">ServerConfig</a>
 
 ---
 
@@ -50,39 +50,39 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.resetDropCascade">resetDropCascade</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.resetOptions">resetOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.resetServerOwner">resetServerOwner</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.resetServerType">resetServerType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.resetServerVersion">resetServerVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.resetDropCascade">resetDropCascade</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.resetOptions">resetOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.resetServerOwner">resetServerOwner</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.resetServerType">resetServerType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.resetServerVersion">resetServerVersion</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-postgresql.server.Server.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-postgresql.server.Server.toString"></a>
 
 ```typescript
 public toString(): string
@@ -90,25 +90,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-postgresql.server.Server.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-postgresql.server.Server.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-postgresql.server.Server.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-postgresql.server.Server.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-postgresql.server.Server.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-postgresql.server.Server.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-postgresql.server.Server.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-postgresql.server.Server.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -116,7 +116,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-postgresql.server.Server.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-postgresql.server.Server.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -124,7 +124,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-postgresql.server.Server.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-postgresql.server.Server.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -132,19 +132,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-postgresql.server.Server.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-postgresql.server.Server.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-postgresql.server.Server.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-postgresql.server.Server.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-postgresql.server.Server.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-postgresql.server.Server.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -152,7 +152,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-postgresql.server.Server.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-postgresql.server.Server.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -160,7 +160,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-postgresql.server.Server.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-postgresql.server.Server.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -168,151 +168,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-postgresql.server.Server.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-postgresql.server.Server.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.server.Server.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.server.Server.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-postgresql.server.Server.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-postgresql.server.Server.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.server.Server.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.server.Server.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-postgresql.server.Server.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-postgresql.server.Server.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.server.Server.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.server.Server.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-postgresql.server.Server.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-postgresql.server.Server.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.server.Server.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.server.Server.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-postgresql.server.Server.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-postgresql.server.Server.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.server.Server.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.server.Server.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-postgresql.server.Server.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-postgresql.server.Server.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.server.Server.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.server.Server.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-postgresql.server.Server.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-postgresql.server.Server.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.server.Server.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.server.Server.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-postgresql.server.Server.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-postgresql.server.Server.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.server.Server.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.server.Server.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-postgresql.server.Server.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-postgresql.server.Server.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.server.Server.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.server.Server.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-postgresql.server.Server.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-postgresql.server.Server.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-postgresql.server.Server.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-postgresql.server.Server.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.server.Server.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.server.Server.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.server.Server.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.server.Server.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-postgresql.server.Server.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-postgresql.server.Server.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.server.Server.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.server.Server.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-postgresql.server.Server.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-postgresql.server.Server.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -322,7 +322,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.server.Server.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.server.Server.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -330,7 +330,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-postgresql.server.Server.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-postgresql.server.Server.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -338,7 +338,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-postgresql.server.Server.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-postgresql.server.Server.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -346,7 +346,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-postgresql.server.Server.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-postgresql.server.Server.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -354,7 +354,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-postgresql.server.Server.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-postgresql.server.Server.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -362,7 +362,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.server.Server.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.server.Server.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -370,37 +370,37 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetDropCascade` <a name="resetDropCascade" id="@cdktf/provider-postgresql.server.Server.resetDropCascade"></a>
+##### `resetDropCascade` <a name="resetDropCascade" id="@cdktn/provider-postgresql.server.Server.resetDropCascade"></a>
 
 ```typescript
 public resetDropCascade(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-postgresql.server.Server.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-postgresql.server.Server.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetOptions` <a name="resetOptions" id="@cdktf/provider-postgresql.server.Server.resetOptions"></a>
+##### `resetOptions` <a name="resetOptions" id="@cdktn/provider-postgresql.server.Server.resetOptions"></a>
 
 ```typescript
 public resetOptions(): void
 ```
 
-##### `resetServerOwner` <a name="resetServerOwner" id="@cdktf/provider-postgresql.server.Server.resetServerOwner"></a>
+##### `resetServerOwner` <a name="resetServerOwner" id="@cdktn/provider-postgresql.server.Server.resetServerOwner"></a>
 
 ```typescript
 public resetServerOwner(): void
 ```
 
-##### `resetServerType` <a name="resetServerType" id="@cdktf/provider-postgresql.server.Server.resetServerType"></a>
+##### `resetServerType` <a name="resetServerType" id="@cdktn/provider-postgresql.server.Server.resetServerType"></a>
 
 ```typescript
 public resetServerType(): void
 ```
 
-##### `resetServerVersion` <a name="resetServerVersion" id="@cdktf/provider-postgresql.server.Server.resetServerVersion"></a>
+##### `resetServerVersion` <a name="resetServerVersion" id="@cdktn/provider-postgresql.server.Server.resetServerVersion"></a>
 
 ```typescript
 public resetServerVersion(): void
@@ -410,17 +410,17 @@ public resetServerVersion(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a Server resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a Server resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-postgresql.server.Server.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-postgresql.server.Server.isConstruct"></a>
 
 ```typescript
-import { server } from '@cdktf/provider-postgresql'
+import { server } from '@cdktn/provider-postgresql'
 
 server.Server.isConstruct(x: any)
 ```
@@ -441,7 +441,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.server.Server.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.server.Server.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -449,45 +449,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-postgresql.server.Server.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-postgresql.server.Server.isTerraformElement"></a>
 
 ```typescript
-import { server } from '@cdktf/provider-postgresql'
+import { server } from '@cdktn/provider-postgresql'
 
 server.Server.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.server.Server.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.server.Server.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-postgresql.server.Server.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-postgresql.server.Server.isTerraformResource"></a>
 
 ```typescript
-import { server } from '@cdktf/provider-postgresql'
+import { server } from '@cdktn/provider-postgresql'
 
 server.Server.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.server.Server.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.server.Server.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-postgresql.server.Server.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-postgresql.server.Server.generateConfigForImport"></a>
 
 ```typescript
-import { server } from '@cdktf/provider-postgresql'
+import { server } from '@cdktn/provider-postgresql'
 
 server.Server.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a Server resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a Server resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.server.Server.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.server.Server.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -495,7 +495,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-postgresql.server.Server.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-postgresql.server.Server.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the Server to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-postgresql.server.Server.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-postgresql.server.Server.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -513,9 +513,9 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.server.Server.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.server.Server.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the Server to import is found.
 
@@ -525,40 +525,40 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.dropCascadeInput">dropCascadeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.fdwNameInput">fdwNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.optionsInput">optionsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.serverNameInput">serverNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.serverOwnerInput">serverOwnerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.serverTypeInput">serverTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.serverVersionInput">serverVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.dropCascade">dropCascade</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.fdwName">fdwName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.serverName">serverName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.serverOwner">serverOwner</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.serverType">serverType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.serverVersion">serverVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.dropCascadeInput">dropCascadeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.fdwNameInput">fdwNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.optionsInput">optionsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.serverNameInput">serverNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.serverOwnerInput">serverOwnerInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.serverTypeInput">serverTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.serverVersionInput">serverVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.dropCascade">dropCascade</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.fdwName">fdwName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.serverName">serverName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.serverOwner">serverOwner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.serverType">serverType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.serverVersion">serverVersion</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-postgresql.server.Server.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-postgresql.server.Server.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -570,17 +570,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-postgresql.server.Server.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-postgresql.server.Server.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-postgresql.server.Server.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-postgresql.server.Server.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -590,7 +590,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-postgresql.server.Server.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-postgresql.server.Server.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -600,7 +600,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-postgresql.server.Server.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-postgresql.server.Server.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -610,7 +610,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-postgresql.server.Server.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-postgresql.server.Server.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -620,37 +620,37 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-postgresql.server.Server.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-postgresql.server.Server.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.server.Server.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.server.Server.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.server.Server.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.server.Server.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-postgresql.server.Server.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-postgresql.server.Server.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -660,57 +660,57 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-postgresql.server.Server.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-postgresql.server.Server.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.server.Server.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.server.Server.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.server.Server.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.server.Server.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.server.Server.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.server.Server.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `dropCascadeInput`<sup>Optional</sup> <a name="dropCascadeInput" id="@cdktf/provider-postgresql.server.Server.property.dropCascadeInput"></a>
+##### `dropCascadeInput`<sup>Optional</sup> <a name="dropCascadeInput" id="@cdktn/provider-postgresql.server.Server.property.dropCascadeInput"></a>
 
 ```typescript
 public readonly dropCascadeInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `fdwNameInput`<sup>Optional</sup> <a name="fdwNameInput" id="@cdktf/provider-postgresql.server.Server.property.fdwNameInput"></a>
+##### `fdwNameInput`<sup>Optional</sup> <a name="fdwNameInput" id="@cdktn/provider-postgresql.server.Server.property.fdwNameInput"></a>
 
 ```typescript
 public readonly fdwNameInput: string;
@@ -720,7 +720,7 @@ public readonly fdwNameInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-postgresql.server.Server.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-postgresql.server.Server.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -730,7 +730,7 @@ public readonly idInput: string;
 
 ---
 
-##### `optionsInput`<sup>Optional</sup> <a name="optionsInput" id="@cdktf/provider-postgresql.server.Server.property.optionsInput"></a>
+##### `optionsInput`<sup>Optional</sup> <a name="optionsInput" id="@cdktn/provider-postgresql.server.Server.property.optionsInput"></a>
 
 ```typescript
 public readonly optionsInput: {[ key: string ]: string};
@@ -740,7 +740,7 @@ public readonly optionsInput: {[ key: string ]: string};
 
 ---
 
-##### `serverNameInput`<sup>Optional</sup> <a name="serverNameInput" id="@cdktf/provider-postgresql.server.Server.property.serverNameInput"></a>
+##### `serverNameInput`<sup>Optional</sup> <a name="serverNameInput" id="@cdktn/provider-postgresql.server.Server.property.serverNameInput"></a>
 
 ```typescript
 public readonly serverNameInput: string;
@@ -750,7 +750,7 @@ public readonly serverNameInput: string;
 
 ---
 
-##### `serverOwnerInput`<sup>Optional</sup> <a name="serverOwnerInput" id="@cdktf/provider-postgresql.server.Server.property.serverOwnerInput"></a>
+##### `serverOwnerInput`<sup>Optional</sup> <a name="serverOwnerInput" id="@cdktn/provider-postgresql.server.Server.property.serverOwnerInput"></a>
 
 ```typescript
 public readonly serverOwnerInput: string;
@@ -760,7 +760,7 @@ public readonly serverOwnerInput: string;
 
 ---
 
-##### `serverTypeInput`<sup>Optional</sup> <a name="serverTypeInput" id="@cdktf/provider-postgresql.server.Server.property.serverTypeInput"></a>
+##### `serverTypeInput`<sup>Optional</sup> <a name="serverTypeInput" id="@cdktn/provider-postgresql.server.Server.property.serverTypeInput"></a>
 
 ```typescript
 public readonly serverTypeInput: string;
@@ -770,7 +770,7 @@ public readonly serverTypeInput: string;
 
 ---
 
-##### `serverVersionInput`<sup>Optional</sup> <a name="serverVersionInput" id="@cdktf/provider-postgresql.server.Server.property.serverVersionInput"></a>
+##### `serverVersionInput`<sup>Optional</sup> <a name="serverVersionInput" id="@cdktn/provider-postgresql.server.Server.property.serverVersionInput"></a>
 
 ```typescript
 public readonly serverVersionInput: string;
@@ -780,17 +780,17 @@ public readonly serverVersionInput: string;
 
 ---
 
-##### `dropCascade`<sup>Required</sup> <a name="dropCascade" id="@cdktf/provider-postgresql.server.Server.property.dropCascade"></a>
+##### `dropCascade`<sup>Required</sup> <a name="dropCascade" id="@cdktn/provider-postgresql.server.Server.property.dropCascade"></a>
 
 ```typescript
 public readonly dropCascade: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `fdwName`<sup>Required</sup> <a name="fdwName" id="@cdktf/provider-postgresql.server.Server.property.fdwName"></a>
+##### `fdwName`<sup>Required</sup> <a name="fdwName" id="@cdktn/provider-postgresql.server.Server.property.fdwName"></a>
 
 ```typescript
 public readonly fdwName: string;
@@ -800,7 +800,7 @@ public readonly fdwName: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.server.Server.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.server.Server.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -810,7 +810,7 @@ public readonly id: string;
 
 ---
 
-##### `options`<sup>Required</sup> <a name="options" id="@cdktf/provider-postgresql.server.Server.property.options"></a>
+##### `options`<sup>Required</sup> <a name="options" id="@cdktn/provider-postgresql.server.Server.property.options"></a>
 
 ```typescript
 public readonly options: {[ key: string ]: string};
@@ -820,7 +820,7 @@ public readonly options: {[ key: string ]: string};
 
 ---
 
-##### `serverName`<sup>Required</sup> <a name="serverName" id="@cdktf/provider-postgresql.server.Server.property.serverName"></a>
+##### `serverName`<sup>Required</sup> <a name="serverName" id="@cdktn/provider-postgresql.server.Server.property.serverName"></a>
 
 ```typescript
 public readonly serverName: string;
@@ -830,7 +830,7 @@ public readonly serverName: string;
 
 ---
 
-##### `serverOwner`<sup>Required</sup> <a name="serverOwner" id="@cdktf/provider-postgresql.server.Server.property.serverOwner"></a>
+##### `serverOwner`<sup>Required</sup> <a name="serverOwner" id="@cdktn/provider-postgresql.server.Server.property.serverOwner"></a>
 
 ```typescript
 public readonly serverOwner: string;
@@ -840,7 +840,7 @@ public readonly serverOwner: string;
 
 ---
 
-##### `serverType`<sup>Required</sup> <a name="serverType" id="@cdktf/provider-postgresql.server.Server.property.serverType"></a>
+##### `serverType`<sup>Required</sup> <a name="serverType" id="@cdktn/provider-postgresql.server.Server.property.serverType"></a>
 
 ```typescript
 public readonly serverType: string;
@@ -850,7 +850,7 @@ public readonly serverType: string;
 
 ---
 
-##### `serverVersion`<sup>Required</sup> <a name="serverVersion" id="@cdktf/provider-postgresql.server.Server.property.serverVersion"></a>
+##### `serverVersion`<sup>Required</sup> <a name="serverVersion" id="@cdktn/provider-postgresql.server.Server.property.serverVersion"></a>
 
 ```typescript
 public readonly serverVersion: string;
@@ -864,11 +864,11 @@ public readonly serverVersion: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.server.Server.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.Server.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-postgresql.server.Server.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-postgresql.server.Server.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -880,12 +880,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ServerConfig <a name="ServerConfig" id="@cdktf/provider-postgresql.server.ServerConfig"></a>
+### ServerConfig <a name="ServerConfig" id="@cdktn/provider-postgresql.server.ServerConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.server.ServerConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.server.ServerConfig.Initializer"></a>
 
 ```typescript
-import { server } from '@cdktf/provider-postgresql'
+import { server } from '@cdktn/provider-postgresql'
 
 const serverConfig: server.ServerConfig = { ... }
 ```
@@ -894,95 +894,95 @@ const serverConfig: server.ServerConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.fdwName">fdwName</a></code> | <code>string</code> | The name of the foreign-data wrapper that manages the server. |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.serverName">serverName</a></code> | <code>string</code> | The name of the foreign server to be created. |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.dropCascade">dropCascade</a></code> | <code>boolean \| cdktf.IResolvable</code> | Automatically drop objects that depend on the server (such as user mappings), and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#id Server#id}. |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | This clause specifies the options for the server. |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.serverOwner">serverOwner</a></code> | <code>string</code> | The user name of the new owner of the foreign server. |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.serverType">serverType</a></code> | <code>string</code> | Optional server type, potentially useful to foreign-data wrappers. |
-| <code><a href="#@cdktf/provider-postgresql.server.ServerConfig.property.serverVersion">serverVersion</a></code> | <code>string</code> | Optional server version, potentially useful to foreign-data wrappers. |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.fdwName">fdwName</a></code> | <code>string</code> | The name of the foreign-data wrapper that manages the server. |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.serverName">serverName</a></code> | <code>string</code> | The name of the foreign server to be created. |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.dropCascade">dropCascade</a></code> | <code>boolean \| cdktn.IResolvable</code> | Automatically drop objects that depend on the server (such as user mappings), and in turn all objects that depend on those objects. |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#id Server#id}. |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | This clause specifies the options for the server. |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.serverOwner">serverOwner</a></code> | <code>string</code> | The user name of the new owner of the foreign server. |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.serverType">serverType</a></code> | <code>string</code> | Optional server type, potentially useful to foreign-data wrappers. |
+| <code><a href="#@cdktn/provider-postgresql.server.ServerConfig.property.serverVersion">serverVersion</a></code> | <code>string</code> | Optional server version, potentially useful to foreign-data wrappers. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.server.ServerConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.server.ServerConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.server.ServerConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.server.ServerConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-postgresql.server.ServerConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-postgresql.server.ServerConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-postgresql.server.ServerConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-postgresql.server.ServerConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.server.ServerConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.server.ServerConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.server.ServerConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.server.ServerConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.server.ServerConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.server.ServerConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `fdwName`<sup>Required</sup> <a name="fdwName" id="@cdktf/provider-postgresql.server.ServerConfig.property.fdwName"></a>
+##### `fdwName`<sup>Required</sup> <a name="fdwName" id="@cdktn/provider-postgresql.server.ServerConfig.property.fdwName"></a>
 
 ```typescript
 public readonly fdwName: string;
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `serverName`<sup>Required</sup> <a name="serverName" id="@cdktf/provider-postgresql.server.ServerConfig.property.serverName"></a>
+##### `serverName`<sup>Required</sup> <a name="serverName" id="@cdktn/provider-postgresql.server.ServerConfig.property.serverName"></a>
 
 ```typescript
 public readonly serverName: string;
@@ -1010,13 +1010,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `dropCascade`<sup>Optional</sup> <a name="dropCascade" id="@cdktf/provider-postgresql.server.ServerConfig.property.dropCascade"></a>
+##### `dropCascade`<sup>Optional</sup> <a name="dropCascade" id="@cdktn/provider-postgresql.server.ServerConfig.property.dropCascade"></a>
 
 ```typescript
 public readonly dropCascade: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Automatically drop objects that depend on the server (such as user mappings), and in turn all objects that depend on those objects.
 
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-postgresql.server.ServerConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-postgresql.server.ServerConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1041,7 +1041,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `options`<sup>Optional</sup> <a name="options" id="@cdktf/provider-postgresql.server.ServerConfig.property.options"></a>
+##### `options`<sup>Optional</sup> <a name="options" id="@cdktn/provider-postgresql.server.ServerConfig.property.options"></a>
 
 ```typescript
 public readonly options: {[ key: string ]: string};
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `serverOwner`<sup>Optional</sup> <a name="serverOwner" id="@cdktf/provider-postgresql.server.ServerConfig.property.serverOwner"></a>
+##### `serverOwner`<sup>Optional</sup> <a name="serverOwner" id="@cdktn/provider-postgresql.server.ServerConfig.property.serverOwner"></a>
 
 ```typescript
 public readonly serverOwner: string;
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `serverType`<sup>Optional</sup> <a name="serverType" id="@cdktf/provider-postgresql.server.ServerConfig.property.serverType"></a>
+##### `serverType`<sup>Optional</sup> <a name="serverType" id="@cdktn/provider-postgresql.server.ServerConfig.property.serverType"></a>
 
 ```typescript
 public readonly serverType: string;
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `serverVersion`<sup>Optional</sup> <a name="serverVersion" id="@cdktf/provider-postgresql.server.ServerConfig.property.serverVersion"></a>
+##### `serverVersion`<sup>Optional</sup> <a name="serverVersion" id="@cdktn/provider-postgresql.server.ServerConfig.property.serverVersion"></a>
 
 ```typescript
 public readonly serverVersion: string;

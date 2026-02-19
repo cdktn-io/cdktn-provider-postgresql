@@ -1,28 +1,28 @@
-# `grant` Submodule <a name="`grant` Submodule" id="@cdktf/provider-postgresql.grant"></a>
+# `grant` Submodule <a name="`grant` Submodule" id="@cdktn/provider-postgresql.grant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Grant <a name="Grant" id="@cdktf/provider-postgresql.grant.Grant"></a>
+### Grant <a name="Grant" id="@cdktn/provider-postgresql.grant.Grant"></a>
 
 Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant postgresql_grant}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.grant.Grant.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.grant.Grant.Initializer"></a>
 
 ```typescript
-import { grant } from '@cdktf/provider-postgresql'
+import { grant } from '@cdktn/provider-postgresql'
 
 new grant.Grant(scope: Construct, id: string, config: GrantConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig">GrantConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig">GrantConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.grant.Grant.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.grant.Grant.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-postgresql.grant.Grant.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-postgresql.grant.Grant.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-postgresql.grant.GrantConfig">GrantConfig</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.grant.GrantConfig">GrantConfig</a>
 
 ---
 
@@ -50,38 +50,38 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetColumns">resetColumns</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetObjects">resetObjects</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetSchema">resetSchema</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.resetWithGrantOption">resetWithGrantOption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.resetColumns">resetColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.resetObjects">resetObjects</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.resetSchema">resetSchema</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.resetWithGrantOption">resetWithGrantOption</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-postgresql.grant.Grant.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-postgresql.grant.Grant.toString"></a>
 
 ```typescript
 public toString(): string
@@ -89,25 +89,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-postgresql.grant.Grant.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-postgresql.grant.Grant.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-postgresql.grant.Grant.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-postgresql.grant.Grant.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-postgresql.grant.Grant.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-postgresql.grant.Grant.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-postgresql.grant.Grant.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-postgresql.grant.Grant.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -115,7 +115,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-postgresql.grant.Grant.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-postgresql.grant.Grant.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -123,7 +123,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-postgresql.grant.Grant.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-postgresql.grant.Grant.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -131,19 +131,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-postgresql.grant.Grant.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-postgresql.grant.Grant.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-postgresql.grant.Grant.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-postgresql.grant.Grant.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-postgresql.grant.Grant.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-postgresql.grant.Grant.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -151,7 +151,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-postgresql.grant.Grant.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-postgresql.grant.Grant.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -159,7 +159,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-postgresql.grant.Grant.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-postgresql.grant.Grant.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -167,151 +167,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-postgresql.grant.Grant.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-postgresql.grant.Grant.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.grant.Grant.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.grant.Grant.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-postgresql.grant.Grant.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-postgresql.grant.Grant.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.grant.Grant.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.grant.Grant.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-postgresql.grant.Grant.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-postgresql.grant.Grant.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.grant.Grant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.grant.Grant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-postgresql.grant.Grant.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-postgresql.grant.Grant.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.grant.Grant.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.grant.Grant.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-postgresql.grant.Grant.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-postgresql.grant.Grant.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.grant.Grant.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.grant.Grant.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-postgresql.grant.Grant.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-postgresql.grant.Grant.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.grant.Grant.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.grant.Grant.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-postgresql.grant.Grant.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-postgresql.grant.Grant.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.grant.Grant.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.grant.Grant.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-postgresql.grant.Grant.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-postgresql.grant.Grant.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.grant.Grant.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.grant.Grant.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-postgresql.grant.Grant.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-postgresql.grant.Grant.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.grant.Grant.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.grant.Grant.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-postgresql.grant.Grant.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-postgresql.grant.Grant.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-postgresql.grant.Grant.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-postgresql.grant.Grant.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.grant.Grant.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.grant.Grant.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.grant.Grant.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.grant.Grant.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-postgresql.grant.Grant.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-postgresql.grant.Grant.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.grant.Grant.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.grant.Grant.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-postgresql.grant.Grant.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-postgresql.grant.Grant.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -321,7 +321,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.grant.Grant.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.grant.Grant.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -329,7 +329,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-postgresql.grant.Grant.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-postgresql.grant.Grant.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -337,7 +337,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-postgresql.grant.Grant.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-postgresql.grant.Grant.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -345,7 +345,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-postgresql.grant.Grant.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-postgresql.grant.Grant.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -353,7 +353,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-postgresql.grant.Grant.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-postgresql.grant.Grant.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -361,7 +361,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.grant.Grant.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.grant.Grant.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -369,31 +369,31 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetColumns` <a name="resetColumns" id="@cdktf/provider-postgresql.grant.Grant.resetColumns"></a>
+##### `resetColumns` <a name="resetColumns" id="@cdktn/provider-postgresql.grant.Grant.resetColumns"></a>
 
 ```typescript
 public resetColumns(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-postgresql.grant.Grant.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-postgresql.grant.Grant.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetObjects` <a name="resetObjects" id="@cdktf/provider-postgresql.grant.Grant.resetObjects"></a>
+##### `resetObjects` <a name="resetObjects" id="@cdktn/provider-postgresql.grant.Grant.resetObjects"></a>
 
 ```typescript
 public resetObjects(): void
 ```
 
-##### `resetSchema` <a name="resetSchema" id="@cdktf/provider-postgresql.grant.Grant.resetSchema"></a>
+##### `resetSchema` <a name="resetSchema" id="@cdktn/provider-postgresql.grant.Grant.resetSchema"></a>
 
 ```typescript
 public resetSchema(): void
 ```
 
-##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-postgresql.grant.Grant.resetWithGrantOption"></a>
+##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktn/provider-postgresql.grant.Grant.resetWithGrantOption"></a>
 
 ```typescript
 public resetWithGrantOption(): void
@@ -403,17 +403,17 @@ public resetWithGrantOption(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a Grant resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a Grant resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-postgresql.grant.Grant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-postgresql.grant.Grant.isConstruct"></a>
 
 ```typescript
-import { grant } from '@cdktf/provider-postgresql'
+import { grant } from '@cdktn/provider-postgresql'
 
 grant.Grant.isConstruct(x: any)
 ```
@@ -434,7 +434,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.grant.Grant.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.grant.Grant.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -442,45 +442,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-postgresql.grant.Grant.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-postgresql.grant.Grant.isTerraformElement"></a>
 
 ```typescript
-import { grant } from '@cdktf/provider-postgresql'
+import { grant } from '@cdktn/provider-postgresql'
 
 grant.Grant.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.grant.Grant.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.grant.Grant.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-postgresql.grant.Grant.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-postgresql.grant.Grant.isTerraformResource"></a>
 
 ```typescript
-import { grant } from '@cdktf/provider-postgresql'
+import { grant } from '@cdktn/provider-postgresql'
 
 grant.Grant.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.grant.Grant.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.grant.Grant.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-postgresql.grant.Grant.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-postgresql.grant.Grant.generateConfigForImport"></a>
 
 ```typescript
-import { grant } from '@cdktf/provider-postgresql'
+import { grant } from '@cdktn/provider-postgresql'
 
 grant.Grant.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a Grant resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a Grant resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.grant.Grant.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.grant.Grant.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -488,7 +488,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-postgresql.grant.Grant.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-postgresql.grant.Grant.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the Grant to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-postgresql.grant.Grant.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-postgresql.grant.Grant.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -506,9 +506,9 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.grant.Grant.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.grant.Grant.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the Grant to import is found.
 
@@ -518,42 +518,42 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.columnsInput">columnsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.objectsInput">objectsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.objectTypeInput">objectTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.privilegesInput">privilegesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.columns">columns</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.objects">objects</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.objectType">objectType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.privileges">privileges</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.role">role</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.columnsInput">columnsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.objectsInput">objectsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.objectTypeInput">objectTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.privilegesInput">privilegesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.columns">columns</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.objects">objects</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.objectType">objectType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.privileges">privileges</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.role">role</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-postgresql.grant.Grant.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-postgresql.grant.Grant.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -565,17 +565,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-postgresql.grant.Grant.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-postgresql.grant.Grant.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-postgresql.grant.Grant.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-postgresql.grant.Grant.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -585,7 +585,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-postgresql.grant.Grant.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-postgresql.grant.Grant.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -595,7 +595,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-postgresql.grant.Grant.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-postgresql.grant.Grant.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -605,7 +605,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-postgresql.grant.Grant.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-postgresql.grant.Grant.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -615,37 +615,37 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-postgresql.grant.Grant.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-postgresql.grant.Grant.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.grant.Grant.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.grant.Grant.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.grant.Grant.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.grant.Grant.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-postgresql.grant.Grant.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-postgresql.grant.Grant.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -655,47 +655,47 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-postgresql.grant.Grant.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-postgresql.grant.Grant.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.grant.Grant.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.grant.Grant.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.grant.Grant.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.grant.Grant.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.grant.Grant.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.grant.Grant.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `columnsInput`<sup>Optional</sup> <a name="columnsInput" id="@cdktf/provider-postgresql.grant.Grant.property.columnsInput"></a>
+##### `columnsInput`<sup>Optional</sup> <a name="columnsInput" id="@cdktn/provider-postgresql.grant.Grant.property.columnsInput"></a>
 
 ```typescript
 public readonly columnsInput: string[];
@@ -705,7 +705,7 @@ public readonly columnsInput: string[];
 
 ---
 
-##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-postgresql.grant.Grant.property.databaseInput"></a>
+##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktn/provider-postgresql.grant.Grant.property.databaseInput"></a>
 
 ```typescript
 public readonly databaseInput: string;
@@ -715,7 +715,7 @@ public readonly databaseInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-postgresql.grant.Grant.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-postgresql.grant.Grant.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -725,7 +725,7 @@ public readonly idInput: string;
 
 ---
 
-##### `objectsInput`<sup>Optional</sup> <a name="objectsInput" id="@cdktf/provider-postgresql.grant.Grant.property.objectsInput"></a>
+##### `objectsInput`<sup>Optional</sup> <a name="objectsInput" id="@cdktn/provider-postgresql.grant.Grant.property.objectsInput"></a>
 
 ```typescript
 public readonly objectsInput: string[];
@@ -735,7 +735,7 @@ public readonly objectsInput: string[];
 
 ---
 
-##### `objectTypeInput`<sup>Optional</sup> <a name="objectTypeInput" id="@cdktf/provider-postgresql.grant.Grant.property.objectTypeInput"></a>
+##### `objectTypeInput`<sup>Optional</sup> <a name="objectTypeInput" id="@cdktn/provider-postgresql.grant.Grant.property.objectTypeInput"></a>
 
 ```typescript
 public readonly objectTypeInput: string;
@@ -745,7 +745,7 @@ public readonly objectTypeInput: string;
 
 ---
 
-##### `privilegesInput`<sup>Optional</sup> <a name="privilegesInput" id="@cdktf/provider-postgresql.grant.Grant.property.privilegesInput"></a>
+##### `privilegesInput`<sup>Optional</sup> <a name="privilegesInput" id="@cdktn/provider-postgresql.grant.Grant.property.privilegesInput"></a>
 
 ```typescript
 public readonly privilegesInput: string[];
@@ -755,7 +755,7 @@ public readonly privilegesInput: string[];
 
 ---
 
-##### `roleInput`<sup>Optional</sup> <a name="roleInput" id="@cdktf/provider-postgresql.grant.Grant.property.roleInput"></a>
+##### `roleInput`<sup>Optional</sup> <a name="roleInput" id="@cdktn/provider-postgresql.grant.Grant.property.roleInput"></a>
 
 ```typescript
 public readonly roleInput: string;
@@ -765,7 +765,7 @@ public readonly roleInput: string;
 
 ---
 
-##### `schemaInput`<sup>Optional</sup> <a name="schemaInput" id="@cdktf/provider-postgresql.grant.Grant.property.schemaInput"></a>
+##### `schemaInput`<sup>Optional</sup> <a name="schemaInput" id="@cdktn/provider-postgresql.grant.Grant.property.schemaInput"></a>
 
 ```typescript
 public readonly schemaInput: string;
@@ -775,17 +775,17 @@ public readonly schemaInput: string;
 
 ---
 
-##### `withGrantOptionInput`<sup>Optional</sup> <a name="withGrantOptionInput" id="@cdktf/provider-postgresql.grant.Grant.property.withGrantOptionInput"></a>
+##### `withGrantOptionInput`<sup>Optional</sup> <a name="withGrantOptionInput" id="@cdktn/provider-postgresql.grant.Grant.property.withGrantOptionInput"></a>
 
 ```typescript
 public readonly withGrantOptionInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `columns`<sup>Required</sup> <a name="columns" id="@cdktf/provider-postgresql.grant.Grant.property.columns"></a>
+##### `columns`<sup>Required</sup> <a name="columns" id="@cdktn/provider-postgresql.grant.Grant.property.columns"></a>
 
 ```typescript
 public readonly columns: string[];
@@ -795,7 +795,7 @@ public readonly columns: string[];
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-postgresql.grant.Grant.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-postgresql.grant.Grant.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -805,7 +805,7 @@ public readonly database: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.grant.Grant.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.grant.Grant.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -815,7 +815,7 @@ public readonly id: string;
 
 ---
 
-##### `objects`<sup>Required</sup> <a name="objects" id="@cdktf/provider-postgresql.grant.Grant.property.objects"></a>
+##### `objects`<sup>Required</sup> <a name="objects" id="@cdktn/provider-postgresql.grant.Grant.property.objects"></a>
 
 ```typescript
 public readonly objects: string[];
@@ -825,7 +825,7 @@ public readonly objects: string[];
 
 ---
 
-##### `objectType`<sup>Required</sup> <a name="objectType" id="@cdktf/provider-postgresql.grant.Grant.property.objectType"></a>
+##### `objectType`<sup>Required</sup> <a name="objectType" id="@cdktn/provider-postgresql.grant.Grant.property.objectType"></a>
 
 ```typescript
 public readonly objectType: string;
@@ -835,7 +835,7 @@ public readonly objectType: string;
 
 ---
 
-##### `privileges`<sup>Required</sup> <a name="privileges" id="@cdktf/provider-postgresql.grant.Grant.property.privileges"></a>
+##### `privileges`<sup>Required</sup> <a name="privileges" id="@cdktn/provider-postgresql.grant.Grant.property.privileges"></a>
 
 ```typescript
 public readonly privileges: string[];
@@ -845,7 +845,7 @@ public readonly privileges: string[];
 
 ---
 
-##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-postgresql.grant.Grant.property.role"></a>
+##### `role`<sup>Required</sup> <a name="role" id="@cdktn/provider-postgresql.grant.Grant.property.role"></a>
 
 ```typescript
 public readonly role: string;
@@ -855,7 +855,7 @@ public readonly role: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-postgresql.grant.Grant.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktn/provider-postgresql.grant.Grant.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -865,13 +865,13 @@ public readonly schema: string;
 
 ---
 
-##### `withGrantOption`<sup>Required</sup> <a name="withGrantOption" id="@cdktf/provider-postgresql.grant.Grant.property.withGrantOption"></a>
+##### `withGrantOption`<sup>Required</sup> <a name="withGrantOption" id="@cdktn/provider-postgresql.grant.Grant.property.withGrantOption"></a>
 
 ```typescript
 public readonly withGrantOption: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -879,11 +879,11 @@ public readonly withGrantOption: boolean | IResolvable;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.grant.Grant.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.Grant.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-postgresql.grant.Grant.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-postgresql.grant.Grant.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -895,12 +895,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### GrantConfig <a name="GrantConfig" id="@cdktf/provider-postgresql.grant.GrantConfig"></a>
+### GrantConfig <a name="GrantConfig" id="@cdktn/provider-postgresql.grant.GrantConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.grant.GrantConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.grant.GrantConfig.Initializer"></a>
 
 ```typescript
-import { grant } from '@cdktf/provider-postgresql'
+import { grant } from '@cdktn/provider-postgresql'
 
 const grantConfig: grant.GrantConfig = { ... }
 ```
@@ -909,96 +909,96 @@ const grantConfig: grant.GrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.database">database</a></code> | <code>string</code> | The database to grant privileges on for this role. |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objectType">objectType</a></code> | <code>string</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column). |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.privileges">privileges</a></code> | <code>string[]</code> | The list of privileges to grant. |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.role">role</a></code> | <code>string</code> | The name of the role to grant privileges on. |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.columns">columns</a></code> | <code>string[]</code> | The specific columns to grant privileges on for this role. |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#id Grant#id}. |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.objects">objects</a></code> | <code>string[]</code> | The specific objects to grant privileges on for this role (empty means all objects of the requested type). |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.schema">schema</a></code> | <code>string</code> | The database schema to grant privileges on for this role. |
-| <code><a href="#@cdktf/provider-postgresql.grant.GrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | Permit the grant recipient to grant it to others. |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.database">database</a></code> | <code>string</code> | The database to grant privileges on for this role. |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.objectType">objectType</a></code> | <code>string</code> | The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column). |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.privileges">privileges</a></code> | <code>string[]</code> | The list of privileges to grant. |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.role">role</a></code> | <code>string</code> | The name of the role to grant privileges on. |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.columns">columns</a></code> | <code>string[]</code> | The specific columns to grant privileges on for this role. |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#id Grant#id}. |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.objects">objects</a></code> | <code>string[]</code> | The specific objects to grant privileges on for this role (empty means all objects of the requested type). |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.schema">schema</a></code> | <code>string</code> | The database schema to grant privileges on for this role. |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktn.IResolvable</code> | Permit the grant recipient to grant it to others. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.grant.GrantConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.grant.GrantConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.grant.GrantConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.grant.GrantConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-postgresql.grant.GrantConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-postgresql.grant.GrantConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-postgresql.grant.GrantConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-postgresql.grant.GrantConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.grant.GrantConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.grant.GrantConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.grant.GrantConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.grant.GrantConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.grant.GrantConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.grant.GrantConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-postgresql.grant.GrantConfig.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-postgresql.grant.GrantConfig.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `objectType`<sup>Required</sup> <a name="objectType" id="@cdktf/provider-postgresql.grant.GrantConfig.property.objectType"></a>
+##### `objectType`<sup>Required</sup> <a name="objectType" id="@cdktn/provider-postgresql.grant.GrantConfig.property.objectType"></a>
 
 ```typescript
 public readonly objectType: string;
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `privileges`<sup>Required</sup> <a name="privileges" id="@cdktf/provider-postgresql.grant.GrantConfig.property.privileges"></a>
+##### `privileges`<sup>Required</sup> <a name="privileges" id="@cdktn/provider-postgresql.grant.GrantConfig.property.privileges"></a>
 
 ```typescript
 public readonly privileges: string[];
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-postgresql.grant.GrantConfig.property.role"></a>
+##### `role`<sup>Required</sup> <a name="role" id="@cdktn/provider-postgresql.grant.GrantConfig.property.role"></a>
 
 ```typescript
 public readonly role: string;
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `columns`<sup>Optional</sup> <a name="columns" id="@cdktf/provider-postgresql.grant.GrantConfig.property.columns"></a>
+##### `columns`<sup>Optional</sup> <a name="columns" id="@cdktn/provider-postgresql.grant.GrantConfig.property.columns"></a>
 
 ```typescript
 public readonly columns: string[];
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-postgresql.grant.GrantConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-postgresql.grant.GrantConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1083,7 +1083,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `objects`<sup>Optional</sup> <a name="objects" id="@cdktf/provider-postgresql.grant.GrantConfig.property.objects"></a>
+##### `objects`<sup>Optional</sup> <a name="objects" id="@cdktn/provider-postgresql.grant.GrantConfig.property.objects"></a>
 
 ```typescript
 public readonly objects: string[];
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktf/provider-postgresql.grant.GrantConfig.property.schema"></a>
+##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktn/provider-postgresql.grant.GrantConfig.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -1111,13 +1111,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `withGrantOption`<sup>Optional</sup> <a name="withGrantOption" id="@cdktf/provider-postgresql.grant.GrantConfig.property.withGrantOption"></a>
+##### `withGrantOption`<sup>Optional</sup> <a name="withGrantOption" id="@cdktn/provider-postgresql.grant.GrantConfig.property.withGrantOption"></a>
 
 ```typescript
 public readonly withGrantOption: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Permit the grant recipient to grant it to others.
 

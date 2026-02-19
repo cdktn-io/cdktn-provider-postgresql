@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
+export interface FunctionResourceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Body of the function.
   *
@@ -29,7 +29,7 @@ export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#drop_cascade FunctionResource#drop_cascade}
   */
-  readonly dropCascade?: boolean | cdktf.IResolvable;
+  readonly dropCascade?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#id FunctionResource#id}
   *
@@ -72,13 +72,13 @@ export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#security_definer FunctionResource#security_definer}
   */
-  readonly securityDefiner?: boolean | cdktf.IResolvable;
+  readonly securityDefiner?: boolean | cdktn.IResolvable;
   /**
   * If the function should always return NULL if any of it's inputs is NULL.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#strict FunctionResource#strict}
   */
-  readonly strict?: boolean | cdktf.IResolvable;
+  readonly strict?: boolean | cdktn.IResolvable;
   /**
   * Volatility of the function. One of: VOLATILE, STABLE, IMMUTABLE.
   *
@@ -90,7 +90,7 @@ export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#arg FunctionResource#arg}
   */
-  readonly arg?: FunctionResourceArg[] | cdktf.IResolvable;
+  readonly arg?: FunctionResourceArg[] | cdktn.IResolvable;
 }
 export interface FunctionResourceArg {
   /**
@@ -119,46 +119,46 @@ export interface FunctionResourceArg {
   readonly type: string;
 }
 
-export function functionResourceArgToTerraform(struct?: FunctionResourceArg | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionResourceArgToTerraform(struct?: FunctionResourceArg | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default: cdktf.stringToTerraform(struct!.default),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    default: cdktn.stringToTerraform(struct!.default),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function functionResourceArgToHclTerraform(struct?: FunctionResourceArg | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionResourceArgToHclTerraform(struct?: FunctionResourceArg | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -169,9 +169,9 @@ export function functionResourceArgToHclTerraform(struct?: FunctionResourceArg |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FunctionResourceArgOutputReference extends cdktf.ComplexObject {
+export class FunctionResourceArgOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -179,11 +179,11 @@ export class FunctionResourceArgOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FunctionResourceArg | cdktf.IResolvable | undefined {
+  public get internalValue(): FunctionResourceArg | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -208,7 +208,7 @@ export class FunctionResourceArgOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FunctionResourceArg | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FunctionResourceArg | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -217,7 +217,7 @@ export class FunctionResourceArgOutputReference extends cdktf.ComplexObject {
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -293,15 +293,15 @@ export class FunctionResourceArgOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class FunctionResourceArgList extends cdktf.ComplexList {
-  public internalValue? : FunctionResourceArg[] | cdktf.IResolvable
+export class FunctionResourceArgList extends cdktn.ComplexList {
+  public internalValue? : FunctionResourceArg[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -316,7 +316,7 @@ export class FunctionResourceArgList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function postgresql_function}
 */
-export class FunctionResource extends cdktf.TerraformResource {
+export class FunctionResource extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -327,14 +327,14 @@ export class FunctionResource extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FunctionResource resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FunctionResource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FunctionResource to import
   * @param importFromId The id of the existing FunctionResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FunctionResource to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_function", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_function", importId: importFromId, provider });
       }
 
   // ===========
@@ -413,11 +413,11 @@ export class FunctionResource extends cdktf.TerraformResource {
   }
 
   // drop_cascade - computed: false, optional: true, required: false
-  private _dropCascade?: boolean | cdktf.IResolvable; 
+  private _dropCascade?: boolean | cdktn.IResolvable; 
   public get dropCascade() {
     return this.getBooleanAttribute('drop_cascade');
   }
-  public set dropCascade(value: boolean | cdktf.IResolvable) {
+  public set dropCascade(value: boolean | cdktn.IResolvable) {
     this._dropCascade = value;
   }
   public resetDropCascade() {
@@ -522,11 +522,11 @@ export class FunctionResource extends cdktf.TerraformResource {
   }
 
   // security_definer - computed: false, optional: true, required: false
-  private _securityDefiner?: boolean | cdktf.IResolvable; 
+  private _securityDefiner?: boolean | cdktn.IResolvable; 
   public get securityDefiner() {
     return this.getBooleanAttribute('security_definer');
   }
-  public set securityDefiner(value: boolean | cdktf.IResolvable) {
+  public set securityDefiner(value: boolean | cdktn.IResolvable) {
     this._securityDefiner = value;
   }
   public resetSecurityDefiner() {
@@ -538,11 +538,11 @@ export class FunctionResource extends cdktf.TerraformResource {
   }
 
   // strict - computed: false, optional: true, required: false
-  private _strict?: boolean | cdktf.IResolvable; 
+  private _strict?: boolean | cdktn.IResolvable; 
   public get strict() {
     return this.getBooleanAttribute('strict');
   }
-  public set strict(value: boolean | cdktf.IResolvable) {
+  public set strict(value: boolean | cdktn.IResolvable) {
     this._strict = value;
   }
   public resetStrict() {
@@ -574,7 +574,7 @@ export class FunctionResource extends cdktf.TerraformResource {
   public get arg() {
     return this._arg;
   }
-  public putArg(value: FunctionResourceArg[] | cdktf.IResolvable) {
+  public putArg(value: FunctionResourceArg[] | cdktn.IResolvable) {
     this._arg.internalValue = value;
   }
   public resetArg() {
@@ -591,98 +591,98 @@ export class FunctionResource extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      body: cdktf.stringToTerraform(this._body),
-      database: cdktf.stringToTerraform(this._database),
-      drop_cascade: cdktf.booleanToTerraform(this._dropCascade),
-      id: cdktf.stringToTerraform(this._id),
-      language: cdktf.stringToTerraform(this._language),
-      name: cdktf.stringToTerraform(this._name),
-      parallel: cdktf.stringToTerraform(this._parallel),
-      returns: cdktf.stringToTerraform(this._returns),
-      schema: cdktf.stringToTerraform(this._schema),
-      security_definer: cdktf.booleanToTerraform(this._securityDefiner),
-      strict: cdktf.booleanToTerraform(this._strict),
-      volatility: cdktf.stringToTerraform(this._volatility),
-      arg: cdktf.listMapper(functionResourceArgToTerraform, true)(this._arg.internalValue),
+      body: cdktn.stringToTerraform(this._body),
+      database: cdktn.stringToTerraform(this._database),
+      drop_cascade: cdktn.booleanToTerraform(this._dropCascade),
+      id: cdktn.stringToTerraform(this._id),
+      language: cdktn.stringToTerraform(this._language),
+      name: cdktn.stringToTerraform(this._name),
+      parallel: cdktn.stringToTerraform(this._parallel),
+      returns: cdktn.stringToTerraform(this._returns),
+      schema: cdktn.stringToTerraform(this._schema),
+      security_definer: cdktn.booleanToTerraform(this._securityDefiner),
+      strict: cdktn.booleanToTerraform(this._strict),
+      volatility: cdktn.stringToTerraform(this._volatility),
+      arg: cdktn.listMapper(functionResourceArgToTerraform, true)(this._arg.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       body: {
-        value: cdktf.stringToHclTerraform(this._body),
+        value: cdktn.stringToHclTerraform(this._body),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       drop_cascade: {
-        value: cdktf.booleanToHclTerraform(this._dropCascade),
+        value: cdktn.booleanToHclTerraform(this._dropCascade),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       language: {
-        value: cdktf.stringToHclTerraform(this._language),
+        value: cdktn.stringToHclTerraform(this._language),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parallel: {
-        value: cdktf.stringToHclTerraform(this._parallel),
+        value: cdktn.stringToHclTerraform(this._parallel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       returns: {
-        value: cdktf.stringToHclTerraform(this._returns),
+        value: cdktn.stringToHclTerraform(this._returns),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_definer: {
-        value: cdktf.booleanToHclTerraform(this._securityDefiner),
+        value: cdktn.booleanToHclTerraform(this._securityDefiner),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       strict: {
-        value: cdktf.booleanToHclTerraform(this._strict),
+        value: cdktn.booleanToHclTerraform(this._strict),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       volatility: {
-        value: cdktf.stringToHclTerraform(this._volatility),
+        value: cdktn.stringToHclTerraform(this._volatility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       arg: {
-        value: cdktf.listMapperHcl(functionResourceArgToHclTerraform, true)(this._arg.internalValue),
+        value: cdktn.listMapperHcl(functionResourceArgToHclTerraform, true)(this._arg.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "FunctionResourceArgList",

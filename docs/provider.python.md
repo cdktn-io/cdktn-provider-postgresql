@@ -1,15 +1,15 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-postgresql.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-postgresql.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### PostgresqlProvider <a name="PostgresqlProvider" id="@cdktf/provider-postgresql.provider.PostgresqlProvider"></a>
+### PostgresqlProvider <a name="PostgresqlProvider" id="@cdktn/provider-postgresql.provider.PostgresqlProvider"></a>
 
 Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs postgresql}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import provider
+from cdktn_provider_postgresql import provider
 
 provider.PostgresqlProvider(
   scope: Construct,
@@ -42,35 +42,35 @@ provider.PostgresqlProvider(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamAuth">aws_rds_iam_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamProfile">aws_rds_iam_profile</a></code> | <code>str</code> | AWS profile to use for IAM auth. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamProviderRoleArn">aws_rds_iam_provider_role_arn</a></code> | <code>str</code> | AWS IAM role to assume for IAM auth. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamRegion">aws_rds_iam_region</a></code> | <code>str</code> | AWS region to use for IAM auth. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.azureIdentityAuth">azure_identity_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | MS Azure tenant ID (see: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config.html). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.clientcert">clientcert</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | clientcert block. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.connectTimeout">connect_timeout</a></code> | <code>typing.Union[int, float]</code> | Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.database">database</a></code> | <code>str</code> | The name of the database to connect to in order to connect to (defaults to `postgres`). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.databaseUsername">database_username</a></code> | <code>str</code> | Database username associated to the connected user (for user name maps). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.expectedVersion">expected_version</a></code> | <code>str</code> | Specify the expected version of PostgreSQL. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.gcpIamImpersonateServiceAccount">gcp_iam_impersonate_service_account</a></code> | <code>str</code> | Service account to impersonate when using GCP IAM authentication. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.host">host</a></code> | <code>str</code> | Name of PostgreSQL server address to connect to. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.maxConnections">max_connections</a></code> | <code>typing.Union[int, float]</code> | Maximum number of connections to establish to the database. Zero means unlimited. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | Password to be used if the PostgreSQL server demands password authentication. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.scheme">scheme</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#scheme PostgresqlProvider#scheme}. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslmode">sslmode</a></code> | <code>str</code> | This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the PostgreSQL server. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslMode">ssl_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#ssl_mode PostgresqlProvider#ssl_mode}. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslrootcert">sslrootcert</a></code> | <code>str</code> | The SSL server root certificate file path. The file must contain PEM encoded data. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.superuser">superuser</a></code> | <code>bool \| cdktf.IResolvable</code> | Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.username">username</a></code> | <code>str</code> | PostgreSQL user name to connect as. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamAuth">aws_rds_iam_auth</a></code> | <code>bool \| cdktn.IResolvable</code> | Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamProfile">aws_rds_iam_profile</a></code> | <code>str</code> | AWS profile to use for IAM auth. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamProviderRoleArn">aws_rds_iam_provider_role_arn</a></code> | <code>str</code> | AWS IAM role to assume for IAM auth. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamRegion">aws_rds_iam_region</a></code> | <code>str</code> | AWS region to use for IAM auth. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.azureIdentityAuth">azure_identity_auth</a></code> | <code>bool \| cdktn.IResolvable</code> | Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | MS Azure tenant ID (see: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config.html). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.clientcert">clientcert</a></code> | <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | clientcert block. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.connectTimeout">connect_timeout</a></code> | <code>typing.Union[int, float]</code> | Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.database">database</a></code> | <code>str</code> | The name of the database to connect to in order to connect to (defaults to `postgres`). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.databaseUsername">database_username</a></code> | <code>str</code> | Database username associated to the connected user (for user name maps). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.expectedVersion">expected_version</a></code> | <code>str</code> | Specify the expected version of PostgreSQL. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.gcpIamImpersonateServiceAccount">gcp_iam_impersonate_service_account</a></code> | <code>str</code> | Service account to impersonate when using GCP IAM authentication. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.host">host</a></code> | <code>str</code> | Name of PostgreSQL server address to connect to. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.maxConnections">max_connections</a></code> | <code>typing.Union[int, float]</code> | Maximum number of connections to establish to the database. Zero means unlimited. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | Password to be used if the PostgreSQL server demands password authentication. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.scheme">scheme</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#scheme PostgresqlProvider#scheme}. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslmode">sslmode</a></code> | <code>str</code> | This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the PostgreSQL server. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslMode">ssl_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#ssl_mode PostgresqlProvider#ssl_mode}. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslrootcert">sslrootcert</a></code> | <code>str</code> | The SSL server root certificate file path. The file must contain PEM encoded data. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.superuser">superuser</a></code> | <code>bool \| cdktn.IResolvable</code> | Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.username">username</a></code> | <code>str</code> | PostgreSQL user name to connect as. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -78,7 +78,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -88,7 +88,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.alias"></a>
 
 - *Type:* str
 
@@ -98,9 +98,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `aws_rds_iam_auth`<sup>Optional</sup> <a name="aws_rds_iam_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamAuth"></a>
+##### `aws_rds_iam_auth`<sup>Optional</sup> <a name="aws_rds_iam_auth" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamAuth"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html).
 
@@ -108,7 +108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `aws_rds_iam_profile`<sup>Optional</sup> <a name="aws_rds_iam_profile" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamProfile"></a>
+##### `aws_rds_iam_profile`<sup>Optional</sup> <a name="aws_rds_iam_profile" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamProfile"></a>
 
 - *Type:* str
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `aws_rds_iam_provider_role_arn`<sup>Optional</sup> <a name="aws_rds_iam_provider_role_arn" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamProviderRoleArn"></a>
+##### `aws_rds_iam_provider_role_arn`<sup>Optional</sup> <a name="aws_rds_iam_provider_role_arn" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamProviderRoleArn"></a>
 
 - *Type:* str
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `aws_rds_iam_region`<sup>Optional</sup> <a name="aws_rds_iam_region" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamRegion"></a>
+##### `aws_rds_iam_region`<sup>Optional</sup> <a name="aws_rds_iam_region" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.awsRdsIamRegion"></a>
 
 - *Type:* str
 
@@ -138,9 +138,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `azure_identity_auth`<sup>Optional</sup> <a name="azure_identity_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.azureIdentityAuth"></a>
+##### `azure_identity_auth`<sup>Optional</sup> <a name="azure_identity_auth" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.azureIdentityAuth"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `azure_tenant_id`<sup>Optional</sup> <a name="azure_tenant_id" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.azureTenantId"></a>
+##### `azure_tenant_id`<sup>Optional</sup> <a name="azure_tenant_id" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.azureTenantId"></a>
 
 - *Type:* str
 
@@ -158,9 +158,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `clientcert`<sup>Optional</sup> <a name="clientcert" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.clientcert"></a>
+##### `clientcert`<sup>Optional</sup> <a name="clientcert" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.clientcert"></a>
 
-- *Type:* <a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
 
 clientcert block.
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `connect_timeout`<sup>Optional</sup> <a name="connect_timeout" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.connectTimeout"></a>
+##### `connect_timeout`<sup>Optional</sup> <a name="connect_timeout" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.connectTimeout"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.database"></a>
+##### `database`<sup>Optional</sup> <a name="database" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.database"></a>
 
 - *Type:* str
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `database_username`<sup>Optional</sup> <a name="database_username" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.databaseUsername"></a>
+##### `database_username`<sup>Optional</sup> <a name="database_username" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.databaseUsername"></a>
 
 - *Type:* str
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `expected_version`<sup>Optional</sup> <a name="expected_version" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.expectedVersion"></a>
+##### `expected_version`<sup>Optional</sup> <a name="expected_version" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.expectedVersion"></a>
 
 - *Type:* str
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `gcp_iam_impersonate_service_account`<sup>Optional</sup> <a name="gcp_iam_impersonate_service_account" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.gcpIamImpersonateServiceAccount"></a>
+##### `gcp_iam_impersonate_service_account`<sup>Optional</sup> <a name="gcp_iam_impersonate_service_account" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.gcpIamImpersonateServiceAccount"></a>
 
 - *Type:* str
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.host"></a>
 
 - *Type:* str
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `max_connections`<sup>Optional</sup> <a name="max_connections" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.maxConnections"></a>
+##### `max_connections`<sup>Optional</sup> <a name="max_connections" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.maxConnections"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.password"></a>
 
 - *Type:* str
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.port"></a>
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.port"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -258,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `scheme`<sup>Optional</sup> <a name="scheme" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.scheme"></a>
+##### `scheme`<sup>Optional</sup> <a name="scheme" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.scheme"></a>
 
 - *Type:* str
 
@@ -266,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `sslmode`<sup>Optional</sup> <a name="sslmode" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslmode"></a>
+##### `sslmode`<sup>Optional</sup> <a name="sslmode" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslmode"></a>
 
 - *Type:* str
 
@@ -276,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `ssl_mode`<sup>Optional</sup> <a name="ssl_mode" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslMode"></a>
+##### `ssl_mode`<sup>Optional</sup> <a name="ssl_mode" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslMode"></a>
 
 - *Type:* str
 
@@ -284,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `sslrootcert`<sup>Optional</sup> <a name="sslrootcert" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslrootcert"></a>
+##### `sslrootcert`<sup>Optional</sup> <a name="sslrootcert" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.sslrootcert"></a>
 
 - *Type:* str
 
@@ -294,9 +294,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.superuser"></a>
+##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.superuser"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres).
 
@@ -304,7 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer.parameter.username"></a>
 
 - *Type:* str
 
@@ -318,40 +318,40 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAlias">reset_alias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamAuth">reset_aws_rds_iam_auth</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProfile">reset_aws_rds_iam_profile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProviderRoleArn">reset_aws_rds_iam_provider_role_arn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamRegion">reset_aws_rds_iam_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAzureIdentityAuth">reset_azure_identity_auth</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAzureTenantId">reset_azure_tenant_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetClientcert">reset_clientcert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetConnectTimeout">reset_connect_timeout</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetDatabase">reset_database</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetDatabaseUsername">reset_database_username</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetExpectedVersion">reset_expected_version</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetGcpIamImpersonateServiceAccount">reset_gcp_iam_impersonate_service_account</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetHost">reset_host</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetMaxConnections">reset_max_connections</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetPassword">reset_password</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetPort">reset_port</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetScheme">reset_scheme</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSslmode">reset_sslmode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSslMode">reset_ssl_mode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSslrootcert">reset_sslrootcert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSuperuser">reset_superuser</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.resetUsername">reset_username</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAlias">reset_alias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamAuth">reset_aws_rds_iam_auth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProfile">reset_aws_rds_iam_profile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProviderRoleArn">reset_aws_rds_iam_provider_role_arn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamRegion">reset_aws_rds_iam_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAzureIdentityAuth">reset_azure_identity_auth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAzureTenantId">reset_azure_tenant_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetClientcert">reset_clientcert</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetConnectTimeout">reset_connect_timeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetDatabase">reset_database</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetDatabaseUsername">reset_database_username</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetExpectedVersion">reset_expected_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetGcpIamImpersonateServiceAccount">reset_gcp_iam_impersonate_service_account</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetHost">reset_host</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetMaxConnections">reset_max_connections</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetPassword">reset_password</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetPort">reset_port</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetScheme">reset_scheme</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSslmode">reset_sslmode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSslMode">reset_ssl_mode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSslrootcert">reset_sslrootcert</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSuperuser">reset_superuser</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.resetUsername">reset_username</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.toString"></a>
 
 ```python
 def to_string() -> str
@@ -359,7 +359,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.addOverride"></a>
 
 ```python
 def add_override(
@@ -368,19 +368,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -390,7 +390,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -398,7 +398,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -406,19 +406,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -426,139 +426,139 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `reset_alias` <a name="reset_alias" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAlias"></a>
+##### `reset_alias` <a name="reset_alias" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAlias"></a>
 
 ```python
 def reset_alias() -> None
 ```
 
-##### `reset_aws_rds_iam_auth` <a name="reset_aws_rds_iam_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamAuth"></a>
+##### `reset_aws_rds_iam_auth` <a name="reset_aws_rds_iam_auth" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamAuth"></a>
 
 ```python
 def reset_aws_rds_iam_auth() -> None
 ```
 
-##### `reset_aws_rds_iam_profile` <a name="reset_aws_rds_iam_profile" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProfile"></a>
+##### `reset_aws_rds_iam_profile` <a name="reset_aws_rds_iam_profile" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProfile"></a>
 
 ```python
 def reset_aws_rds_iam_profile() -> None
 ```
 
-##### `reset_aws_rds_iam_provider_role_arn` <a name="reset_aws_rds_iam_provider_role_arn" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProviderRoleArn"></a>
+##### `reset_aws_rds_iam_provider_role_arn` <a name="reset_aws_rds_iam_provider_role_arn" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamProviderRoleArn"></a>
 
 ```python
 def reset_aws_rds_iam_provider_role_arn() -> None
 ```
 
-##### `reset_aws_rds_iam_region` <a name="reset_aws_rds_iam_region" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamRegion"></a>
+##### `reset_aws_rds_iam_region` <a name="reset_aws_rds_iam_region" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAwsRdsIamRegion"></a>
 
 ```python
 def reset_aws_rds_iam_region() -> None
 ```
 
-##### `reset_azure_identity_auth` <a name="reset_azure_identity_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAzureIdentityAuth"></a>
+##### `reset_azure_identity_auth` <a name="reset_azure_identity_auth" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAzureIdentityAuth"></a>
 
 ```python
 def reset_azure_identity_auth() -> None
 ```
 
-##### `reset_azure_tenant_id` <a name="reset_azure_tenant_id" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetAzureTenantId"></a>
+##### `reset_azure_tenant_id` <a name="reset_azure_tenant_id" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetAzureTenantId"></a>
 
 ```python
 def reset_azure_tenant_id() -> None
 ```
 
-##### `reset_clientcert` <a name="reset_clientcert" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetClientcert"></a>
+##### `reset_clientcert` <a name="reset_clientcert" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetClientcert"></a>
 
 ```python
 def reset_clientcert() -> None
 ```
 
-##### `reset_connect_timeout` <a name="reset_connect_timeout" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetConnectTimeout"></a>
+##### `reset_connect_timeout` <a name="reset_connect_timeout" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetConnectTimeout"></a>
 
 ```python
 def reset_connect_timeout() -> None
 ```
 
-##### `reset_database` <a name="reset_database" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetDatabase"></a>
+##### `reset_database` <a name="reset_database" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetDatabase"></a>
 
 ```python
 def reset_database() -> None
 ```
 
-##### `reset_database_username` <a name="reset_database_username" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetDatabaseUsername"></a>
+##### `reset_database_username` <a name="reset_database_username" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetDatabaseUsername"></a>
 
 ```python
 def reset_database_username() -> None
 ```
 
-##### `reset_expected_version` <a name="reset_expected_version" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetExpectedVersion"></a>
+##### `reset_expected_version` <a name="reset_expected_version" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetExpectedVersion"></a>
 
 ```python
 def reset_expected_version() -> None
 ```
 
-##### `reset_gcp_iam_impersonate_service_account` <a name="reset_gcp_iam_impersonate_service_account" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetGcpIamImpersonateServiceAccount"></a>
+##### `reset_gcp_iam_impersonate_service_account` <a name="reset_gcp_iam_impersonate_service_account" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetGcpIamImpersonateServiceAccount"></a>
 
 ```python
 def reset_gcp_iam_impersonate_service_account() -> None
 ```
 
-##### `reset_host` <a name="reset_host" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetHost"></a>
+##### `reset_host` <a name="reset_host" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetHost"></a>
 
 ```python
 def reset_host() -> None
 ```
 
-##### `reset_max_connections` <a name="reset_max_connections" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetMaxConnections"></a>
+##### `reset_max_connections` <a name="reset_max_connections" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetMaxConnections"></a>
 
 ```python
 def reset_max_connections() -> None
 ```
 
-##### `reset_password` <a name="reset_password" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetPassword"></a>
+##### `reset_password` <a name="reset_password" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetPassword"></a>
 
 ```python
 def reset_password() -> None
 ```
 
-##### `reset_port` <a name="reset_port" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetPort"></a>
+##### `reset_port` <a name="reset_port" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetPort"></a>
 
 ```python
 def reset_port() -> None
 ```
 
-##### `reset_scheme` <a name="reset_scheme" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetScheme"></a>
+##### `reset_scheme` <a name="reset_scheme" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetScheme"></a>
 
 ```python
 def reset_scheme() -> None
 ```
 
-##### `reset_sslmode` <a name="reset_sslmode" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSslmode"></a>
+##### `reset_sslmode` <a name="reset_sslmode" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSslmode"></a>
 
 ```python
 def reset_sslmode() -> None
 ```
 
-##### `reset_ssl_mode` <a name="reset_ssl_mode" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSslMode"></a>
+##### `reset_ssl_mode` <a name="reset_ssl_mode" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSslMode"></a>
 
 ```python
 def reset_ssl_mode() -> None
 ```
 
-##### `reset_sslrootcert` <a name="reset_sslrootcert" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSslrootcert"></a>
+##### `reset_sslrootcert` <a name="reset_sslrootcert" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSslrootcert"></a>
 
 ```python
 def reset_sslrootcert() -> None
 ```
 
-##### `reset_superuser` <a name="reset_superuser" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetSuperuser"></a>
+##### `reset_superuser` <a name="reset_superuser" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetSuperuser"></a>
 
 ```python
 def reset_superuser() -> None
 ```
 
-##### `reset_username` <a name="reset_username" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.resetUsername"></a>
+##### `reset_username` <a name="reset_username" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.resetUsername"></a>
 
 ```python
 def reset_username() -> None
@@ -568,17 +568,17 @@ def reset_username() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a PostgresqlProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a PostgresqlProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import provider
+from cdktn_provider_postgresql import provider
 
 provider.PostgresqlProvider.is_construct(
   x: typing.Any
@@ -601,7 +601,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -609,42 +609,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import provider
+from cdktn_provider_postgresql import provider
 
 provider.PostgresqlProvider.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_provider` <a name="is_terraform_provider" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider"></a>
+##### `is_terraform_provider` <a name="is_terraform_provider" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import provider
+from cdktn_provider_postgresql import provider
 
 provider.PostgresqlProvider.is_terraform_provider(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import provider
+from cdktn_provider_postgresql import provider
 
 provider.PostgresqlProvider.generate_config_for_import(
   scope: Construct,
@@ -654,9 +654,9 @@ provider.PostgresqlProvider.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a PostgresqlProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a PostgresqlProvider resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -664,7 +664,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -672,7 +672,7 @@ The construct id used in the generated config for the PostgresqlProvider to impo
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -682,9 +682,9 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the PostgresqlProvider to import is found.
 
@@ -694,64 +694,64 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.metaAttributes">meta_attributes</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput">aws_rds_iam_auth_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfileInput">aws_rds_iam_profile_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArnInput">aws_rds_iam_provider_role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegionInput">aws_rds_iam_region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput">azure_identity_auth_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureTenantIdInput">azure_tenant_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.clientcertInput">clientcert_input</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.connectTimeoutInput">connect_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.databaseUsernameInput">database_username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.expectedVersionInput">expected_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccountInput">gcp_iam_impersonate_service_account_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.maxConnectionsInput">max_connections_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.portInput">port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.schemeInput">scheme_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslmodeInput">sslmode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslModeInput">ssl_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslrootcertInput">sslrootcert_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuserInput">superuser_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth">aws_rds_iam_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfile">aws_rds_iam_profile</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArn">aws_rds_iam_provider_role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegion">aws_rds_iam_region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth">azure_identity_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.clientcert">clientcert</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.connectTimeout">connect_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.database">database</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.databaseUsername">database_username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.expectedVersion">expected_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccount">gcp_iam_impersonate_service_account</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.host">host</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.maxConnections">max_connections</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.password">password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.scheme">scheme</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslmode">sslmode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslMode">ssl_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslrootcert">sslrootcert</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuser">superuser</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.username">username</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.metaAttributes">meta_attributes</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput">aws_rds_iam_auth_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfileInput">aws_rds_iam_profile_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArnInput">aws_rds_iam_provider_role_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegionInput">aws_rds_iam_region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput">azure_identity_auth_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureTenantIdInput">azure_tenant_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.clientcertInput">clientcert_input</a></code> | <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.connectTimeoutInput">connect_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.databaseUsernameInput">database_username_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.expectedVersionInput">expected_version_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccountInput">gcp_iam_impersonate_service_account_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.maxConnectionsInput">max_connections_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.portInput">port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.schemeInput">scheme_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslmodeInput">sslmode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslModeInput">ssl_mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslrootcertInput">sslrootcert_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.superuserInput">superuser_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth">aws_rds_iam_auth</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfile">aws_rds_iam_profile</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArn">aws_rds_iam_provider_role_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegion">aws_rds_iam_region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth">azure_identity_auth</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.clientcert">clientcert</a></code> | <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.connectTimeout">connect_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.database">database</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.databaseUsername">database_username</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.expectedVersion">expected_version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccount">gcp_iam_impersonate_service_account</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.host">host</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.maxConnections">max_connections</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.password">password</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.scheme">scheme</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslmode">sslmode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslMode">ssl_mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslrootcert">sslrootcert</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.superuser">superuser</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.username">username</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.node"></a>
 
 ```python
 node: Node
@@ -763,17 +763,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.fqn"></a>
 
 ```python
 fqn: str
@@ -783,7 +783,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -793,7 +793,7 @@ friendly_unique_id: str
 
 ---
 
-##### `meta_attributes`<sup>Required</sup> <a name="meta_attributes" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.metaAttributes"></a>
+##### `meta_attributes`<sup>Required</sup> <a name="meta_attributes" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.metaAttributes"></a>
 
 ```python
 meta_attributes: typing.Mapping[typing.Any]
@@ -803,7 +803,7 @@ meta_attributes: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -813,17 +813,17 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `terraform_provider_source`<sup>Optional</sup> <a name="terraform_provider_source" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.terraformProviderSource"></a>
+##### `terraform_provider_source`<sup>Optional</sup> <a name="terraform_provider_source" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.terraformProviderSource"></a>
 
 ```python
 terraform_provider_source: str
@@ -833,7 +833,7 @@ terraform_provider_source: str
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.alias"></a>
 
 ```python
 alias: str
@@ -843,7 +843,7 @@ alias: str
 
 ---
 
-##### `alias_input`<sup>Optional</sup> <a name="alias_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.aliasInput"></a>
+##### `alias_input`<sup>Optional</sup> <a name="alias_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.aliasInput"></a>
 
 ```python
 alias_input: str
@@ -853,17 +853,17 @@ alias_input: str
 
 ---
 
-##### `aws_rds_iam_auth_input`<sup>Optional</sup> <a name="aws_rds_iam_auth_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput"></a>
+##### `aws_rds_iam_auth_input`<sup>Optional</sup> <a name="aws_rds_iam_auth_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuthInput"></a>
 
 ```python
 aws_rds_iam_auth_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `aws_rds_iam_profile_input`<sup>Optional</sup> <a name="aws_rds_iam_profile_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfileInput"></a>
+##### `aws_rds_iam_profile_input`<sup>Optional</sup> <a name="aws_rds_iam_profile_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfileInput"></a>
 
 ```python
 aws_rds_iam_profile_input: str
@@ -873,7 +873,7 @@ aws_rds_iam_profile_input: str
 
 ---
 
-##### `aws_rds_iam_provider_role_arn_input`<sup>Optional</sup> <a name="aws_rds_iam_provider_role_arn_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArnInput"></a>
+##### `aws_rds_iam_provider_role_arn_input`<sup>Optional</sup> <a name="aws_rds_iam_provider_role_arn_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArnInput"></a>
 
 ```python
 aws_rds_iam_provider_role_arn_input: str
@@ -883,7 +883,7 @@ aws_rds_iam_provider_role_arn_input: str
 
 ---
 
-##### `aws_rds_iam_region_input`<sup>Optional</sup> <a name="aws_rds_iam_region_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegionInput"></a>
+##### `aws_rds_iam_region_input`<sup>Optional</sup> <a name="aws_rds_iam_region_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegionInput"></a>
 
 ```python
 aws_rds_iam_region_input: str
@@ -893,17 +893,17 @@ aws_rds_iam_region_input: str
 
 ---
 
-##### `azure_identity_auth_input`<sup>Optional</sup> <a name="azure_identity_auth_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput"></a>
+##### `azure_identity_auth_input`<sup>Optional</sup> <a name="azure_identity_auth_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuthInput"></a>
 
 ```python
 azure_identity_auth_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `azure_tenant_id_input`<sup>Optional</sup> <a name="azure_tenant_id_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureTenantIdInput"></a>
+##### `azure_tenant_id_input`<sup>Optional</sup> <a name="azure_tenant_id_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureTenantIdInput"></a>
 
 ```python
 azure_tenant_id_input: str
@@ -913,17 +913,17 @@ azure_tenant_id_input: str
 
 ---
 
-##### `clientcert_input`<sup>Optional</sup> <a name="clientcert_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.clientcertInput"></a>
+##### `clientcert_input`<sup>Optional</sup> <a name="clientcert_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.clientcertInput"></a>
 
 ```python
 clientcert_input: PostgresqlProviderClientcert
 ```
 
-- *Type:* <a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
 
 ---
 
-##### `connect_timeout_input`<sup>Optional</sup> <a name="connect_timeout_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.connectTimeoutInput"></a>
+##### `connect_timeout_input`<sup>Optional</sup> <a name="connect_timeout_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.connectTimeoutInput"></a>
 
 ```python
 connect_timeout_input: typing.Union[int, float]
@@ -933,7 +933,7 @@ connect_timeout_input: typing.Union[int, float]
 
 ---
 
-##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.databaseInput"></a>
+##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.databaseInput"></a>
 
 ```python
 database_input: str
@@ -943,7 +943,7 @@ database_input: str
 
 ---
 
-##### `database_username_input`<sup>Optional</sup> <a name="database_username_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.databaseUsernameInput"></a>
+##### `database_username_input`<sup>Optional</sup> <a name="database_username_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.databaseUsernameInput"></a>
 
 ```python
 database_username_input: str
@@ -953,7 +953,7 @@ database_username_input: str
 
 ---
 
-##### `expected_version_input`<sup>Optional</sup> <a name="expected_version_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.expectedVersionInput"></a>
+##### `expected_version_input`<sup>Optional</sup> <a name="expected_version_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.expectedVersionInput"></a>
 
 ```python
 expected_version_input: str
@@ -963,7 +963,7 @@ expected_version_input: str
 
 ---
 
-##### `gcp_iam_impersonate_service_account_input`<sup>Optional</sup> <a name="gcp_iam_impersonate_service_account_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccountInput"></a>
+##### `gcp_iam_impersonate_service_account_input`<sup>Optional</sup> <a name="gcp_iam_impersonate_service_account_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccountInput"></a>
 
 ```python
 gcp_iam_impersonate_service_account_input: str
@@ -973,7 +973,7 @@ gcp_iam_impersonate_service_account_input: str
 
 ---
 
-##### `host_input`<sup>Optional</sup> <a name="host_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.hostInput"></a>
+##### `host_input`<sup>Optional</sup> <a name="host_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.hostInput"></a>
 
 ```python
 host_input: str
@@ -983,7 +983,7 @@ host_input: str
 
 ---
 
-##### `max_connections_input`<sup>Optional</sup> <a name="max_connections_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.maxConnectionsInput"></a>
+##### `max_connections_input`<sup>Optional</sup> <a name="max_connections_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.maxConnectionsInput"></a>
 
 ```python
 max_connections_input: typing.Union[int, float]
@@ -993,7 +993,7 @@ max_connections_input: typing.Union[int, float]
 
 ---
 
-##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.passwordInput"></a>
+##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.passwordInput"></a>
 
 ```python
 password_input: str
@@ -1003,7 +1003,7 @@ password_input: str
 
 ---
 
-##### `port_input`<sup>Optional</sup> <a name="port_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.portInput"></a>
+##### `port_input`<sup>Optional</sup> <a name="port_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.portInput"></a>
 
 ```python
 port_input: typing.Union[int, float]
@@ -1013,7 +1013,7 @@ port_input: typing.Union[int, float]
 
 ---
 
-##### `scheme_input`<sup>Optional</sup> <a name="scheme_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.schemeInput"></a>
+##### `scheme_input`<sup>Optional</sup> <a name="scheme_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.schemeInput"></a>
 
 ```python
 scheme_input: str
@@ -1023,7 +1023,7 @@ scheme_input: str
 
 ---
 
-##### `sslmode_input`<sup>Optional</sup> <a name="sslmode_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslmodeInput"></a>
+##### `sslmode_input`<sup>Optional</sup> <a name="sslmode_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslmodeInput"></a>
 
 ```python
 sslmode_input: str
@@ -1033,7 +1033,7 @@ sslmode_input: str
 
 ---
 
-##### `ssl_mode_input`<sup>Optional</sup> <a name="ssl_mode_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslModeInput"></a>
+##### `ssl_mode_input`<sup>Optional</sup> <a name="ssl_mode_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslModeInput"></a>
 
 ```python
 ssl_mode_input: str
@@ -1043,7 +1043,7 @@ ssl_mode_input: str
 
 ---
 
-##### `sslrootcert_input`<sup>Optional</sup> <a name="sslrootcert_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslrootcertInput"></a>
+##### `sslrootcert_input`<sup>Optional</sup> <a name="sslrootcert_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslrootcertInput"></a>
 
 ```python
 sslrootcert_input: str
@@ -1053,17 +1053,17 @@ sslrootcert_input: str
 
 ---
 
-##### `superuser_input`<sup>Optional</sup> <a name="superuser_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuserInput"></a>
+##### `superuser_input`<sup>Optional</sup> <a name="superuser_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.superuserInput"></a>
 
 ```python
 superuser_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.usernameInput"></a>
+##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.usernameInput"></a>
 
 ```python
 username_input: str
@@ -1073,17 +1073,17 @@ username_input: str
 
 ---
 
-##### `aws_rds_iam_auth`<sup>Optional</sup> <a name="aws_rds_iam_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth"></a>
+##### `aws_rds_iam_auth`<sup>Optional</sup> <a name="aws_rds_iam_auth" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamAuth"></a>
 
 ```python
 aws_rds_iam_auth: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `aws_rds_iam_profile`<sup>Optional</sup> <a name="aws_rds_iam_profile" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfile"></a>
+##### `aws_rds_iam_profile`<sup>Optional</sup> <a name="aws_rds_iam_profile" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProfile"></a>
 
 ```python
 aws_rds_iam_profile: str
@@ -1093,7 +1093,7 @@ aws_rds_iam_profile: str
 
 ---
 
-##### `aws_rds_iam_provider_role_arn`<sup>Optional</sup> <a name="aws_rds_iam_provider_role_arn" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArn"></a>
+##### `aws_rds_iam_provider_role_arn`<sup>Optional</sup> <a name="aws_rds_iam_provider_role_arn" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamProviderRoleArn"></a>
 
 ```python
 aws_rds_iam_provider_role_arn: str
@@ -1103,7 +1103,7 @@ aws_rds_iam_provider_role_arn: str
 
 ---
 
-##### `aws_rds_iam_region`<sup>Optional</sup> <a name="aws_rds_iam_region" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegion"></a>
+##### `aws_rds_iam_region`<sup>Optional</sup> <a name="aws_rds_iam_region" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.awsRdsIamRegion"></a>
 
 ```python
 aws_rds_iam_region: str
@@ -1113,17 +1113,17 @@ aws_rds_iam_region: str
 
 ---
 
-##### `azure_identity_auth`<sup>Optional</sup> <a name="azure_identity_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth"></a>
+##### `azure_identity_auth`<sup>Optional</sup> <a name="azure_identity_auth" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureIdentityAuth"></a>
 
 ```python
 azure_identity_auth: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `azure_tenant_id`<sup>Optional</sup> <a name="azure_tenant_id" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.azureTenantId"></a>
+##### `azure_tenant_id`<sup>Optional</sup> <a name="azure_tenant_id" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.azureTenantId"></a>
 
 ```python
 azure_tenant_id: str
@@ -1133,17 +1133,17 @@ azure_tenant_id: str
 
 ---
 
-##### `clientcert`<sup>Optional</sup> <a name="clientcert" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.clientcert"></a>
+##### `clientcert`<sup>Optional</sup> <a name="clientcert" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.clientcert"></a>
 
 ```python
 clientcert: PostgresqlProviderClientcert
 ```
 
-- *Type:* <a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
 
 ---
 
-##### `connect_timeout`<sup>Optional</sup> <a name="connect_timeout" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.connectTimeout"></a>
+##### `connect_timeout`<sup>Optional</sup> <a name="connect_timeout" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.connectTimeout"></a>
 
 ```python
 connect_timeout: typing.Union[int, float]
@@ -1153,7 +1153,7 @@ connect_timeout: typing.Union[int, float]
 
 ---
 
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.database"></a>
+##### `database`<sup>Optional</sup> <a name="database" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.database"></a>
 
 ```python
 database: str
@@ -1163,7 +1163,7 @@ database: str
 
 ---
 
-##### `database_username`<sup>Optional</sup> <a name="database_username" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.databaseUsername"></a>
+##### `database_username`<sup>Optional</sup> <a name="database_username" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.databaseUsername"></a>
 
 ```python
 database_username: str
@@ -1173,7 +1173,7 @@ database_username: str
 
 ---
 
-##### `expected_version`<sup>Optional</sup> <a name="expected_version" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.expectedVersion"></a>
+##### `expected_version`<sup>Optional</sup> <a name="expected_version" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.expectedVersion"></a>
 
 ```python
 expected_version: str
@@ -1183,7 +1183,7 @@ expected_version: str
 
 ---
 
-##### `gcp_iam_impersonate_service_account`<sup>Optional</sup> <a name="gcp_iam_impersonate_service_account" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccount"></a>
+##### `gcp_iam_impersonate_service_account`<sup>Optional</sup> <a name="gcp_iam_impersonate_service_account" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.gcpIamImpersonateServiceAccount"></a>
 
 ```python
 gcp_iam_impersonate_service_account: str
@@ -1193,7 +1193,7 @@ gcp_iam_impersonate_service_account: str
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.host"></a>
 
 ```python
 host: str
@@ -1203,7 +1203,7 @@ host: str
 
 ---
 
-##### `max_connections`<sup>Optional</sup> <a name="max_connections" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.maxConnections"></a>
+##### `max_connections`<sup>Optional</sup> <a name="max_connections" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.maxConnections"></a>
 
 ```python
 max_connections: typing.Union[int, float]
@@ -1213,7 +1213,7 @@ max_connections: typing.Union[int, float]
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.password"></a>
 
 ```python
 password: str
@@ -1223,7 +1223,7 @@ password: str
 
 ---
 
-##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.port"></a>
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.port"></a>
 
 ```python
 port: typing.Union[int, float]
@@ -1233,7 +1233,7 @@ port: typing.Union[int, float]
 
 ---
 
-##### `scheme`<sup>Optional</sup> <a name="scheme" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.scheme"></a>
+##### `scheme`<sup>Optional</sup> <a name="scheme" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.scheme"></a>
 
 ```python
 scheme: str
@@ -1243,7 +1243,7 @@ scheme: str
 
 ---
 
-##### `sslmode`<sup>Optional</sup> <a name="sslmode" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslmode"></a>
+##### `sslmode`<sup>Optional</sup> <a name="sslmode" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslmode"></a>
 
 ```python
 sslmode: str
@@ -1253,7 +1253,7 @@ sslmode: str
 
 ---
 
-##### `ssl_mode`<sup>Optional</sup> <a name="ssl_mode" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslMode"></a>
+##### `ssl_mode`<sup>Optional</sup> <a name="ssl_mode" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslMode"></a>
 
 ```python
 ssl_mode: str
@@ -1263,7 +1263,7 @@ ssl_mode: str
 
 ---
 
-##### `sslrootcert`<sup>Optional</sup> <a name="sslrootcert" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.sslrootcert"></a>
+##### `sslrootcert`<sup>Optional</sup> <a name="sslrootcert" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.sslrootcert"></a>
 
 ```python
 sslrootcert: str
@@ -1273,17 +1273,17 @@ sslrootcert: str
 
 ---
 
-##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.superuser"></a>
+##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.superuser"></a>
 
 ```python
 superuser: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.username"></a>
 
 ```python
 username: str
@@ -1297,11 +1297,11 @@ username: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProvider.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProvider.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-postgresql.provider.PostgresqlProvider.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1313,12 +1313,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### PostgresqlProviderClientcert <a name="PostgresqlProviderClientcert" id="@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert"></a>
+### PostgresqlProviderClientcert <a name="PostgresqlProviderClientcert" id="@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import provider
+from cdktn_provider_postgresql import provider
 
 provider.PostgresqlProviderClientcert(
   cert: str,
@@ -1331,13 +1331,13 @@ provider.PostgresqlProviderClientcert(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.cert">cert</a></code> | <code>str</code> | The SSL client certificate file path. The file must contain PEM encoded data. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.key">key</a></code> | <code>str</code> | The SSL client certificate private key file path. The file must contain PEM encoded data. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline">sslinline</a></code> | <code>bool \| cdktf.IResolvable</code> | Must be set to true if you are inlining the cert/key instead of using a file path. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.property.cert">cert</a></code> | <code>str</code> | The SSL client certificate file path. The file must contain PEM encoded data. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.property.key">key</a></code> | <code>str</code> | The SSL client certificate private key file path. The file must contain PEM encoded data. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline">sslinline</a></code> | <code>bool \| cdktn.IResolvable</code> | Must be set to true if you are inlining the cert/key instead of using a file path. |
 
 ---
 
-##### `cert`<sup>Required</sup> <a name="cert" id="@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.cert"></a>
+##### `cert`<sup>Required</sup> <a name="cert" id="@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.property.cert"></a>
 
 ```python
 cert: str
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.property.key"></a>
 
 ```python
 key: str
@@ -1365,13 +1365,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `sslinline`<sup>Optional</sup> <a name="sslinline" id="@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline"></a>
+##### `sslinline`<sup>Optional</sup> <a name="sslinline" id="@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.property.sslinline"></a>
 
 ```python
 sslinline: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Must be set to true if you are inlining the cert/key instead of using a file path.
 
@@ -1379,12 +1379,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-### PostgresqlProviderConfig <a name="PostgresqlProviderConfig" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig"></a>
+### PostgresqlProviderConfig <a name="PostgresqlProviderConfig" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import provider
+from cdktn_provider_postgresql import provider
 
 provider.PostgresqlProviderConfig(
   alias: str = None,
@@ -1417,33 +1417,33 @@ provider.PostgresqlProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth">aws_rds_iam_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProfile">aws_rds_iam_profile</a></code> | <code>str</code> | AWS profile to use for IAM auth. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProviderRoleArn">aws_rds_iam_provider_role_arn</a></code> | <code>str</code> | AWS IAM role to assume for IAM auth. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamRegion">aws_rds_iam_region</a></code> | <code>str</code> | AWS region to use for IAM auth. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth">azure_identity_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | MS Azure tenant ID (see: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config.html). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.clientcert">clientcert</a></code> | <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | clientcert block. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.connectTimeout">connect_timeout</a></code> | <code>typing.Union[int, float]</code> | Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.database">database</a></code> | <code>str</code> | The name of the database to connect to in order to connect to (defaults to `postgres`). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.databaseUsername">database_username</a></code> | <code>str</code> | Database username associated to the connected user (for user name maps). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.expectedVersion">expected_version</a></code> | <code>str</code> | Specify the expected version of PostgreSQL. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.gcpIamImpersonateServiceAccount">gcp_iam_impersonate_service_account</a></code> | <code>str</code> | Service account to impersonate when using GCP IAM authentication. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.host">host</a></code> | <code>str</code> | Name of PostgreSQL server address to connect to. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.maxConnections">max_connections</a></code> | <code>typing.Union[int, float]</code> | Maximum number of connections to establish to the database. Zero means unlimited. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.password">password</a></code> | <code>str</code> | Password to be used if the PostgreSQL server demands password authentication. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.scheme">scheme</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#scheme PostgresqlProvider#scheme}. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslmode">sslmode</a></code> | <code>str</code> | This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the PostgreSQL server. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslMode">ssl_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#ssl_mode PostgresqlProvider#ssl_mode}. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslrootcert">sslrootcert</a></code> | <code>str</code> | The SSL server root certificate file path. The file must contain PEM encoded data. |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser">superuser</a></code> | <code>bool \| cdktf.IResolvable</code> | Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres). |
-| <code><a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.username">username</a></code> | <code>str</code> | PostgreSQL user name to connect as. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth">aws_rds_iam_auth</a></code> | <code>bool \| cdktn.IResolvable</code> | Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProfile">aws_rds_iam_profile</a></code> | <code>str</code> | AWS profile to use for IAM auth. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProviderRoleArn">aws_rds_iam_provider_role_arn</a></code> | <code>str</code> | AWS IAM role to assume for IAM auth. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamRegion">aws_rds_iam_region</a></code> | <code>str</code> | AWS region to use for IAM auth. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth">azure_identity_auth</a></code> | <code>bool \| cdktn.IResolvable</code> | Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | MS Azure tenant ID (see: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config.html). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.clientcert">clientcert</a></code> | <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a></code> | clientcert block. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.connectTimeout">connect_timeout</a></code> | <code>typing.Union[int, float]</code> | Maximum wait for connection, in seconds. Zero or not specified means wait indefinitely. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.database">database</a></code> | <code>str</code> | The name of the database to connect to in order to connect to (defaults to `postgres`). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.databaseUsername">database_username</a></code> | <code>str</code> | Database username associated to the connected user (for user name maps). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.expectedVersion">expected_version</a></code> | <code>str</code> | Specify the expected version of PostgreSQL. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.gcpIamImpersonateServiceAccount">gcp_iam_impersonate_service_account</a></code> | <code>str</code> | Service account to impersonate when using GCP IAM authentication. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.host">host</a></code> | <code>str</code> | Name of PostgreSQL server address to connect to. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.maxConnections">max_connections</a></code> | <code>typing.Union[int, float]</code> | Maximum number of connections to establish to the database. Zero means unlimited. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.password">password</a></code> | <code>str</code> | Password to be used if the PostgreSQL server demands password authentication. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | The PostgreSQL port number to connect to at the server host, or socket file name extension for Unix-domain connections. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.scheme">scheme</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#scheme PostgresqlProvider#scheme}. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.sslmode">sslmode</a></code> | <code>str</code> | This option determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the PostgreSQL server. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.sslMode">ssl_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs#ssl_mode PostgresqlProvider#ssl_mode}. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.sslrootcert">sslrootcert</a></code> | <code>str</code> | The SSL server root certificate file path. The file must contain PEM encoded data. |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser">superuser</a></code> | <code>bool \| cdktn.IResolvable</code> | Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres). |
+| <code><a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.username">username</a></code> | <code>str</code> | PostgreSQL user name to connect as. |
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.alias"></a>
 
 ```python
 alias: str
@@ -1457,13 +1457,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `aws_rds_iam_auth`<sup>Optional</sup> <a name="aws_rds_iam_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth"></a>
+##### `aws_rds_iam_auth`<sup>Optional</sup> <a name="aws_rds_iam_auth" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamAuth"></a>
 
 ```python
 aws_rds_iam_auth: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Use rds_iam instead of password authentication (see: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html).
 
@@ -1471,7 +1471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `aws_rds_iam_profile`<sup>Optional</sup> <a name="aws_rds_iam_profile" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProfile"></a>
+##### `aws_rds_iam_profile`<sup>Optional</sup> <a name="aws_rds_iam_profile" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProfile"></a>
 
 ```python
 aws_rds_iam_profile: str
@@ -1485,7 +1485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `aws_rds_iam_provider_role_arn`<sup>Optional</sup> <a name="aws_rds_iam_provider_role_arn" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProviderRoleArn"></a>
+##### `aws_rds_iam_provider_role_arn`<sup>Optional</sup> <a name="aws_rds_iam_provider_role_arn" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamProviderRoleArn"></a>
 
 ```python
 aws_rds_iam_provider_role_arn: str
@@ -1499,7 +1499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `aws_rds_iam_region`<sup>Optional</sup> <a name="aws_rds_iam_region" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamRegion"></a>
+##### `aws_rds_iam_region`<sup>Optional</sup> <a name="aws_rds_iam_region" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.awsRdsIamRegion"></a>
 
 ```python
 aws_rds_iam_region: str
@@ -1513,13 +1513,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `azure_identity_auth`<sup>Optional</sup> <a name="azure_identity_auth" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth"></a>
+##### `azure_identity_auth`<sup>Optional</sup> <a name="azure_identity_auth" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.azureIdentityAuth"></a>
 
 ```python
 azure_identity_auth: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Use MS Azure identity OAuth token (see: https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
 
@@ -1527,7 +1527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `azure_tenant_id`<sup>Optional</sup> <a name="azure_tenant_id" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.azureTenantId"></a>
+##### `azure_tenant_id`<sup>Optional</sup> <a name="azure_tenant_id" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.azureTenantId"></a>
 
 ```python
 azure_tenant_id: str
@@ -1541,13 +1541,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `clientcert`<sup>Optional</sup> <a name="clientcert" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.clientcert"></a>
+##### `clientcert`<sup>Optional</sup> <a name="clientcert" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.clientcert"></a>
 
 ```python
 clientcert: PostgresqlProviderClientcert
 ```
 
-- *Type:* <a href="#@cdktf/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert">PostgresqlProviderClientcert</a>
 
 clientcert block.
 
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `connect_timeout`<sup>Optional</sup> <a name="connect_timeout" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.connectTimeout"></a>
+##### `connect_timeout`<sup>Optional</sup> <a name="connect_timeout" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.connectTimeout"></a>
 
 ```python
 connect_timeout: typing.Union[int, float]
@@ -1569,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.database"></a>
+##### `database`<sup>Optional</sup> <a name="database" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.database"></a>
 
 ```python
 database: str
@@ -1583,7 +1583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `database_username`<sup>Optional</sup> <a name="database_username" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.databaseUsername"></a>
+##### `database_username`<sup>Optional</sup> <a name="database_username" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.databaseUsername"></a>
 
 ```python
 database_username: str
@@ -1597,7 +1597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `expected_version`<sup>Optional</sup> <a name="expected_version" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.expectedVersion"></a>
+##### `expected_version`<sup>Optional</sup> <a name="expected_version" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.expectedVersion"></a>
 
 ```python
 expected_version: str
@@ -1611,7 +1611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `gcp_iam_impersonate_service_account`<sup>Optional</sup> <a name="gcp_iam_impersonate_service_account" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.gcpIamImpersonateServiceAccount"></a>
+##### `gcp_iam_impersonate_service_account`<sup>Optional</sup> <a name="gcp_iam_impersonate_service_account" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.gcpIamImpersonateServiceAccount"></a>
 
 ```python
 gcp_iam_impersonate_service_account: str
@@ -1625,7 +1625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.host"></a>
 
 ```python
 host: str
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `max_connections`<sup>Optional</sup> <a name="max_connections" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.maxConnections"></a>
+##### `max_connections`<sup>Optional</sup> <a name="max_connections" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.maxConnections"></a>
 
 ```python
 max_connections: typing.Union[int, float]
@@ -1653,7 +1653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.password"></a>
 
 ```python
 password: str
@@ -1667,7 +1667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.port"></a>
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.port"></a>
 
 ```python
 port: typing.Union[int, float]
@@ -1681,7 +1681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `scheme`<sup>Optional</sup> <a name="scheme" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.scheme"></a>
+##### `scheme`<sup>Optional</sup> <a name="scheme" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.scheme"></a>
 
 ```python
 scheme: str
@@ -1693,7 +1693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `sslmode`<sup>Optional</sup> <a name="sslmode" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslmode"></a>
+##### `sslmode`<sup>Optional</sup> <a name="sslmode" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.sslmode"></a>
 
 ```python
 sslmode: str
@@ -1707,7 +1707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `ssl_mode`<sup>Optional</sup> <a name="ssl_mode" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslMode"></a>
+##### `ssl_mode`<sup>Optional</sup> <a name="ssl_mode" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.sslMode"></a>
 
 ```python
 ssl_mode: str
@@ -1719,7 +1719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `sslrootcert`<sup>Optional</sup> <a name="sslrootcert" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.sslrootcert"></a>
+##### `sslrootcert`<sup>Optional</sup> <a name="sslrootcert" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.sslrootcert"></a>
 
 ```python
 sslrootcert: str
@@ -1733,13 +1733,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser"></a>
+##### `superuser`<sup>Optional</sup> <a name="superuser" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.superuser"></a>
 
 ```python
 superuser: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Specify if the user to connect as is a Postgres superuser or not.If not, some feature might be disabled (e.g.: Refreshing state password from Postgres).
 
@@ -1747,7 +1747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-postgresql.provider.PostgresqlProviderConfig.property.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.property.username"></a>
 
 ```python
 username: str
