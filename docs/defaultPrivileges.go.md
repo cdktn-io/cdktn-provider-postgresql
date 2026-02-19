@@ -1,28 +1,28 @@
-# `defaultPrivileges` Submodule <a name="`defaultPrivileges` Submodule" id="@cdktf/provider-postgresql.defaultPrivileges"></a>
+# `defaultPrivileges` Submodule <a name="`defaultPrivileges` Submodule" id="@cdktn/provider-postgresql.defaultPrivileges"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DefaultPrivileges <a name="DefaultPrivileges" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges"></a>
+### DefaultPrivileges <a name="DefaultPrivileges" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges"></a>
 
 Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges postgresql_default_privileges}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/defaultprivileges"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/defaultprivileges"
 
 defaultprivileges.NewDefaultPrivileges(scope Construct, id *string, config DefaultPrivilegesConfig) DefaultPrivileges
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig">DefaultPrivilegesConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig">DefaultPrivilegesConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig">DefaultPrivilegesConfig</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig">DefaultPrivilegesConfig</a>
 
 ---
 
@@ -50,36 +50,36 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetSchema">ResetSchema</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetWithGrantOption">ResetWithGrantOption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetSchema">ResetSchema</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetWithGrantOption">ResetWithGrantOption</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.toString"></a>
 
 ```go
 func ToString() *string
@@ -87,25 +87,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -113,7 +113,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -121,7 +121,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -129,19 +129,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -149,7 +149,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -157,7 +157,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -165,151 +165,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -319,7 +319,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -327,7 +327,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -335,7 +335,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -343,7 +343,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -351,7 +351,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -359,7 +359,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -367,19 +367,19 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetSchema` <a name="ResetSchema" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetSchema"></a>
+##### `ResetSchema` <a name="ResetSchema" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetSchema"></a>
 
 ```go
 func ResetSchema()
 ```
 
-##### `ResetWithGrantOption` <a name="ResetWithGrantOption" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetWithGrantOption"></a>
+##### `ResetWithGrantOption` <a name="ResetWithGrantOption" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.resetWithGrantOption"></a>
 
 ```go
 func ResetWithGrantOption()
@@ -389,17 +389,17 @@ func ResetWithGrantOption()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DefaultPrivileges resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a DefaultPrivileges resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/defaultprivileges"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/defaultprivileges"
 
 defaultprivileges.DefaultPrivileges_IsConstruct(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -428,45 +428,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/defaultprivileges"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/defaultprivileges"
 
 defaultprivileges.DefaultPrivileges_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/defaultprivileges"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/defaultprivileges"
 
 defaultprivileges.DefaultPrivileges_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/defaultprivileges"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/defaultprivileges"
 
 defaultprivileges.DefaultPrivileges_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a DefaultPrivileges resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DefaultPrivileges resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -474,7 +474,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -482,7 +482,7 @@ The construct id used in the generated config for the DefaultPrivileges to impor
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -492,9 +492,9 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DefaultPrivileges to import is found.
 
@@ -504,40 +504,40 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.databaseInput">DatabaseInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.objectTypeInput">ObjectTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.ownerInput">OwnerInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.privilegesInput">PrivilegesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.roleInput">RoleInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.withGrantOptionInput">WithGrantOptionInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.database">Database</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.objectType">ObjectType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.privileges">Privileges</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.role">Role</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.schema">Schema</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.withGrantOption">WithGrantOption</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.databaseInput">DatabaseInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.objectTypeInput">ObjectTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.ownerInput">OwnerInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.privilegesInput">PrivilegesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.roleInput">RoleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.withGrantOptionInput">WithGrantOptionInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.database">Database</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.objectType">ObjectType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.privileges">Privileges</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.role">Role</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.schema">Schema</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.withGrantOption">WithGrantOption</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.node"></a>
 
 ```go
 func Node() Node
@@ -549,17 +549,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -569,7 +569,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -579,7 +579,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -589,7 +589,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -599,17 +599,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -619,7 +619,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -629,7 +629,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -639,37 +639,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -679,7 +679,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `DatabaseInput`<sup>Optional</sup> <a name="DatabaseInput" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.databaseInput"></a>
+##### `DatabaseInput`<sup>Optional</sup> <a name="DatabaseInput" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.databaseInput"></a>
 
 ```go
 func DatabaseInput() *string
@@ -689,7 +689,7 @@ func DatabaseInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -699,7 +699,7 @@ func IdInput() *string
 
 ---
 
-##### `ObjectTypeInput`<sup>Optional</sup> <a name="ObjectTypeInput" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.objectTypeInput"></a>
+##### `ObjectTypeInput`<sup>Optional</sup> <a name="ObjectTypeInput" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.objectTypeInput"></a>
 
 ```go
 func ObjectTypeInput() *string
@@ -709,7 +709,7 @@ func ObjectTypeInput() *string
 
 ---
 
-##### `OwnerInput`<sup>Optional</sup> <a name="OwnerInput" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.ownerInput"></a>
+##### `OwnerInput`<sup>Optional</sup> <a name="OwnerInput" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.ownerInput"></a>
 
 ```go
 func OwnerInput() *string
@@ -719,7 +719,7 @@ func OwnerInput() *string
 
 ---
 
-##### `PrivilegesInput`<sup>Optional</sup> <a name="PrivilegesInput" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.privilegesInput"></a>
+##### `PrivilegesInput`<sup>Optional</sup> <a name="PrivilegesInput" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.privilegesInput"></a>
 
 ```go
 func PrivilegesInput() *[]*string
@@ -729,7 +729,7 @@ func PrivilegesInput() *[]*string
 
 ---
 
-##### `RoleInput`<sup>Optional</sup> <a name="RoleInput" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.roleInput"></a>
+##### `RoleInput`<sup>Optional</sup> <a name="RoleInput" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.roleInput"></a>
 
 ```go
 func RoleInput() *string
@@ -739,7 +739,7 @@ func RoleInput() *string
 
 ---
 
-##### `SchemaInput`<sup>Optional</sup> <a name="SchemaInput" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.schemaInput"></a>
+##### `SchemaInput`<sup>Optional</sup> <a name="SchemaInput" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.schemaInput"></a>
 
 ```go
 func SchemaInput() *string
@@ -749,7 +749,7 @@ func SchemaInput() *string
 
 ---
 
-##### `WithGrantOptionInput`<sup>Optional</sup> <a name="WithGrantOptionInput" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.withGrantOptionInput"></a>
+##### `WithGrantOptionInput`<sup>Optional</sup> <a name="WithGrantOptionInput" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.withGrantOptionInput"></a>
 
 ```go
 func WithGrantOptionInput() interface{}
@@ -759,7 +759,7 @@ func WithGrantOptionInput() interface{}
 
 ---
 
-##### `Database`<sup>Required</sup> <a name="Database" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.database"></a>
+##### `Database`<sup>Required</sup> <a name="Database" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.database"></a>
 
 ```go
 func Database() *string
@@ -769,7 +769,7 @@ func Database() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.id"></a>
 
 ```go
 func Id() *string
@@ -779,7 +779,7 @@ func Id() *string
 
 ---
 
-##### `ObjectType`<sup>Required</sup> <a name="ObjectType" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.objectType"></a>
+##### `ObjectType`<sup>Required</sup> <a name="ObjectType" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.objectType"></a>
 
 ```go
 func ObjectType() *string
@@ -789,7 +789,7 @@ func ObjectType() *string
 
 ---
 
-##### `Owner`<sup>Required</sup> <a name="Owner" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.owner"></a>
+##### `Owner`<sup>Required</sup> <a name="Owner" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.owner"></a>
 
 ```go
 func Owner() *string
@@ -799,7 +799,7 @@ func Owner() *string
 
 ---
 
-##### `Privileges`<sup>Required</sup> <a name="Privileges" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.privileges"></a>
+##### `Privileges`<sup>Required</sup> <a name="Privileges" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.privileges"></a>
 
 ```go
 func Privileges() *[]*string
@@ -809,7 +809,7 @@ func Privileges() *[]*string
 
 ---
 
-##### `Role`<sup>Required</sup> <a name="Role" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.role"></a>
+##### `Role`<sup>Required</sup> <a name="Role" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.role"></a>
 
 ```go
 func Role() *string
@@ -819,7 +819,7 @@ func Role() *string
 
 ---
 
-##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.schema"></a>
+##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.schema"></a>
 
 ```go
 func Schema() *string
@@ -829,7 +829,7 @@ func Schema() *string
 
 ---
 
-##### `WithGrantOption`<sup>Required</sup> <a name="WithGrantOption" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.withGrantOption"></a>
+##### `WithGrantOption`<sup>Required</sup> <a name="WithGrantOption" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.withGrantOption"></a>
 
 ```go
 func WithGrantOption() interface{}
@@ -843,11 +843,11 @@ func WithGrantOption() interface{}
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -859,20 +859,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DefaultPrivilegesConfig <a name="DefaultPrivilegesConfig" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig"></a>
+### DefaultPrivilegesConfig <a name="DefaultPrivilegesConfig" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/defaultprivileges"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/defaultprivileges"
 
 &defaultprivileges.DefaultPrivilegesConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Database: *string,
 	ObjectType: *string,
@@ -889,25 +889,25 @@ import "github.com/cdktf/cdktf-provider-postgresql-go/postgresql/v12/defaultpriv
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.database">Database</a></code> | <code>*string</code> | The database to grant default privileges for this role. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.objectType">ObjectType</a></code> | <code>*string</code> | The PostgreSQL object type to set the default privileges on (one of: table, sequence, function, routine, type, schema). |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.owner">Owner</a></code> | <code>*string</code> | Target role for which to alter default privileges. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.privileges">Privileges</a></code> | <code>*[]*string</code> | The list of privileges to apply as default privileges. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.role">Role</a></code> | <code>*string</code> | The name of the role to which grant default privileges on. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#id DefaultPrivileges#id}. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.schema">Schema</a></code> | <code>*string</code> | The database schema to set default privileges for this role. |
-| <code><a href="#@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.withGrantOption">WithGrantOption</a></code> | <code>interface{}</code> | Permit the grant recipient to grant it to others. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.database">Database</a></code> | <code>*string</code> | The database to grant default privileges for this role. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.objectType">ObjectType</a></code> | <code>*string</code> | The PostgreSQL object type to set the default privileges on (one of: table, sequence, function, routine, type, schema). |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.owner">Owner</a></code> | <code>*string</code> | Target role for which to alter default privileges. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.privileges">Privileges</a></code> | <code>*[]*string</code> | The list of privileges to apply as default privileges. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.role">Role</a></code> | <code>*string</code> | The name of the role to which grant default privileges on. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#id DefaultPrivileges#id}. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.schema">Schema</a></code> | <code>*string</code> | The database schema to set default privileges for this role. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.withGrantOption">WithGrantOption</a></code> | <code>interface{}</code> | Permit the grant recipient to grant it to others. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -917,7 +917,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -927,47 +927,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -977,7 +977,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Database`<sup>Required</sup> <a name="Database" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.database"></a>
+##### `Database`<sup>Required</sup> <a name="Database" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.database"></a>
 
 ```go
 Database *string
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `ObjectType`<sup>Required</sup> <a name="ObjectType" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.objectType"></a>
+##### `ObjectType`<sup>Required</sup> <a name="ObjectType" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.objectType"></a>
 
 ```go
 ObjectType *string
@@ -1005,7 +1005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `Owner`<sup>Required</sup> <a name="Owner" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.owner"></a>
+##### `Owner`<sup>Required</sup> <a name="Owner" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.owner"></a>
 
 ```go
 Owner *string
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `Privileges`<sup>Required</sup> <a name="Privileges" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.privileges"></a>
+##### `Privileges`<sup>Required</sup> <a name="Privileges" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.privileges"></a>
 
 ```go
 Privileges *[]*string
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `Role`<sup>Required</sup> <a name="Role" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.role"></a>
+##### `Role`<sup>Required</sup> <a name="Role" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.role"></a>
 
 ```go
 Role *string
@@ -1047,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1062,7 +1062,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `Schema`<sup>Optional</sup> <a name="Schema" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.schema"></a>
+##### `Schema`<sup>Optional</sup> <a name="Schema" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.schema"></a>
 
 ```go
 Schema *string
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `WithGrantOption`<sup>Optional</sup> <a name="WithGrantOption" id="@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.withGrantOption"></a>
+##### `WithGrantOption`<sup>Optional</sup> <a name="WithGrantOption" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.withGrantOption"></a>
 
 ```go
 WithGrantOption interface{}

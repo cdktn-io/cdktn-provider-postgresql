@@ -1,28 +1,28 @@
-# `schema` Submodule <a name="`schema` Submodule" id="@cdktf/provider-postgresql.schema"></a>
+# `schema` Submodule <a name="`schema` Submodule" id="@cdktn/provider-postgresql.schema"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Schema <a name="Schema" id="@cdktf/provider-postgresql.schema.Schema"></a>
+### Schema <a name="Schema" id="@cdktn/provider-postgresql.schema.Schema"></a>
 
 Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema postgresql_schema}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.schema.Schema.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.schema.Schema.Initializer"></a>
 
 ```typescript
-import { schema } from '@cdktf/provider-postgresql'
+import { schema } from '@cdktn/provider-postgresql'
 
 new schema.Schema(scope: Construct, id: string, config: SchemaConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig">SchemaConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig">SchemaConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.schema.Schema.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.schema.Schema.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-postgresql.schema.Schema.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-postgresql.schema.SchemaConfig">SchemaConfig</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.schema.SchemaConfig">SchemaConfig</a>
 
 ---
 
@@ -50,40 +50,40 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.putPolicy">putPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.resetDatabase">resetDatabase</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.resetDropCascade">resetDropCascade</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.resetIfNotExists">resetIfNotExists</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.resetOwner">resetOwner</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.resetPolicy">resetPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.putPolicy">putPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.resetDatabase">resetDatabase</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.resetDropCascade">resetDropCascade</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.resetIfNotExists">resetIfNotExists</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.resetOwner">resetOwner</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.resetPolicy">resetPolicy</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-postgresql.schema.Schema.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-postgresql.schema.Schema.toString"></a>
 
 ```typescript
 public toString(): string
@@ -91,25 +91,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-postgresql.schema.Schema.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-postgresql.schema.Schema.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-postgresql.schema.Schema.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-postgresql.schema.Schema.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-postgresql.schema.Schema.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-postgresql.schema.Schema.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-postgresql.schema.Schema.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-postgresql.schema.Schema.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -117,7 +117,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-postgresql.schema.Schema.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-postgresql.schema.Schema.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -125,7 +125,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-postgresql.schema.Schema.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-postgresql.schema.Schema.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -133,19 +133,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-postgresql.schema.Schema.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-postgresql.schema.Schema.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-postgresql.schema.Schema.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-postgresql.schema.Schema.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-postgresql.schema.Schema.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-postgresql.schema.Schema.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -153,7 +153,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-postgresql.schema.Schema.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-postgresql.schema.Schema.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -161,7 +161,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-postgresql.schema.Schema.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-postgresql.schema.Schema.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -169,151 +169,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-postgresql.schema.Schema.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-postgresql.schema.Schema.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.Schema.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.Schema.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-postgresql.schema.Schema.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-postgresql.schema.Schema.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.Schema.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.Schema.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-postgresql.schema.Schema.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-postgresql.schema.Schema.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.Schema.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.Schema.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-postgresql.schema.Schema.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-postgresql.schema.Schema.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.Schema.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.Schema.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-postgresql.schema.Schema.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-postgresql.schema.Schema.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.Schema.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.Schema.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-postgresql.schema.Schema.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-postgresql.schema.Schema.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.Schema.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.Schema.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-postgresql.schema.Schema.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-postgresql.schema.Schema.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.Schema.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.Schema.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-postgresql.schema.Schema.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-postgresql.schema.Schema.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.Schema.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.Schema.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-postgresql.schema.Schema.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-postgresql.schema.Schema.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.Schema.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.Schema.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-postgresql.schema.Schema.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-postgresql.schema.Schema.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-postgresql.schema.Schema.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-postgresql.schema.Schema.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.schema.Schema.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.schema.Schema.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.schema.Schema.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.schema.Schema.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-postgresql.schema.Schema.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-postgresql.schema.Schema.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.Schema.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.Schema.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-postgresql.schema.Schema.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-postgresql.schema.Schema.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -323,7 +323,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.schema.Schema.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.schema.Schema.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -331,7 +331,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-postgresql.schema.Schema.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-postgresql.schema.Schema.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -339,7 +339,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-postgresql.schema.Schema.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-postgresql.schema.Schema.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -347,7 +347,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-postgresql.schema.Schema.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-postgresql.schema.Schema.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -355,7 +355,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-postgresql.schema.Schema.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-postgresql.schema.Schema.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -363,7 +363,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.schema.Schema.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.schema.Schema.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -371,49 +371,49 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putPolicy` <a name="putPolicy" id="@cdktf/provider-postgresql.schema.Schema.putPolicy"></a>
+##### `putPolicy` <a name="putPolicy" id="@cdktn/provider-postgresql.schema.Schema.putPolicy"></a>
 
 ```typescript
 public putPolicy(value: IResolvable | SchemaPolicy[]): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-postgresql.schema.Schema.putPolicy.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-postgresql.schema.Schema.putPolicy.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]
 
 ---
 
-##### `resetDatabase` <a name="resetDatabase" id="@cdktf/provider-postgresql.schema.Schema.resetDatabase"></a>
+##### `resetDatabase` <a name="resetDatabase" id="@cdktn/provider-postgresql.schema.Schema.resetDatabase"></a>
 
 ```typescript
 public resetDatabase(): void
 ```
 
-##### `resetDropCascade` <a name="resetDropCascade" id="@cdktf/provider-postgresql.schema.Schema.resetDropCascade"></a>
+##### `resetDropCascade` <a name="resetDropCascade" id="@cdktn/provider-postgresql.schema.Schema.resetDropCascade"></a>
 
 ```typescript
 public resetDropCascade(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-postgresql.schema.Schema.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-postgresql.schema.Schema.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetIfNotExists` <a name="resetIfNotExists" id="@cdktf/provider-postgresql.schema.Schema.resetIfNotExists"></a>
+##### `resetIfNotExists` <a name="resetIfNotExists" id="@cdktn/provider-postgresql.schema.Schema.resetIfNotExists"></a>
 
 ```typescript
 public resetIfNotExists(): void
 ```
 
-##### `resetOwner` <a name="resetOwner" id="@cdktf/provider-postgresql.schema.Schema.resetOwner"></a>
+##### `resetOwner` <a name="resetOwner" id="@cdktn/provider-postgresql.schema.Schema.resetOwner"></a>
 
 ```typescript
 public resetOwner(): void
 ```
 
-##### `resetPolicy` <a name="resetPolicy" id="@cdktf/provider-postgresql.schema.Schema.resetPolicy"></a>
+##### `resetPolicy` <a name="resetPolicy" id="@cdktn/provider-postgresql.schema.Schema.resetPolicy"></a>
 
 ```typescript
 public resetPolicy(): void
@@ -423,17 +423,17 @@ public resetPolicy(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a Schema resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a Schema resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-postgresql.schema.Schema.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-postgresql.schema.Schema.isConstruct"></a>
 
 ```typescript
-import { schema } from '@cdktf/provider-postgresql'
+import { schema } from '@cdktn/provider-postgresql'
 
 schema.Schema.isConstruct(x: any)
 ```
@@ -454,7 +454,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.schema.Schema.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.schema.Schema.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -462,45 +462,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-postgresql.schema.Schema.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-postgresql.schema.Schema.isTerraformElement"></a>
 
 ```typescript
-import { schema } from '@cdktf/provider-postgresql'
+import { schema } from '@cdktn/provider-postgresql'
 
 schema.Schema.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.schema.Schema.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.schema.Schema.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-postgresql.schema.Schema.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-postgresql.schema.Schema.isTerraformResource"></a>
 
 ```typescript
-import { schema } from '@cdktf/provider-postgresql'
+import { schema } from '@cdktn/provider-postgresql'
 
 schema.Schema.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.schema.Schema.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.schema.Schema.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-postgresql.schema.Schema.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-postgresql.schema.Schema.generateConfigForImport"></a>
 
 ```typescript
-import { schema } from '@cdktf/provider-postgresql'
+import { schema } from '@cdktn/provider-postgresql'
 
 schema.Schema.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a Schema resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a Schema resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.schema.Schema.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.schema.Schema.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -508,7 +508,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-postgresql.schema.Schema.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-postgresql.schema.Schema.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the Schema to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-postgresql.schema.Schema.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-postgresql.schema.Schema.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -526,9 +526,9 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.schema.Schema.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.schema.Schema.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the Schema to import is found.
 
@@ -538,38 +538,38 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.policy">policy</a></code> | <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList">SchemaPolicyList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.dropCascadeInput">dropCascadeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.ifNotExistsInput">ifNotExistsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.ownerInput">ownerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.policyInput">policyInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.dropCascade">dropCascade</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.ifNotExists">ifNotExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.owner">owner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.policy">policy</a></code> | <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyList">SchemaPolicyList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.dropCascadeInput">dropCascadeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.ifNotExistsInput">ifNotExistsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.ownerInput">ownerInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.policyInput">policyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.dropCascade">dropCascade</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.ifNotExists">ifNotExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.owner">owner</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-postgresql.schema.Schema.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-postgresql.schema.Schema.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -581,17 +581,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-postgresql.schema.Schema.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-postgresql.schema.Schema.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-postgresql.schema.Schema.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-postgresql.schema.Schema.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -601,7 +601,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-postgresql.schema.Schema.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-postgresql.schema.Schema.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -611,7 +611,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-postgresql.schema.Schema.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-postgresql.schema.Schema.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -621,7 +621,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-postgresql.schema.Schema.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-postgresql.schema.Schema.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -631,37 +631,37 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-postgresql.schema.Schema.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-postgresql.schema.Schema.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.schema.Schema.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.schema.Schema.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.schema.Schema.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.schema.Schema.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-postgresql.schema.Schema.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-postgresql.schema.Schema.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -671,57 +671,57 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-postgresql.schema.Schema.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-postgresql.schema.Schema.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.schema.Schema.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.schema.Schema.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.schema.Schema.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.schema.Schema.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.schema.Schema.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.schema.Schema.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `policy`<sup>Required</sup> <a name="policy" id="@cdktf/provider-postgresql.schema.Schema.property.policy"></a>
+##### `policy`<sup>Required</sup> <a name="policy" id="@cdktn/provider-postgresql.schema.Schema.property.policy"></a>
 
 ```typescript
 public readonly policy: SchemaPolicyList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList">SchemaPolicyList</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.schema.SchemaPolicyList">SchemaPolicyList</a>
 
 ---
 
-##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-postgresql.schema.Schema.property.databaseInput"></a>
+##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktn/provider-postgresql.schema.Schema.property.databaseInput"></a>
 
 ```typescript
 public readonly databaseInput: string;
@@ -731,17 +731,17 @@ public readonly databaseInput: string;
 
 ---
 
-##### `dropCascadeInput`<sup>Optional</sup> <a name="dropCascadeInput" id="@cdktf/provider-postgresql.schema.Schema.property.dropCascadeInput"></a>
+##### `dropCascadeInput`<sup>Optional</sup> <a name="dropCascadeInput" id="@cdktn/provider-postgresql.schema.Schema.property.dropCascadeInput"></a>
 
 ```typescript
 public readonly dropCascadeInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-postgresql.schema.Schema.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-postgresql.schema.Schema.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -751,17 +751,17 @@ public readonly idInput: string;
 
 ---
 
-##### `ifNotExistsInput`<sup>Optional</sup> <a name="ifNotExistsInput" id="@cdktf/provider-postgresql.schema.Schema.property.ifNotExistsInput"></a>
+##### `ifNotExistsInput`<sup>Optional</sup> <a name="ifNotExistsInput" id="@cdktn/provider-postgresql.schema.Schema.property.ifNotExistsInput"></a>
 
 ```typescript
 public readonly ifNotExistsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-postgresql.schema.Schema.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-postgresql.schema.Schema.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -771,7 +771,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `ownerInput`<sup>Optional</sup> <a name="ownerInput" id="@cdktf/provider-postgresql.schema.Schema.property.ownerInput"></a>
+##### `ownerInput`<sup>Optional</sup> <a name="ownerInput" id="@cdktn/provider-postgresql.schema.Schema.property.ownerInput"></a>
 
 ```typescript
 public readonly ownerInput: string;
@@ -781,17 +781,17 @@ public readonly ownerInput: string;
 
 ---
 
-##### `policyInput`<sup>Optional</sup> <a name="policyInput" id="@cdktf/provider-postgresql.schema.Schema.property.policyInput"></a>
+##### `policyInput`<sup>Optional</sup> <a name="policyInput" id="@cdktn/provider-postgresql.schema.Schema.property.policyInput"></a>
 
 ```typescript
 public readonly policyInput: IResolvable | SchemaPolicy[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-postgresql.schema.Schema.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-postgresql.schema.Schema.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -801,17 +801,17 @@ public readonly database: string;
 
 ---
 
-##### `dropCascade`<sup>Required</sup> <a name="dropCascade" id="@cdktf/provider-postgresql.schema.Schema.property.dropCascade"></a>
+##### `dropCascade`<sup>Required</sup> <a name="dropCascade" id="@cdktn/provider-postgresql.schema.Schema.property.dropCascade"></a>
 
 ```typescript
 public readonly dropCascade: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.schema.Schema.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.schema.Schema.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -821,17 +821,17 @@ public readonly id: string;
 
 ---
 
-##### `ifNotExists`<sup>Required</sup> <a name="ifNotExists" id="@cdktf/provider-postgresql.schema.Schema.property.ifNotExists"></a>
+##### `ifNotExists`<sup>Required</sup> <a name="ifNotExists" id="@cdktn/provider-postgresql.schema.Schema.property.ifNotExists"></a>
 
 ```typescript
 public readonly ifNotExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-postgresql.schema.Schema.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-postgresql.schema.Schema.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -841,7 +841,7 @@ public readonly name: string;
 
 ---
 
-##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-postgresql.schema.Schema.property.owner"></a>
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktn/provider-postgresql.schema.Schema.property.owner"></a>
 
 ```typescript
 public readonly owner: string;
@@ -855,11 +855,11 @@ public readonly owner: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.Schema.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-postgresql.schema.Schema.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-postgresql.schema.Schema.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -871,12 +871,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### SchemaConfig <a name="SchemaConfig" id="@cdktf/provider-postgresql.schema.SchemaConfig"></a>
+### SchemaConfig <a name="SchemaConfig" id="@cdktn/provider-postgresql.schema.SchemaConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.schema.SchemaConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.schema.SchemaConfig.Initializer"></a>
 
 ```typescript
-import { schema } from '@cdktf/provider-postgresql'
+import { schema } from '@cdktn/provider-postgresql'
 
 const schemaConfig: schema.SchemaConfig = { ... }
 ```
@@ -885,94 +885,94 @@ const schemaConfig: schema.SchemaConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.name">name</a></code> | <code>string</code> | The name of the schema. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.database">database</a></code> | <code>string</code> | The database name to alter schema. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.dropCascade">dropCascade</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, will also drop all the objects that are contained in the schema. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#id Schema#id}. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.ifNotExists">ifNotExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, use the existing schema if it exists. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.owner">owner</a></code> | <code>string</code> | The ROLE name who owns the schema. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaConfig.property.policy">policy</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]</code> | policy block. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.name">name</a></code> | <code>string</code> | The name of the schema. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.database">database</a></code> | <code>string</code> | The database name to alter schema. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.dropCascade">dropCascade</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, will also drop all the objects that are contained in the schema. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#id Schema#id}. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.ifNotExists">ifNotExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, use the existing schema if it exists. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.owner">owner</a></code> | <code>string</code> | The ROLE name who owns the schema. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.policy">policy</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]</code> | policy block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.database"></a>
+##### `database`<sup>Optional</sup> <a name="database" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -1000,13 +1000,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `dropCascade`<sup>Optional</sup> <a name="dropCascade" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.dropCascade"></a>
+##### `dropCascade`<sup>Optional</sup> <a name="dropCascade" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.dropCascade"></a>
 
 ```typescript
 public readonly dropCascade: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When true, will also drop all the objects that are contained in the schema.
 
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1029,13 +1029,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `ifNotExists`<sup>Optional</sup> <a name="ifNotExists" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.ifNotExists"></a>
+##### `ifNotExists`<sup>Optional</sup> <a name="ifNotExists" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.ifNotExists"></a>
 
 ```typescript
 public readonly ifNotExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When true, use the existing schema if it exists.
 
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `owner`<sup>Optional</sup> <a name="owner" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.owner"></a>
+##### `owner`<sup>Optional</sup> <a name="owner" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.owner"></a>
 
 ```typescript
 public readonly owner: string;
@@ -1057,13 +1057,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `policy`<sup>Optional</sup> <a name="policy" id="@cdktf/provider-postgresql.schema.SchemaConfig.property.policy"></a>
+##### `policy`<sup>Optional</sup> <a name="policy" id="@cdktn/provider-postgresql.schema.SchemaConfig.property.policy"></a>
 
 ```typescript
 public readonly policy: IResolvable | SchemaPolicy[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]
 
 policy block.
 
@@ -1071,12 +1071,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-### SchemaPolicy <a name="SchemaPolicy" id="@cdktf/provider-postgresql.schema.SchemaPolicy"></a>
+### SchemaPolicy <a name="SchemaPolicy" id="@cdktn/provider-postgresql.schema.SchemaPolicy"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.schema.SchemaPolicy.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.schema.SchemaPolicy.Initializer"></a>
 
 ```typescript
-import { schema } from '@cdktf/provider-postgresql'
+import { schema } from '@cdktn/provider-postgresql'
 
 const schemaPolicy: schema.SchemaPolicy = { ... }
 ```
@@ -1085,21 +1085,21 @@ const schemaPolicy: schema.SchemaPolicy = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.create">create</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, allow the specified ROLEs to CREATE new objects within the schema(s). |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.createWithGrant">createWithGrant</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.role">role</a></code> | <code>string</code> | ROLE who will receive this policy (default: PUBLIC). |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.usage">usage</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, allow the specified ROLEs to use objects within the schema(s). |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicy.property.usageWithGrant">usageWithGrant</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicy.property.create">create</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, allow the specified ROLEs to CREATE new objects within the schema(s). |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicy.property.createWithGrant">createWithGrant</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicy.property.role">role</a></code> | <code>string</code> | ROLE who will receive this policy (default: PUBLIC). |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicy.property.usage">usage</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, allow the specified ROLEs to use objects within the schema(s). |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicy.property.usageWithGrant">usageWithGrant</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-postgresql.schema.SchemaPolicy.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-postgresql.schema.SchemaPolicy.property.create"></a>
 
 ```typescript
 public readonly create: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If true, allow the specified ROLEs to CREATE new objects within the schema(s).
 
@@ -1107,13 +1107,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `createWithGrant`<sup>Optional</sup> <a name="createWithGrant" id="@cdktf/provider-postgresql.schema.SchemaPolicy.property.createWithGrant"></a>
+##### `createWithGrant`<sup>Optional</sup> <a name="createWithGrant" id="@cdktn/provider-postgresql.schema.SchemaPolicy.property.createWithGrant"></a>
 
 ```typescript
 public readonly createWithGrant: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs.
 
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `role`<sup>Optional</sup> <a name="role" id="@cdktf/provider-postgresql.schema.SchemaPolicy.property.role"></a>
+##### `role`<sup>Optional</sup> <a name="role" id="@cdktn/provider-postgresql.schema.SchemaPolicy.property.role"></a>
 
 ```typescript
 public readonly role: string;
@@ -1135,13 +1135,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `usage`<sup>Optional</sup> <a name="usage" id="@cdktf/provider-postgresql.schema.SchemaPolicy.property.usage"></a>
+##### `usage`<sup>Optional</sup> <a name="usage" id="@cdktn/provider-postgresql.schema.SchemaPolicy.property.usage"></a>
 
 ```typescript
 public readonly usage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If true, allow the specified ROLEs to use objects within the schema(s).
 
@@ -1149,13 +1149,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `usageWithGrant`<sup>Optional</sup> <a name="usageWithGrant" id="@cdktf/provider-postgresql.schema.SchemaPolicy.property.usageWithGrant"></a>
+##### `usageWithGrant`<sup>Optional</sup> <a name="usageWithGrant" id="@cdktn/provider-postgresql.schema.SchemaPolicy.property.usageWithGrant"></a>
 
 ```typescript
 public readonly usageWithGrant: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs.
 
@@ -1165,33 +1165,33 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### SchemaPolicyList <a name="SchemaPolicyList" id="@cdktf/provider-postgresql.schema.SchemaPolicyList"></a>
+### SchemaPolicyList <a name="SchemaPolicyList" id="@cdktn/provider-postgresql.schema.SchemaPolicyList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.Initializer"></a>
 
 ```typescript
-import { schema } from '@cdktf/provider-postgresql'
+import { schema } from '@cdktn/provider-postgresql'
 
 new schema.SchemaPolicyList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1199,7 +1199,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -1211,15 +1211,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -1229,19 +1229,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1249,13 +1249,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1265,13 +1265,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.get"></a>
 
 ```typescript
 public get(index: number): SchemaPolicyOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -1284,13 +1284,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1304,7 +1304,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1314,45 +1314,45 @@ public readonly fqn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-postgresql.schema.SchemaPolicyList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-postgresql.schema.SchemaPolicyList.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | SchemaPolicy[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>[]
 
 ---
 
 
-### SchemaPolicyOutputReference <a name="SchemaPolicyOutputReference" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference"></a>
+### SchemaPolicyOutputReference <a name="SchemaPolicyOutputReference" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer"></a>
 
 ```typescript
-import { schema } from '@cdktf/provider-postgresql'
+import { schema } from '@cdktn/provider-postgresql'
 
 new schema.SchemaPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1360,7 +1360,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -1368,7 +1368,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -1380,154 +1380,154 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.resetCreateWithGrant">resetCreateWithGrant</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.resetRole">resetRole</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.resetUsage">resetUsage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.resetUsageWithGrant">resetUsageWithGrant</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.resetCreateWithGrant">resetCreateWithGrant</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.resetRole">resetRole</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.resetUsage">resetUsage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.resetUsageWithGrant">resetUsageWithGrant</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1535,13 +1535,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1551,31 +1551,31 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetCreateWithGrant` <a name="resetCreateWithGrant" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.resetCreateWithGrant"></a>
+##### `resetCreateWithGrant` <a name="resetCreateWithGrant" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.resetCreateWithGrant"></a>
 
 ```typescript
 public resetCreateWithGrant(): void
 ```
 
-##### `resetRole` <a name="resetRole" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.resetRole"></a>
+##### `resetRole` <a name="resetRole" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.resetRole"></a>
 
 ```typescript
 public resetRole(): void
 ```
 
-##### `resetUsage` <a name="resetUsage" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.resetUsage"></a>
+##### `resetUsage` <a name="resetUsage" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.resetUsage"></a>
 
 ```typescript
 public resetUsage(): void
 ```
 
-##### `resetUsageWithGrant` <a name="resetUsageWithGrant" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.resetUsageWithGrant"></a>
+##### `resetUsageWithGrant` <a name="resetUsageWithGrant" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.resetUsageWithGrant"></a>
 
 ```typescript
 public resetUsageWithGrant(): void
@@ -1586,23 +1586,23 @@ public resetUsageWithGrant(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createInput">createInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrantInput">createWithGrantInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageInput">usageInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrantInput">usageWithGrantInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.create">create</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrant">createWithGrant</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.role">role</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usage">usage</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrant">usageWithGrant</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.createInput">createInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrantInput">createWithGrantInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageInput">usageInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrantInput">usageWithGrantInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.create">create</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrant">createWithGrant</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.role">role</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.usage">usage</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrant">usageWithGrant</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1616,7 +1616,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1626,27 +1626,27 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `createWithGrantInput`<sup>Optional</sup> <a name="createWithGrantInput" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrantInput"></a>
+##### `createWithGrantInput`<sup>Optional</sup> <a name="createWithGrantInput" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrantInput"></a>
 
 ```typescript
 public readonly createWithGrantInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `roleInput`<sup>Optional</sup> <a name="roleInput" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.roleInput"></a>
+##### `roleInput`<sup>Optional</sup> <a name="roleInput" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.roleInput"></a>
 
 ```typescript
 public readonly roleInput: string;
@@ -1656,47 +1656,47 @@ public readonly roleInput: string;
 
 ---
 
-##### `usageInput`<sup>Optional</sup> <a name="usageInput" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageInput"></a>
+##### `usageInput`<sup>Optional</sup> <a name="usageInput" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageInput"></a>
 
 ```typescript
 public readonly usageInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `usageWithGrantInput`<sup>Optional</sup> <a name="usageWithGrantInput" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrantInput"></a>
+##### `usageWithGrantInput`<sup>Optional</sup> <a name="usageWithGrantInput" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrantInput"></a>
 
 ```typescript
 public readonly usageWithGrantInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `createWithGrant`<sup>Required</sup> <a name="createWithGrant" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrant"></a>
+##### `createWithGrant`<sup>Required</sup> <a name="createWithGrant" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.createWithGrant"></a>
 
 ```typescript
 public readonly createWithGrant: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.role"></a>
+##### `role`<sup>Required</sup> <a name="role" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.role"></a>
 
 ```typescript
 public readonly role: string;
@@ -1706,33 +1706,33 @@ public readonly role: string;
 
 ---
 
-##### `usage`<sup>Required</sup> <a name="usage" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usage"></a>
+##### `usage`<sup>Required</sup> <a name="usage" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.usage"></a>
 
 ```typescript
 public readonly usage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `usageWithGrant`<sup>Required</sup> <a name="usageWithGrant" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrant"></a>
+##### `usageWithGrant`<sup>Required</sup> <a name="usageWithGrant" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.usageWithGrant"></a>
 
 ```typescript
 public readonly usageWithGrant: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-postgresql.schema.SchemaPolicyOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | SchemaPolicy;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>
 
 ---
 

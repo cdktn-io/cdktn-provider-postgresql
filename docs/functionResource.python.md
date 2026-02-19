@@ -1,15 +1,15 @@
-# `functionResource` Submodule <a name="`functionResource` Submodule" id="@cdktf/provider-postgresql.functionResource"></a>
+# `functionResource` Submodule <a name="`functionResource` Submodule" id="@cdktn/provider-postgresql.functionResource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### FunctionResource <a name="FunctionResource" id="@cdktf/provider-postgresql.functionResource.FunctionResource"></a>
+### FunctionResource <a name="FunctionResource" id="@cdktn/provider-postgresql.functionResource.FunctionResource"></a>
 
 Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function postgresql_function}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import function_resource
+from cdktn_provider_postgresql import function_resource
 
 functionResource.FunctionResource(
   scope: Construct,
@@ -39,32 +39,32 @@ functionResource.FunctionResource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.body">body</a></code> | <code>str</code> | Body of the function. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the function. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.arg">arg</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]</code> | arg block. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.database">database</a></code> | <code>str</code> | The database where the function is located. If not specified, the provider default database is used. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.dropCascade">drop_cascade</a></code> | <code>bool \| cdktf.IResolvable</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#id FunctionResource#id}. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.language">language</a></code> | <code>str</code> | Language of the function. One of: internal, sql, c, plpgsql. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.parallel">parallel</a></code> | <code>str</code> | If the function can be executed in parallel for a single query execution. One of: UNSAFE, RESTRICTED, SAFE. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.returns">returns</a></code> | <code>str</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.schema">schema</a></code> | <code>str</code> | Schema where the function is located. If not specified, the provider default schema is used. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.securityDefiner">security_definer</a></code> | <code>bool \| cdktf.IResolvable</code> | If the function should execute with the permissions of the function owner instead of the permissions of the caller. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.strict">strict</a></code> | <code>bool \| cdktf.IResolvable</code> | If the function should always return NULL if any of it's inputs is NULL. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.volatility">volatility</a></code> | <code>str</code> | Volatility of the function. One of: VOLATILE, STABLE, IMMUTABLE. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.body">body</a></code> | <code>str</code> | Body of the function. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the function. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.arg">arg</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]</code> | arg block. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.database">database</a></code> | <code>str</code> | The database where the function is located. If not specified, the provider default database is used. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.dropCascade">drop_cascade</a></code> | <code>bool \| cdktn.IResolvable</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#id FunctionResource#id}. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.language">language</a></code> | <code>str</code> | Language of the function. One of: internal, sql, c, plpgsql. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.parallel">parallel</a></code> | <code>str</code> | If the function can be executed in parallel for a single query execution. One of: UNSAFE, RESTRICTED, SAFE. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.returns">returns</a></code> | <code>str</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.schema">schema</a></code> | <code>str</code> | Schema where the function is located. If not specified, the provider default schema is used. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.securityDefiner">security_definer</a></code> | <code>bool \| cdktn.IResolvable</code> | If the function should execute with the permissions of the function owner instead of the permissions of the caller. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.strict">strict</a></code> | <code>bool \| cdktn.IResolvable</code> | If the function should always return NULL if any of it's inputs is NULL. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.volatility">volatility</a></code> | <code>str</code> | Volatility of the function. One of: VOLATILE, STABLE, IMMUTABLE. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -72,7 +72,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -82,49 +82,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `body`<sup>Required</sup> <a name="body" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.body"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `body`<sup>Required</sup> <a name="body" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.body"></a>
 
 - *Type:* str
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.name"></a>
 
 - *Type:* str
 
@@ -144,9 +144,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `arg`<sup>Optional</sup> <a name="arg" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.arg"></a>
+##### `arg`<sup>Optional</sup> <a name="arg" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.arg"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]
 
 arg block.
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.database"></a>
+##### `database`<sup>Optional</sup> <a name="database" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.database"></a>
 
 - *Type:* str
 
@@ -164,9 +164,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `drop_cascade`<sup>Optional</sup> <a name="drop_cascade" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.dropCascade"></a>
+##### `drop_cascade`<sup>Optional</sup> <a name="drop_cascade" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.dropCascade"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects.
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -185,7 +185,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `language`<sup>Optional</sup> <a name="language" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.language"></a>
+##### `language`<sup>Optional</sup> <a name="language" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.language"></a>
 
 - *Type:* str
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `parallel`<sup>Optional</sup> <a name="parallel" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.parallel"></a>
+##### `parallel`<sup>Optional</sup> <a name="parallel" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.parallel"></a>
 
 - *Type:* str
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `returns`<sup>Optional</sup> <a name="returns" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.returns"></a>
+##### `returns`<sup>Optional</sup> <a name="returns" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.returns"></a>
 
 - *Type:* str
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.schema"></a>
+##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.schema"></a>
 
 - *Type:* str
 
@@ -225,9 +225,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `security_definer`<sup>Optional</sup> <a name="security_definer" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.securityDefiner"></a>
+##### `security_definer`<sup>Optional</sup> <a name="security_definer" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.securityDefiner"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If the function should execute with the permissions of the function owner instead of the permissions of the caller.
 
@@ -235,9 +235,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `strict`<sup>Optional</sup> <a name="strict" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.strict"></a>
+##### `strict`<sup>Optional</sup> <a name="strict" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.strict"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If the function should always return NULL if any of it's inputs is NULL.
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `volatility`<sup>Optional</sup> <a name="volatility" id="@cdktf/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.volatility"></a>
+##### `volatility`<sup>Optional</sup> <a name="volatility" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.volatility"></a>
 
 - *Type:* str
 
@@ -259,45 +259,45 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.putArg">put_arg</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetArg">reset_arg</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetDatabase">reset_database</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetDropCascade">reset_drop_cascade</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetLanguage">reset_language</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetParallel">reset_parallel</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetReturns">reset_returns</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetSchema">reset_schema</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetSecurityDefiner">reset_security_definer</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetStrict">reset_strict</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.resetVolatility">reset_volatility</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.putArg">put_arg</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.resetArg">reset_arg</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.resetDatabase">reset_database</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.resetDropCascade">reset_drop_cascade</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.resetLanguage">reset_language</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.resetParallel">reset_parallel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.resetReturns">reset_returns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.resetSchema">reset_schema</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.resetSecurityDefiner">reset_security_definer</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.resetStrict">reset_strict</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.resetVolatility">reset_volatility</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-postgresql.functionResource.FunctionResource.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-postgresql.functionResource.FunctionResource.toString"></a>
 
 ```python
 def to_string() -> str
@@ -305,7 +305,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-postgresql.functionResource.FunctionResource.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-postgresql.functionResource.FunctionResource.addOverride"></a>
 
 ```python
 def add_override(
@@ -314,19 +314,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-postgresql.functionResource.FunctionResource.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-postgresql.functionResource.FunctionResource.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-postgresql.functionResource.FunctionResource.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-postgresql.functionResource.FunctionResource.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -336,7 +336,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -344,7 +344,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -352,19 +352,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-postgresql.functionResource.FunctionResource.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-postgresql.functionResource.FunctionResource.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-postgresql.functionResource.FunctionResource.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-postgresql.functionResource.FunctionResource.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-postgresql.functionResource.FunctionResource.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-postgresql.functionResource.FunctionResource.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -372,7 +372,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-postgresql.functionResource.FunctionResource.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-postgresql.functionResource.FunctionResource.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -382,7 +382,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-postgresql.functionResource.FunctionResource.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-postgresql.functionResource.FunctionResource.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -390,7 +390,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -398,13 +398,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -412,13 +412,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -426,13 +426,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -440,13 +440,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -454,13 +454,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -468,13 +468,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -482,13 +482,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -496,13 +496,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -510,19 +510,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-postgresql.functionResource.FunctionResource.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-postgresql.functionResource.FunctionResource.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-postgresql.functionResource.FunctionResource.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-postgresql.functionResource.FunctionResource.importFrom"></a>
 
 ```python
 def import_from(
@@ -531,19 +531,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.functionResource.FunctionResource.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.functionResource.FunctionResource.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -551,13 +551,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResource.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResource.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -569,7 +569,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -577,7 +577,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-postgresql.functionResource.FunctionResource.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-postgresql.functionResource.FunctionResource.moveTo"></a>
 
 ```python
 def move_to(
@@ -588,7 +588,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-postgresql.functionResource.FunctionResource.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-postgresql.functionResource.FunctionResource.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -596,7 +596,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-postgresql.functionResource.FunctionResource.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-postgresql.functionResource.FunctionResource.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -604,7 +604,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -614,7 +614,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -622,7 +622,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_arg` <a name="put_arg" id="@cdktf/provider-postgresql.functionResource.FunctionResource.putArg"></a>
+##### `put_arg` <a name="put_arg" id="@cdktn/provider-postgresql.functionResource.FunctionResource.putArg"></a>
 
 ```python
 def put_arg(
@@ -630,73 +630,73 @@ def put_arg(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-postgresql.functionResource.FunctionResource.putArg.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-postgresql.functionResource.FunctionResource.putArg.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]
 
 ---
 
-##### `reset_arg` <a name="reset_arg" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetArg"></a>
+##### `reset_arg` <a name="reset_arg" id="@cdktn/provider-postgresql.functionResource.FunctionResource.resetArg"></a>
 
 ```python
 def reset_arg() -> None
 ```
 
-##### `reset_database` <a name="reset_database" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetDatabase"></a>
+##### `reset_database` <a name="reset_database" id="@cdktn/provider-postgresql.functionResource.FunctionResource.resetDatabase"></a>
 
 ```python
 def reset_database() -> None
 ```
 
-##### `reset_drop_cascade` <a name="reset_drop_cascade" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetDropCascade"></a>
+##### `reset_drop_cascade` <a name="reset_drop_cascade" id="@cdktn/provider-postgresql.functionResource.FunctionResource.resetDropCascade"></a>
 
 ```python
 def reset_drop_cascade() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_language` <a name="reset_language" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetLanguage"></a>
+##### `reset_language` <a name="reset_language" id="@cdktn/provider-postgresql.functionResource.FunctionResource.resetLanguage"></a>
 
 ```python
 def reset_language() -> None
 ```
 
-##### `reset_parallel` <a name="reset_parallel" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetParallel"></a>
+##### `reset_parallel` <a name="reset_parallel" id="@cdktn/provider-postgresql.functionResource.FunctionResource.resetParallel"></a>
 
 ```python
 def reset_parallel() -> None
 ```
 
-##### `reset_returns` <a name="reset_returns" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetReturns"></a>
+##### `reset_returns` <a name="reset_returns" id="@cdktn/provider-postgresql.functionResource.FunctionResource.resetReturns"></a>
 
 ```python
 def reset_returns() -> None
 ```
 
-##### `reset_schema` <a name="reset_schema" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetSchema"></a>
+##### `reset_schema` <a name="reset_schema" id="@cdktn/provider-postgresql.functionResource.FunctionResource.resetSchema"></a>
 
 ```python
 def reset_schema() -> None
 ```
 
-##### `reset_security_definer` <a name="reset_security_definer" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetSecurityDefiner"></a>
+##### `reset_security_definer` <a name="reset_security_definer" id="@cdktn/provider-postgresql.functionResource.FunctionResource.resetSecurityDefiner"></a>
 
 ```python
 def reset_security_definer() -> None
 ```
 
-##### `reset_strict` <a name="reset_strict" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetStrict"></a>
+##### `reset_strict` <a name="reset_strict" id="@cdktn/provider-postgresql.functionResource.FunctionResource.resetStrict"></a>
 
 ```python
 def reset_strict() -> None
 ```
 
-##### `reset_volatility` <a name="reset_volatility" id="@cdktf/provider-postgresql.functionResource.FunctionResource.resetVolatility"></a>
+##### `reset_volatility` <a name="reset_volatility" id="@cdktn/provider-postgresql.functionResource.FunctionResource.resetVolatility"></a>
 
 ```python
 def reset_volatility() -> None
@@ -706,17 +706,17 @@ def reset_volatility() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a FunctionResource resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a FunctionResource resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-postgresql.functionResource.FunctionResource.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-postgresql.functionResource.FunctionResource.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import function_resource
+from cdktn_provider_postgresql import function_resource
 
 functionResource.FunctionResource.is_construct(
   x: typing.Any
@@ -739,7 +739,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.functionResource.FunctionResource.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.functionResource.FunctionResource.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -747,42 +747,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-postgresql.functionResource.FunctionResource.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-postgresql.functionResource.FunctionResource.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import function_resource
+from cdktn_provider_postgresql import function_resource
 
 functionResource.FunctionResource.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.functionResource.FunctionResource.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.functionResource.FunctionResource.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-postgresql.functionResource.FunctionResource.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-postgresql.functionResource.FunctionResource.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import function_resource
+from cdktn_provider_postgresql import function_resource
 
 functionResource.FunctionResource.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.functionResource.FunctionResource.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.functionResource.FunctionResource.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-postgresql.functionResource.FunctionResource.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-postgresql.functionResource.FunctionResource.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import function_resource
+from cdktn_provider_postgresql import function_resource
 
 functionResource.FunctionResource.generate_config_for_import(
   scope: Construct,
@@ -792,9 +792,9 @@ functionResource.FunctionResource.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a FunctionResource resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a FunctionResource resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.functionResource.FunctionResource.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.functionResource.FunctionResource.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -802,7 +802,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -810,7 +810,7 @@ The construct id used in the generated config for the FunctionResource to import
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -820,9 +820,9 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.functionResource.FunctionResource.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.functionResource.FunctionResource.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the FunctionResource to import is found.
 
@@ -832,50 +832,50 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.arg">arg</a></code> | <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgList">FunctionResourceArgList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.argInput">arg_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.bodyInput">body_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.dropCascadeInput">drop_cascade_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.languageInput">language_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.parallelInput">parallel_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.returnsInput">returns_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.securityDefinerInput">security_definer_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.strictInput">strict_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.volatilityInput">volatility_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.body">body</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.database">database</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.dropCascade">drop_cascade</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.language">language</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.parallel">parallel</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.returns">returns</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.schema">schema</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.securityDefiner">security_definer</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.strict">strict</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.volatility">volatility</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.arg">arg</a></code> | <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgList">FunctionResourceArgList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.argInput">arg_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.bodyInput">body_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.dropCascadeInput">drop_cascade_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.languageInput">language_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.parallelInput">parallel_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.returnsInput">returns_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.securityDefinerInput">security_definer_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.strictInput">strict_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.volatilityInput">volatility_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.body">body</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.database">database</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.dropCascade">drop_cascade</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.language">language</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.parallel">parallel</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.returns">returns</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.schema">schema</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.securityDefiner">security_definer</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.strict">strict</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.volatility">volatility</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.node"></a>
 
 ```python
 node: Node
@@ -887,17 +887,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.fqn"></a>
 
 ```python
 fqn: str
@@ -907,7 +907,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -917,7 +917,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -927,7 +927,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -937,37 +937,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -977,67 +977,67 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `arg`<sup>Required</sup> <a name="arg" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.arg"></a>
+##### `arg`<sup>Required</sup> <a name="arg" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.arg"></a>
 
 ```python
 arg: FunctionResourceArgList
 ```
 
-- *Type:* <a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgList">FunctionResourceArgList</a>
+- *Type:* <a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgList">FunctionResourceArgList</a>
 
 ---
 
-##### `arg_input`<sup>Optional</sup> <a name="arg_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.argInput"></a>
+##### `arg_input`<sup>Optional</sup> <a name="arg_input" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.argInput"></a>
 
 ```python
 arg_input: IResolvable | typing.List[FunctionResourceArg]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]
 
 ---
 
-##### `body_input`<sup>Optional</sup> <a name="body_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.bodyInput"></a>
+##### `body_input`<sup>Optional</sup> <a name="body_input" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.bodyInput"></a>
 
 ```python
 body_input: str
@@ -1047,7 +1047,7 @@ body_input: str
 
 ---
 
-##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.databaseInput"></a>
+##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.databaseInput"></a>
 
 ```python
 database_input: str
@@ -1057,17 +1057,17 @@ database_input: str
 
 ---
 
-##### `drop_cascade_input`<sup>Optional</sup> <a name="drop_cascade_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.dropCascadeInput"></a>
+##### `drop_cascade_input`<sup>Optional</sup> <a name="drop_cascade_input" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.dropCascadeInput"></a>
 
 ```python
 drop_cascade_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1077,7 +1077,7 @@ id_input: str
 
 ---
 
-##### `language_input`<sup>Optional</sup> <a name="language_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.languageInput"></a>
+##### `language_input`<sup>Optional</sup> <a name="language_input" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.languageInput"></a>
 
 ```python
 language_input: str
@@ -1087,7 +1087,7 @@ language_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1097,7 +1097,7 @@ name_input: str
 
 ---
 
-##### `parallel_input`<sup>Optional</sup> <a name="parallel_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.parallelInput"></a>
+##### `parallel_input`<sup>Optional</sup> <a name="parallel_input" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.parallelInput"></a>
 
 ```python
 parallel_input: str
@@ -1107,7 +1107,7 @@ parallel_input: str
 
 ---
 
-##### `returns_input`<sup>Optional</sup> <a name="returns_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.returnsInput"></a>
+##### `returns_input`<sup>Optional</sup> <a name="returns_input" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.returnsInput"></a>
 
 ```python
 returns_input: str
@@ -1117,7 +1117,7 @@ returns_input: str
 
 ---
 
-##### `schema_input`<sup>Optional</sup> <a name="schema_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.schemaInput"></a>
+##### `schema_input`<sup>Optional</sup> <a name="schema_input" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.schemaInput"></a>
 
 ```python
 schema_input: str
@@ -1127,27 +1127,27 @@ schema_input: str
 
 ---
 
-##### `security_definer_input`<sup>Optional</sup> <a name="security_definer_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.securityDefinerInput"></a>
+##### `security_definer_input`<sup>Optional</sup> <a name="security_definer_input" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.securityDefinerInput"></a>
 
 ```python
 security_definer_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `strict_input`<sup>Optional</sup> <a name="strict_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.strictInput"></a>
+##### `strict_input`<sup>Optional</sup> <a name="strict_input" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.strictInput"></a>
 
 ```python
 strict_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `volatility_input`<sup>Optional</sup> <a name="volatility_input" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.volatilityInput"></a>
+##### `volatility_input`<sup>Optional</sup> <a name="volatility_input" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.volatilityInput"></a>
 
 ```python
 volatility_input: str
@@ -1157,7 +1157,7 @@ volatility_input: str
 
 ---
 
-##### `body`<sup>Required</sup> <a name="body" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.body"></a>
+##### `body`<sup>Required</sup> <a name="body" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.body"></a>
 
 ```python
 body: str
@@ -1167,7 +1167,7 @@ body: str
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.database"></a>
 
 ```python
 database: str
@@ -1177,17 +1177,17 @@ database: str
 
 ---
 
-##### `drop_cascade`<sup>Required</sup> <a name="drop_cascade" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.dropCascade"></a>
+##### `drop_cascade`<sup>Required</sup> <a name="drop_cascade" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.dropCascade"></a>
 
 ```python
 drop_cascade: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.id"></a>
 
 ```python
 id: str
@@ -1197,7 +1197,7 @@ id: str
 
 ---
 
-##### `language`<sup>Required</sup> <a name="language" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.language"></a>
+##### `language`<sup>Required</sup> <a name="language" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.language"></a>
 
 ```python
 language: str
@@ -1207,7 +1207,7 @@ language: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.name"></a>
 
 ```python
 name: str
@@ -1217,7 +1217,7 @@ name: str
 
 ---
 
-##### `parallel`<sup>Required</sup> <a name="parallel" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.parallel"></a>
+##### `parallel`<sup>Required</sup> <a name="parallel" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.parallel"></a>
 
 ```python
 parallel: str
@@ -1227,7 +1227,7 @@ parallel: str
 
 ---
 
-##### `returns`<sup>Required</sup> <a name="returns" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.returns"></a>
+##### `returns`<sup>Required</sup> <a name="returns" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.returns"></a>
 
 ```python
 returns: str
@@ -1237,7 +1237,7 @@ returns: str
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.schema"></a>
 
 ```python
 schema: str
@@ -1247,27 +1247,27 @@ schema: str
 
 ---
 
-##### `security_definer`<sup>Required</sup> <a name="security_definer" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.securityDefiner"></a>
+##### `security_definer`<sup>Required</sup> <a name="security_definer" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.securityDefiner"></a>
 
 ```python
 security_definer: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `strict`<sup>Required</sup> <a name="strict" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.strict"></a>
+##### `strict`<sup>Required</sup> <a name="strict" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.strict"></a>
 
 ```python
 strict: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `volatility`<sup>Required</sup> <a name="volatility" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.volatility"></a>
+##### `volatility`<sup>Required</sup> <a name="volatility" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.volatility"></a>
 
 ```python
 volatility: str
@@ -1281,11 +1281,11 @@ volatility: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResource.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-postgresql.functionResource.FunctionResource.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-postgresql.functionResource.FunctionResource.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1297,12 +1297,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### FunctionResourceArg <a name="FunctionResourceArg" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArg"></a>
+### FunctionResourceArg <a name="FunctionResourceArg" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArg"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArg.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArg.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import function_resource
+from cdktn_provider_postgresql import function_resource
 
 functionResource.FunctionResourceArg(
   type: str,
@@ -1316,14 +1316,14 @@ functionResource.FunctionResourceArg(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg.property.type">type</a></code> | <code>str</code> | The argument type. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg.property.default">default</a></code> | <code>str</code> | An expression to be used as default value if the parameter is not specified. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg.property.mode">mode</a></code> | <code>str</code> | The argument mode. One of: IN, OUT, INOUT, or VARIADIC. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg.property.name">name</a></code> | <code>str</code> | The argument name. The name may be required for some languages or depending on the argument mode. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg.property.type">type</a></code> | <code>str</code> | The argument type. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg.property.default">default</a></code> | <code>str</code> | An expression to be used as default value if the parameter is not specified. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg.property.mode">mode</a></code> | <code>str</code> | The argument mode. One of: IN, OUT, INOUT, or VARIADIC. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg.property.name">name</a></code> | <code>str</code> | The argument name. The name may be required for some languages or depending on the argument mode. |
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArg.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArg.property.type"></a>
 
 ```python
 type: str
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `default`<sup>Optional</sup> <a name="default" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArg.property.default"></a>
+##### `default`<sup>Optional</sup> <a name="default" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArg.property.default"></a>
 
 ```python
 default: str
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `mode`<sup>Optional</sup> <a name="mode" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArg.property.mode"></a>
+##### `mode`<sup>Optional</sup> <a name="mode" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArg.property.mode"></a>
 
 ```python
 mode: str
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArg.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArg.property.name"></a>
 
 ```python
 name: str
@@ -1379,12 +1379,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-### FunctionResourceConfig <a name="FunctionResourceConfig" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig"></a>
+### FunctionResourceConfig <a name="FunctionResourceConfig" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import function_resource
+from cdktn_provider_postgresql import function_resource
 
 functionResource.FunctionResourceConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1414,100 +1414,100 @@ functionResource.FunctionResourceConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.body">body</a></code> | <code>str</code> | Body of the function. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.name">name</a></code> | <code>str</code> | Name of the function. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.arg">arg</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]</code> | arg block. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.database">database</a></code> | <code>str</code> | The database where the function is located. If not specified, the provider default database is used. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.dropCascade">drop_cascade</a></code> | <code>bool \| cdktf.IResolvable</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#id FunctionResource#id}. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.language">language</a></code> | <code>str</code> | Language of the function. One of: internal, sql, c, plpgsql. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.parallel">parallel</a></code> | <code>str</code> | If the function can be executed in parallel for a single query execution. One of: UNSAFE, RESTRICTED, SAFE. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.returns">returns</a></code> | <code>str</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.schema">schema</a></code> | <code>str</code> | Schema where the function is located. If not specified, the provider default schema is used. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.securityDefiner">security_definer</a></code> | <code>bool \| cdktf.IResolvable</code> | If the function should execute with the permissions of the function owner instead of the permissions of the caller. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.strict">strict</a></code> | <code>bool \| cdktf.IResolvable</code> | If the function should always return NULL if any of it's inputs is NULL. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.volatility">volatility</a></code> | <code>str</code> | Volatility of the function. One of: VOLATILE, STABLE, IMMUTABLE. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.body">body</a></code> | <code>str</code> | Body of the function. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.name">name</a></code> | <code>str</code> | Name of the function. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.arg">arg</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]</code> | arg block. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.database">database</a></code> | <code>str</code> | The database where the function is located. If not specified, the provider default database is used. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.dropCascade">drop_cascade</a></code> | <code>bool \| cdktn.IResolvable</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#id FunctionResource#id}. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.language">language</a></code> | <code>str</code> | Language of the function. One of: internal, sql, c, plpgsql. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.parallel">parallel</a></code> | <code>str</code> | If the function can be executed in parallel for a single query execution. One of: UNSAFE, RESTRICTED, SAFE. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.returns">returns</a></code> | <code>str</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.schema">schema</a></code> | <code>str</code> | Schema where the function is located. If not specified, the provider default schema is used. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.securityDefiner">security_definer</a></code> | <code>bool \| cdktn.IResolvable</code> | If the function should execute with the permissions of the function owner instead of the permissions of the caller. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.strict">strict</a></code> | <code>bool \| cdktn.IResolvable</code> | If the function should always return NULL if any of it's inputs is NULL. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.volatility">volatility</a></code> | <code>str</code> | Volatility of the function. One of: VOLATILE, STABLE, IMMUTABLE. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `body`<sup>Required</sup> <a name="body" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.body"></a>
+##### `body`<sup>Required</sup> <a name="body" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.body"></a>
 
 ```python
 body: str
@@ -1521,7 +1521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.name"></a>
 
 ```python
 name: str
@@ -1535,13 +1535,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `arg`<sup>Optional</sup> <a name="arg" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.arg"></a>
+##### `arg`<sup>Optional</sup> <a name="arg" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.arg"></a>
 
 ```python
 arg: IResolvable | typing.List[FunctionResourceArg]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]
 
 arg block.
 
@@ -1549,7 +1549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.database"></a>
+##### `database`<sup>Optional</sup> <a name="database" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.database"></a>
 
 ```python
 database: str
@@ -1563,13 +1563,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `drop_cascade`<sup>Optional</sup> <a name="drop_cascade" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.dropCascade"></a>
+##### `drop_cascade`<sup>Optional</sup> <a name="drop_cascade" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.dropCascade"></a>
 
 ```python
 drop_cascade: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects.
 
@@ -1577,7 +1577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.id"></a>
 
 ```python
 id: str
@@ -1592,7 +1592,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `language`<sup>Optional</sup> <a name="language" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.language"></a>
+##### `language`<sup>Optional</sup> <a name="language" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.language"></a>
 
 ```python
 language: str
@@ -1606,7 +1606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `parallel`<sup>Optional</sup> <a name="parallel" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.parallel"></a>
+##### `parallel`<sup>Optional</sup> <a name="parallel" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.parallel"></a>
 
 ```python
 parallel: str
@@ -1620,7 +1620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `returns`<sup>Optional</sup> <a name="returns" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.returns"></a>
+##### `returns`<sup>Optional</sup> <a name="returns" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.returns"></a>
 
 ```python
 returns: str
@@ -1634,7 +1634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.schema"></a>
+##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.schema"></a>
 
 ```python
 schema: str
@@ -1648,13 +1648,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `security_definer`<sup>Optional</sup> <a name="security_definer" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.securityDefiner"></a>
+##### `security_definer`<sup>Optional</sup> <a name="security_definer" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.securityDefiner"></a>
 
 ```python
 security_definer: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If the function should execute with the permissions of the function owner instead of the permissions of the caller.
 
@@ -1662,13 +1662,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `strict`<sup>Optional</sup> <a name="strict" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.strict"></a>
+##### `strict`<sup>Optional</sup> <a name="strict" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.strict"></a>
 
 ```python
 strict: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If the function should always return NULL if any of it's inputs is NULL.
 
@@ -1676,7 +1676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `volatility`<sup>Optional</sup> <a name="volatility" id="@cdktf/provider-postgresql.functionResource.FunctionResourceConfig.property.volatility"></a>
+##### `volatility`<sup>Optional</sup> <a name="volatility" id="@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.volatility"></a>
 
 ```python
 volatility: str
@@ -1692,12 +1692,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### FunctionResourceArgList <a name="FunctionResourceArgList" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList"></a>
+### FunctionResourceArgList <a name="FunctionResourceArgList" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import function_resource
+from cdktn_provider_postgresql import function_resource
 
 functionResource.FunctionResourceArgList(
   terraform_resource: IInterpolatingParent,
@@ -1708,21 +1708,21 @@ functionResource.FunctionResourceArgList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1730,7 +1730,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -1742,15 +1742,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -1762,19 +1762,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.resolve"></a>
 
 ```python
 def resolve(
@@ -1784,13 +1784,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1800,7 +1800,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.get"></a>
 
 ```python
 def get(
@@ -1808,7 +1808,7 @@ def get(
 ) -> FunctionResourceArgOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1821,13 +1821,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1841,7 +1841,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1851,23 +1851,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[FunctionResourceArg]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>]
 
 ---
 
 
-### FunctionResourceArgOutputReference <a name="FunctionResourceArgOutputReference" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference"></a>
+### FunctionResourceArgOutputReference <a name="FunctionResourceArgOutputReference" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import function_resource
+from cdktn_provider_postgresql import function_resource
 
 functionResource.FunctionResourceArgOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1879,22 +1879,22 @@ functionResource.FunctionResourceArgOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1902,7 +1902,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1910,7 +1910,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -1922,32 +1922,32 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resetDefault">reset_default</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resetMode">reset_mode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resetDefault">reset_default</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resetMode">reset_mode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resetName">reset_name</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1955,13 +1955,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1969,13 +1969,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1983,13 +1983,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1997,13 +1997,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2011,13 +2011,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2025,13 +2025,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2039,13 +2039,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2053,13 +2053,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2067,13 +2067,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2081,13 +2081,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2097,13 +2097,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2113,19 +2113,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_default` <a name="reset_default" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resetDefault"></a>
+##### `reset_default` <a name="reset_default" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resetDefault"></a>
 
 ```python
 def reset_default() -> None
 ```
 
-##### `reset_mode` <a name="reset_mode" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resetMode"></a>
+##### `reset_mode` <a name="reset_mode" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resetMode"></a>
 
 ```python
 def reset_mode() -> None
 ```
 
-##### `reset_name` <a name="reset_name" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resetName"></a>
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.resetName"></a>
 
 ```python
 def reset_name() -> None
@@ -2136,21 +2136,21 @@ def reset_name() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.defaultInput">default_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.modeInput">mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.defaultInput">default_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.modeInput">mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2164,7 +2164,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2174,7 +2174,7 @@ fqn: str
 
 ---
 
-##### `default_input`<sup>Optional</sup> <a name="default_input" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.defaultInput"></a>
+##### `default_input`<sup>Optional</sup> <a name="default_input" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.defaultInput"></a>
 
 ```python
 default_input: str
@@ -2184,7 +2184,7 @@ default_input: str
 
 ---
 
-##### `mode_input`<sup>Optional</sup> <a name="mode_input" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.modeInput"></a>
+##### `mode_input`<sup>Optional</sup> <a name="mode_input" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.modeInput"></a>
 
 ```python
 mode_input: str
@@ -2194,7 +2194,7 @@ mode_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -2204,7 +2204,7 @@ name_input: str
 
 ---
 
-##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.typeInput"></a>
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.typeInput"></a>
 
 ```python
 type_input: str
@@ -2214,7 +2214,7 @@ type_input: str
 
 ---
 
-##### `default`<sup>Required</sup> <a name="default" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.default"></a>
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.default"></a>
 
 ```python
 default: str
@@ -2224,7 +2224,7 @@ default: str
 
 ---
 
-##### `mode`<sup>Required</sup> <a name="mode" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.mode"></a>
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.mode"></a>
 
 ```python
 mode: str
@@ -2234,7 +2234,7 @@ mode: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.name"></a>
 
 ```python
 name: str
@@ -2244,7 +2244,7 @@ name: str
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.type"></a>
 
 ```python
 type: str
@@ -2254,13 +2254,13 @@ type: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-postgresql.functionResource.FunctionResourceArgOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | FunctionResourceArg
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>
 
 ---
 

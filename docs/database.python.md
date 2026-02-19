@@ -1,15 +1,15 @@
-# `database` Submodule <a name="`database` Submodule" id="@cdktf/provider-postgresql.database"></a>
+# `database` Submodule <a name="`database` Submodule" id="@cdktn/provider-postgresql.database"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Database <a name="Database" id="@cdktf/provider-postgresql.database.Database"></a>
+### Database <a name="Database" id="@cdktn/provider-postgresql.database.Database"></a>
 
 Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/database postgresql_database}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-postgresql.database.Database.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.database.Database.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import database
+from cdktn_provider_postgresql import database
 
 database.Database(
   scope: Construct,
@@ -38,31 +38,31 @@ database.Database(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.name">name</a></code> | <code>str</code> | The PostgreSQL database name to connect to. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.allowConnections">allow_connections</a></code> | <code>bool \| cdktf.IResolvable</code> | If false then no one can connect to this database. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.alterObjectOwnership">alter_object_ownership</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the owner of already existing objects will change if the owner changes. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | How many concurrent connections can be made to this database. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.encoding">encoding</a></code> | <code>str</code> | Character set encoding to use in the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/database#id Database#id}. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.isTemplate">is_template</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, then this database can be cloned by any user with CREATEDB privileges. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.lcCollate">lc_collate</a></code> | <code>str</code> | Collation order (LC_COLLATE) to use in the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.lcCtype">lc_ctype</a></code> | <code>str</code> | Character classification (LC_CTYPE) to use in the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.owner">owner</a></code> | <code>str</code> | The ROLE which owns the database. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.tablespaceName">tablespace_name</a></code> | <code>str</code> | The name of the tablespace that will be associated with the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.Initializer.parameter.template">template</a></code> | <code>str</code> | The name of the template from which to create the new database. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.name">name</a></code> | <code>str</code> | The PostgreSQL database name to connect to. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.allowConnections">allow_connections</a></code> | <code>bool \| cdktn.IResolvable</code> | If false then no one can connect to this database. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.alterObjectOwnership">alter_object_ownership</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, the owner of already existing objects will change if the owner changes. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | How many concurrent connections can be made to this database. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.encoding">encoding</a></code> | <code>str</code> | Character set encoding to use in the new database. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/database#id Database#id}. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.isTemplate">is_template</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, then this database can be cloned by any user with CREATEDB privileges. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.lcCollate">lc_collate</a></code> | <code>str</code> | Collation order (LC_COLLATE) to use in the new database. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.lcCtype">lc_ctype</a></code> | <code>str</code> | Character classification (LC_CTYPE) to use in the new database. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.owner">owner</a></code> | <code>str</code> | The ROLE which owns the database. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.tablespaceName">tablespace_name</a></code> | <code>str</code> | The name of the tablespace that will be associated with the new database. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.Initializer.parameter.template">template</a></code> | <code>str</code> | The name of the template from which to create the new database. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -70,7 +70,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -80,49 +80,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.name"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.name"></a>
 
 - *Type:* str
 
@@ -132,9 +132,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `allow_connections`<sup>Optional</sup> <a name="allow_connections" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.allowConnections"></a>
+##### `allow_connections`<sup>Optional</sup> <a name="allow_connections" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.allowConnections"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If false then no one can connect to this database.
 
@@ -142,9 +142,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `alter_object_ownership`<sup>Optional</sup> <a name="alter_object_ownership" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.alterObjectOwnership"></a>
+##### `alter_object_ownership`<sup>Optional</sup> <a name="alter_object_ownership" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.alterObjectOwnership"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, the owner of already existing objects will change if the owner changes.
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `connection_limit`<sup>Optional</sup> <a name="connection_limit" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.connectionLimit"></a>
+##### `connection_limit`<sup>Optional</sup> <a name="connection_limit" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.connectionLimit"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `encoding`<sup>Optional</sup> <a name="encoding" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.encoding"></a>
+##### `encoding`<sup>Optional</sup> <a name="encoding" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.encoding"></a>
 
 - *Type:* str
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -183,9 +183,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `is_template`<sup>Optional</sup> <a name="is_template" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.isTemplate"></a>
+##### `is_template`<sup>Optional</sup> <a name="is_template" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.isTemplate"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, then this database can be cloned by any user with CREATEDB privileges.
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `lc_collate`<sup>Optional</sup> <a name="lc_collate" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.lcCollate"></a>
+##### `lc_collate`<sup>Optional</sup> <a name="lc_collate" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.lcCollate"></a>
 
 - *Type:* str
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `lc_ctype`<sup>Optional</sup> <a name="lc_ctype" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.lcCtype"></a>
+##### `lc_ctype`<sup>Optional</sup> <a name="lc_ctype" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.lcCtype"></a>
 
 - *Type:* str
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `owner`<sup>Optional</sup> <a name="owner" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.owner"></a>
+##### `owner`<sup>Optional</sup> <a name="owner" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.owner"></a>
 
 - *Type:* str
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `tablespace_name`<sup>Optional</sup> <a name="tablespace_name" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.tablespaceName"></a>
+##### `tablespace_name`<sup>Optional</sup> <a name="tablespace_name" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.tablespaceName"></a>
 
 - *Type:* str
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `template`<sup>Optional</sup> <a name="template" id="@cdktf/provider-postgresql.database.Database.Initializer.parameter.template"></a>
+##### `template`<sup>Optional</sup> <a name="template" id="@cdktn/provider-postgresql.database.Database.Initializer.parameter.template"></a>
 
 - *Type:* str
 
@@ -247,44 +247,44 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.resetAllowConnections">reset_allow_connections</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.resetAlterObjectOwnership">reset_alter_object_ownership</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.resetConnectionLimit">reset_connection_limit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.resetEncoding">reset_encoding</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.resetIsTemplate">reset_is_template</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.resetLcCollate">reset_lc_collate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.resetLcCtype">reset_lc_ctype</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.resetOwner">reset_owner</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.resetTablespaceName">reset_tablespace_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.resetTemplate">reset_template</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.resetAllowConnections">reset_allow_connections</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.resetAlterObjectOwnership">reset_alter_object_ownership</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.resetConnectionLimit">reset_connection_limit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.resetEncoding">reset_encoding</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.resetIsTemplate">reset_is_template</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.resetLcCollate">reset_lc_collate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.resetLcCtype">reset_lc_ctype</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.resetOwner">reset_owner</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.resetTablespaceName">reset_tablespace_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.resetTemplate">reset_template</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-postgresql.database.Database.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-postgresql.database.Database.toString"></a>
 
 ```python
 def to_string() -> str
@@ -292,7 +292,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-postgresql.database.Database.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-postgresql.database.Database.addOverride"></a>
 
 ```python
 def add_override(
@@ -301,19 +301,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-postgresql.database.Database.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-postgresql.database.Database.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-postgresql.database.Database.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-postgresql.database.Database.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-postgresql.database.Database.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-postgresql.database.Database.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -323,7 +323,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-postgresql.database.Database.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-postgresql.database.Database.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -331,7 +331,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-postgresql.database.Database.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-postgresql.database.Database.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -339,19 +339,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-postgresql.database.Database.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-postgresql.database.Database.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-postgresql.database.Database.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-postgresql.database.Database.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-postgresql.database.Database.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-postgresql.database.Database.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -359,7 +359,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-postgresql.database.Database.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-postgresql.database.Database.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -369,7 +369,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-postgresql.database.Database.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-postgresql.database.Database.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -377,7 +377,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-postgresql.database.Database.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-postgresql.database.Database.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -385,13 +385,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.database.Database.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.database.Database.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-postgresql.database.Database.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-postgresql.database.Database.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -399,13 +399,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.database.Database.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.database.Database.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-postgresql.database.Database.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-postgresql.database.Database.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -413,13 +413,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.database.Database.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.database.Database.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-postgresql.database.Database.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-postgresql.database.Database.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -427,13 +427,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.database.Database.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.database.Database.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-postgresql.database.Database.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-postgresql.database.Database.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -441,13 +441,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.database.Database.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.database.Database.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-postgresql.database.Database.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-postgresql.database.Database.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -455,13 +455,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.database.Database.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.database.Database.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-postgresql.database.Database.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-postgresql.database.Database.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -469,13 +469,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.database.Database.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.database.Database.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-postgresql.database.Database.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-postgresql.database.Database.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -483,13 +483,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.database.Database.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.database.Database.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-postgresql.database.Database.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-postgresql.database.Database.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -497,19 +497,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.database.Database.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.database.Database.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-postgresql.database.Database.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-postgresql.database.Database.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-postgresql.database.Database.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-postgresql.database.Database.importFrom"></a>
 
 ```python
 def import_from(
@@ -518,19 +518,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.database.Database.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.database.Database.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.database.Database.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.database.Database.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-postgresql.database.Database.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-postgresql.database.Database.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -538,13 +538,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-postgresql.database.Database.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-postgresql.database.Database.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-postgresql.database.Database.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-postgresql.database.Database.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -556,7 +556,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.database.Database.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.database.Database.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -564,7 +564,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-postgresql.database.Database.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-postgresql.database.Database.moveTo"></a>
 
 ```python
 def move_to(
@@ -575,7 +575,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-postgresql.database.Database.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-postgresql.database.Database.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -583,7 +583,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-postgresql.database.Database.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-postgresql.database.Database.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -591,7 +591,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-postgresql.database.Database.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-postgresql.database.Database.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -601,7 +601,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.database.Database.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.database.Database.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -609,67 +609,67 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_allow_connections` <a name="reset_allow_connections" id="@cdktf/provider-postgresql.database.Database.resetAllowConnections"></a>
+##### `reset_allow_connections` <a name="reset_allow_connections" id="@cdktn/provider-postgresql.database.Database.resetAllowConnections"></a>
 
 ```python
 def reset_allow_connections() -> None
 ```
 
-##### `reset_alter_object_ownership` <a name="reset_alter_object_ownership" id="@cdktf/provider-postgresql.database.Database.resetAlterObjectOwnership"></a>
+##### `reset_alter_object_ownership` <a name="reset_alter_object_ownership" id="@cdktn/provider-postgresql.database.Database.resetAlterObjectOwnership"></a>
 
 ```python
 def reset_alter_object_ownership() -> None
 ```
 
-##### `reset_connection_limit` <a name="reset_connection_limit" id="@cdktf/provider-postgresql.database.Database.resetConnectionLimit"></a>
+##### `reset_connection_limit` <a name="reset_connection_limit" id="@cdktn/provider-postgresql.database.Database.resetConnectionLimit"></a>
 
 ```python
 def reset_connection_limit() -> None
 ```
 
-##### `reset_encoding` <a name="reset_encoding" id="@cdktf/provider-postgresql.database.Database.resetEncoding"></a>
+##### `reset_encoding` <a name="reset_encoding" id="@cdktn/provider-postgresql.database.Database.resetEncoding"></a>
 
 ```python
 def reset_encoding() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-postgresql.database.Database.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-postgresql.database.Database.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_is_template` <a name="reset_is_template" id="@cdktf/provider-postgresql.database.Database.resetIsTemplate"></a>
+##### `reset_is_template` <a name="reset_is_template" id="@cdktn/provider-postgresql.database.Database.resetIsTemplate"></a>
 
 ```python
 def reset_is_template() -> None
 ```
 
-##### `reset_lc_collate` <a name="reset_lc_collate" id="@cdktf/provider-postgresql.database.Database.resetLcCollate"></a>
+##### `reset_lc_collate` <a name="reset_lc_collate" id="@cdktn/provider-postgresql.database.Database.resetLcCollate"></a>
 
 ```python
 def reset_lc_collate() -> None
 ```
 
-##### `reset_lc_ctype` <a name="reset_lc_ctype" id="@cdktf/provider-postgresql.database.Database.resetLcCtype"></a>
+##### `reset_lc_ctype` <a name="reset_lc_ctype" id="@cdktn/provider-postgresql.database.Database.resetLcCtype"></a>
 
 ```python
 def reset_lc_ctype() -> None
 ```
 
-##### `reset_owner` <a name="reset_owner" id="@cdktf/provider-postgresql.database.Database.resetOwner"></a>
+##### `reset_owner` <a name="reset_owner" id="@cdktn/provider-postgresql.database.Database.resetOwner"></a>
 
 ```python
 def reset_owner() -> None
 ```
 
-##### `reset_tablespace_name` <a name="reset_tablespace_name" id="@cdktf/provider-postgresql.database.Database.resetTablespaceName"></a>
+##### `reset_tablespace_name` <a name="reset_tablespace_name" id="@cdktn/provider-postgresql.database.Database.resetTablespaceName"></a>
 
 ```python
 def reset_tablespace_name() -> None
 ```
 
-##### `reset_template` <a name="reset_template" id="@cdktf/provider-postgresql.database.Database.resetTemplate"></a>
+##### `reset_template` <a name="reset_template" id="@cdktn/provider-postgresql.database.Database.resetTemplate"></a>
 
 ```python
 def reset_template() -> None
@@ -679,17 +679,17 @@ def reset_template() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Database resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a Database resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-postgresql.database.Database.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-postgresql.database.Database.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import database
+from cdktn_provider_postgresql import database
 
 database.Database.is_construct(
   x: typing.Any
@@ -712,7 +712,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.database.Database.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.database.Database.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -720,42 +720,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-postgresql.database.Database.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-postgresql.database.Database.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import database
+from cdktn_provider_postgresql import database
 
 database.Database.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.database.Database.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.database.Database.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-postgresql.database.Database.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-postgresql.database.Database.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import database
+from cdktn_provider_postgresql import database
 
 database.Database.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-postgresql.database.Database.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-postgresql.database.Database.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-postgresql.database.Database.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-postgresql.database.Database.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import database
+from cdktn_provider_postgresql import database
 
 database.Database.generate_config_for_import(
   scope: Construct,
@@ -765,9 +765,9 @@ database.Database.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a Database resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a Database resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-postgresql.database.Database.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-postgresql.database.Database.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -775,7 +775,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-postgresql.database.Database.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-postgresql.database.Database.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -783,7 +783,7 @@ The construct id used in the generated config for the Database to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-postgresql.database.Database.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-postgresql.database.Database.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -793,9 +793,9 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.database.Database.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.database.Database.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the Database to import is found.
 
@@ -805,48 +805,48 @@ Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.allowConnectionsInput">allow_connections_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.alterObjectOwnershipInput">alter_object_ownership_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.connectionLimitInput">connection_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.encodingInput">encoding_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.isTemplateInput">is_template_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.lcCollateInput">lc_collate_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.lcCtypeInput">lc_ctype_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.ownerInput">owner_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.tablespaceNameInput">tablespace_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.templateInput">template_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.allowConnections">allow_connections</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.alterObjectOwnership">alter_object_ownership</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.encoding">encoding</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.isTemplate">is_template</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.lcCollate">lc_collate</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.lcCtype">lc_ctype</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.owner">owner</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.tablespaceName">tablespace_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.template">template</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.allowConnectionsInput">allow_connections_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.alterObjectOwnershipInput">alter_object_ownership_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.connectionLimitInput">connection_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.encodingInput">encoding_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.isTemplateInput">is_template_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.lcCollateInput">lc_collate_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.lcCtypeInput">lc_ctype_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.ownerInput">owner_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.tablespaceNameInput">tablespace_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.templateInput">template_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.allowConnections">allow_connections</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.alterObjectOwnership">alter_object_ownership</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.encoding">encoding</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.isTemplate">is_template</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.lcCollate">lc_collate</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.lcCtype">lc_ctype</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.owner">owner</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.tablespaceName">tablespace_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.template">template</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-postgresql.database.Database.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-postgresql.database.Database.property.node"></a>
 
 ```python
 node: Node
@@ -858,17 +858,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-postgresql.database.Database.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-postgresql.database.Database.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-postgresql.database.Database.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-postgresql.database.Database.property.fqn"></a>
 
 ```python
 fqn: str
@@ -878,7 +878,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-postgresql.database.Database.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-postgresql.database.Database.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -888,7 +888,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-postgresql.database.Database.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-postgresql.database.Database.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -898,7 +898,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-postgresql.database.Database.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-postgresql.database.Database.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -908,37 +908,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-postgresql.database.Database.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-postgresql.database.Database.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.database.Database.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.database.Database.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.database.Database.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.database.Database.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-postgresql.database.Database.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-postgresql.database.Database.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -948,67 +948,67 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-postgresql.database.Database.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-postgresql.database.Database.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.database.Database.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.database.Database.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.database.Database.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.database.Database.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.database.Database.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.database.Database.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `allow_connections_input`<sup>Optional</sup> <a name="allow_connections_input" id="@cdktf/provider-postgresql.database.Database.property.allowConnectionsInput"></a>
+##### `allow_connections_input`<sup>Optional</sup> <a name="allow_connections_input" id="@cdktn/provider-postgresql.database.Database.property.allowConnectionsInput"></a>
 
 ```python
 allow_connections_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `alter_object_ownership_input`<sup>Optional</sup> <a name="alter_object_ownership_input" id="@cdktf/provider-postgresql.database.Database.property.alterObjectOwnershipInput"></a>
+##### `alter_object_ownership_input`<sup>Optional</sup> <a name="alter_object_ownership_input" id="@cdktn/provider-postgresql.database.Database.property.alterObjectOwnershipInput"></a>
 
 ```python
 alter_object_ownership_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `connection_limit_input`<sup>Optional</sup> <a name="connection_limit_input" id="@cdktf/provider-postgresql.database.Database.property.connectionLimitInput"></a>
+##### `connection_limit_input`<sup>Optional</sup> <a name="connection_limit_input" id="@cdktn/provider-postgresql.database.Database.property.connectionLimitInput"></a>
 
 ```python
 connection_limit_input: typing.Union[int, float]
@@ -1018,7 +1018,7 @@ connection_limit_input: typing.Union[int, float]
 
 ---
 
-##### `encoding_input`<sup>Optional</sup> <a name="encoding_input" id="@cdktf/provider-postgresql.database.Database.property.encodingInput"></a>
+##### `encoding_input`<sup>Optional</sup> <a name="encoding_input" id="@cdktn/provider-postgresql.database.Database.property.encodingInput"></a>
 
 ```python
 encoding_input: str
@@ -1028,7 +1028,7 @@ encoding_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-postgresql.database.Database.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-postgresql.database.Database.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1038,17 +1038,17 @@ id_input: str
 
 ---
 
-##### `is_template_input`<sup>Optional</sup> <a name="is_template_input" id="@cdktf/provider-postgresql.database.Database.property.isTemplateInput"></a>
+##### `is_template_input`<sup>Optional</sup> <a name="is_template_input" id="@cdktn/provider-postgresql.database.Database.property.isTemplateInput"></a>
 
 ```python
 is_template_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `lc_collate_input`<sup>Optional</sup> <a name="lc_collate_input" id="@cdktf/provider-postgresql.database.Database.property.lcCollateInput"></a>
+##### `lc_collate_input`<sup>Optional</sup> <a name="lc_collate_input" id="@cdktn/provider-postgresql.database.Database.property.lcCollateInput"></a>
 
 ```python
 lc_collate_input: str
@@ -1058,7 +1058,7 @@ lc_collate_input: str
 
 ---
 
-##### `lc_ctype_input`<sup>Optional</sup> <a name="lc_ctype_input" id="@cdktf/provider-postgresql.database.Database.property.lcCtypeInput"></a>
+##### `lc_ctype_input`<sup>Optional</sup> <a name="lc_ctype_input" id="@cdktn/provider-postgresql.database.Database.property.lcCtypeInput"></a>
 
 ```python
 lc_ctype_input: str
@@ -1068,7 +1068,7 @@ lc_ctype_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-postgresql.database.Database.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-postgresql.database.Database.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1078,7 +1078,7 @@ name_input: str
 
 ---
 
-##### `owner_input`<sup>Optional</sup> <a name="owner_input" id="@cdktf/provider-postgresql.database.Database.property.ownerInput"></a>
+##### `owner_input`<sup>Optional</sup> <a name="owner_input" id="@cdktn/provider-postgresql.database.Database.property.ownerInput"></a>
 
 ```python
 owner_input: str
@@ -1088,7 +1088,7 @@ owner_input: str
 
 ---
 
-##### `tablespace_name_input`<sup>Optional</sup> <a name="tablespace_name_input" id="@cdktf/provider-postgresql.database.Database.property.tablespaceNameInput"></a>
+##### `tablespace_name_input`<sup>Optional</sup> <a name="tablespace_name_input" id="@cdktn/provider-postgresql.database.Database.property.tablespaceNameInput"></a>
 
 ```python
 tablespace_name_input: str
@@ -1098,7 +1098,7 @@ tablespace_name_input: str
 
 ---
 
-##### `template_input`<sup>Optional</sup> <a name="template_input" id="@cdktf/provider-postgresql.database.Database.property.templateInput"></a>
+##### `template_input`<sup>Optional</sup> <a name="template_input" id="@cdktn/provider-postgresql.database.Database.property.templateInput"></a>
 
 ```python
 template_input: str
@@ -1108,27 +1108,27 @@ template_input: str
 
 ---
 
-##### `allow_connections`<sup>Required</sup> <a name="allow_connections" id="@cdktf/provider-postgresql.database.Database.property.allowConnections"></a>
+##### `allow_connections`<sup>Required</sup> <a name="allow_connections" id="@cdktn/provider-postgresql.database.Database.property.allowConnections"></a>
 
 ```python
 allow_connections: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `alter_object_ownership`<sup>Required</sup> <a name="alter_object_ownership" id="@cdktf/provider-postgresql.database.Database.property.alterObjectOwnership"></a>
+##### `alter_object_ownership`<sup>Required</sup> <a name="alter_object_ownership" id="@cdktn/provider-postgresql.database.Database.property.alterObjectOwnership"></a>
 
 ```python
 alter_object_ownership: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `connection_limit`<sup>Required</sup> <a name="connection_limit" id="@cdktf/provider-postgresql.database.Database.property.connectionLimit"></a>
+##### `connection_limit`<sup>Required</sup> <a name="connection_limit" id="@cdktn/provider-postgresql.database.Database.property.connectionLimit"></a>
 
 ```python
 connection_limit: typing.Union[int, float]
@@ -1138,7 +1138,7 @@ connection_limit: typing.Union[int, float]
 
 ---
 
-##### `encoding`<sup>Required</sup> <a name="encoding" id="@cdktf/provider-postgresql.database.Database.property.encoding"></a>
+##### `encoding`<sup>Required</sup> <a name="encoding" id="@cdktn/provider-postgresql.database.Database.property.encoding"></a>
 
 ```python
 encoding: str
@@ -1148,7 +1148,7 @@ encoding: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-postgresql.database.Database.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-postgresql.database.Database.property.id"></a>
 
 ```python
 id: str
@@ -1158,17 +1158,17 @@ id: str
 
 ---
 
-##### `is_template`<sup>Required</sup> <a name="is_template" id="@cdktf/provider-postgresql.database.Database.property.isTemplate"></a>
+##### `is_template`<sup>Required</sup> <a name="is_template" id="@cdktn/provider-postgresql.database.Database.property.isTemplate"></a>
 
 ```python
 is_template: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `lc_collate`<sup>Required</sup> <a name="lc_collate" id="@cdktf/provider-postgresql.database.Database.property.lcCollate"></a>
+##### `lc_collate`<sup>Required</sup> <a name="lc_collate" id="@cdktn/provider-postgresql.database.Database.property.lcCollate"></a>
 
 ```python
 lc_collate: str
@@ -1178,7 +1178,7 @@ lc_collate: str
 
 ---
 
-##### `lc_ctype`<sup>Required</sup> <a name="lc_ctype" id="@cdktf/provider-postgresql.database.Database.property.lcCtype"></a>
+##### `lc_ctype`<sup>Required</sup> <a name="lc_ctype" id="@cdktn/provider-postgresql.database.Database.property.lcCtype"></a>
 
 ```python
 lc_ctype: str
@@ -1188,7 +1188,7 @@ lc_ctype: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-postgresql.database.Database.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-postgresql.database.Database.property.name"></a>
 
 ```python
 name: str
@@ -1198,7 +1198,7 @@ name: str
 
 ---
 
-##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-postgresql.database.Database.property.owner"></a>
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktn/provider-postgresql.database.Database.property.owner"></a>
 
 ```python
 owner: str
@@ -1208,7 +1208,7 @@ owner: str
 
 ---
 
-##### `tablespace_name`<sup>Required</sup> <a name="tablespace_name" id="@cdktf/provider-postgresql.database.Database.property.tablespaceName"></a>
+##### `tablespace_name`<sup>Required</sup> <a name="tablespace_name" id="@cdktn/provider-postgresql.database.Database.property.tablespaceName"></a>
 
 ```python
 tablespace_name: str
@@ -1218,7 +1218,7 @@ tablespace_name: str
 
 ---
 
-##### `template`<sup>Required</sup> <a name="template" id="@cdktf/provider-postgresql.database.Database.property.template"></a>
+##### `template`<sup>Required</sup> <a name="template" id="@cdktn/provider-postgresql.database.Database.property.template"></a>
 
 ```python
 template: str
@@ -1232,11 +1232,11 @@ template: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.database.Database.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.Database.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-postgresql.database.Database.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-postgresql.database.Database.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1248,12 +1248,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DatabaseConfig <a name="DatabaseConfig" id="@cdktf/provider-postgresql.database.DatabaseConfig"></a>
+### DatabaseConfig <a name="DatabaseConfig" id="@cdktn/provider-postgresql.database.DatabaseConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-postgresql.database.DatabaseConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.database.DatabaseConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_postgresql import database
+from cdktn_provider_postgresql import database
 
 database.DatabaseConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1282,99 +1282,99 @@ database.DatabaseConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.name">name</a></code> | <code>str</code> | The PostgreSQL database name to connect to. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.allowConnections">allow_connections</a></code> | <code>bool \| cdktf.IResolvable</code> | If false then no one can connect to this database. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.alterObjectOwnership">alter_object_ownership</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the owner of already existing objects will change if the owner changes. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | How many concurrent connections can be made to this database. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.encoding">encoding</a></code> | <code>str</code> | Character set encoding to use in the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/database#id Database#id}. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.isTemplate">is_template</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, then this database can be cloned by any user with CREATEDB privileges. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCollate">lc_collate</a></code> | <code>str</code> | Collation order (LC_COLLATE) to use in the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCtype">lc_ctype</a></code> | <code>str</code> | Character classification (LC_CTYPE) to use in the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.owner">owner</a></code> | <code>str</code> | The ROLE which owns the database. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.tablespaceName">tablespace_name</a></code> | <code>str</code> | The name of the tablespace that will be associated with the new database. |
-| <code><a href="#@cdktf/provider-postgresql.database.DatabaseConfig.property.template">template</a></code> | <code>str</code> | The name of the template from which to create the new database. |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.name">name</a></code> | <code>str</code> | The PostgreSQL database name to connect to. |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.allowConnections">allow_connections</a></code> | <code>bool \| cdktn.IResolvable</code> | If false then no one can connect to this database. |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.alterObjectOwnership">alter_object_ownership</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, the owner of already existing objects will change if the owner changes. |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.connectionLimit">connection_limit</a></code> | <code>typing.Union[int, float]</code> | How many concurrent connections can be made to this database. |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.encoding">encoding</a></code> | <code>str</code> | Character set encoding to use in the new database. |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/database#id Database#id}. |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.isTemplate">is_template</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, then this database can be cloned by any user with CREATEDB privileges. |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.lcCollate">lc_collate</a></code> | <code>str</code> | Collation order (LC_COLLATE) to use in the new database. |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.lcCtype">lc_ctype</a></code> | <code>str</code> | Character classification (LC_CTYPE) to use in the new database. |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.owner">owner</a></code> | <code>str</code> | The ROLE which owns the database. |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.tablespaceName">tablespace_name</a></code> | <code>str</code> | The name of the tablespace that will be associated with the new database. |
+| <code><a href="#@cdktn/provider-postgresql.database.DatabaseConfig.property.template">template</a></code> | <code>str</code> | The name of the template from which to create the new database. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.name"></a>
 
 ```python
 name: str
@@ -1388,13 +1388,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `allow_connections`<sup>Optional</sup> <a name="allow_connections" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.allowConnections"></a>
+##### `allow_connections`<sup>Optional</sup> <a name="allow_connections" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.allowConnections"></a>
 
 ```python
 allow_connections: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If false then no one can connect to this database.
 
@@ -1402,13 +1402,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `alter_object_ownership`<sup>Optional</sup> <a name="alter_object_ownership" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.alterObjectOwnership"></a>
+##### `alter_object_ownership`<sup>Optional</sup> <a name="alter_object_ownership" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.alterObjectOwnership"></a>
 
 ```python
 alter_object_ownership: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, the owner of already existing objects will change if the owner changes.
 
@@ -1416,7 +1416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `connection_limit`<sup>Optional</sup> <a name="connection_limit" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.connectionLimit"></a>
+##### `connection_limit`<sup>Optional</sup> <a name="connection_limit" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.connectionLimit"></a>
 
 ```python
 connection_limit: typing.Union[int, float]
@@ -1430,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `encoding`<sup>Optional</sup> <a name="encoding" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.encoding"></a>
+##### `encoding`<sup>Optional</sup> <a name="encoding" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.encoding"></a>
 
 ```python
 encoding: str
@@ -1444,7 +1444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.id"></a>
 
 ```python
 id: str
@@ -1459,13 +1459,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `is_template`<sup>Optional</sup> <a name="is_template" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.isTemplate"></a>
+##### `is_template`<sup>Optional</sup> <a name="is_template" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.isTemplate"></a>
 
 ```python
 is_template: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, then this database can be cloned by any user with CREATEDB privileges.
 
@@ -1473,7 +1473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `lc_collate`<sup>Optional</sup> <a name="lc_collate" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCollate"></a>
+##### `lc_collate`<sup>Optional</sup> <a name="lc_collate" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.lcCollate"></a>
 
 ```python
 lc_collate: str
@@ -1487,7 +1487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `lc_ctype`<sup>Optional</sup> <a name="lc_ctype" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.lcCtype"></a>
+##### `lc_ctype`<sup>Optional</sup> <a name="lc_ctype" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.lcCtype"></a>
 
 ```python
 lc_ctype: str
@@ -1501,7 +1501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `owner`<sup>Optional</sup> <a name="owner" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.owner"></a>
+##### `owner`<sup>Optional</sup> <a name="owner" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.owner"></a>
 
 ```python
 owner: str
@@ -1515,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `tablespace_name`<sup>Optional</sup> <a name="tablespace_name" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.tablespaceName"></a>
+##### `tablespace_name`<sup>Optional</sup> <a name="tablespace_name" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.tablespaceName"></a>
 
 ```python
 tablespace_name: str
@@ -1529,7 +1529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 ---
 
-##### `template`<sup>Optional</sup> <a name="template" id="@cdktf/provider-postgresql.database.DatabaseConfig.property.template"></a>
+##### `template`<sup>Optional</sup> <a name="template" id="@cdktn/provider-postgresql.database.DatabaseConfig.property.template"></a>
 
 ```python
 template: str
