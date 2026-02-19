@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SchemaConfig extends cdktf.TerraformMetaArguments {
+export interface SchemaConfig extends cdktn.TerraformMetaArguments {
   /**
   * The database name to alter schema
   *
@@ -23,7 +23,7 @@ export interface SchemaConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
   */
-  readonly dropCascade?: boolean | cdktf.IResolvable;
+  readonly dropCascade?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#id Schema#id}
   *
@@ -36,7 +36,7 @@ export interface SchemaConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
   */
-  readonly ifNotExists?: boolean | cdktf.IResolvable;
+  readonly ifNotExists?: boolean | cdktn.IResolvable;
   /**
   * The name of the schema
   *
@@ -54,7 +54,7 @@ export interface SchemaConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#policy Schema#policy}
   */
-  readonly policy?: SchemaPolicy[] | cdktf.IResolvable;
+  readonly policy?: SchemaPolicy[] | cdktn.IResolvable;
 }
 export interface SchemaPolicy {
   /**
@@ -62,13 +62,13 @@ export interface SchemaPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#create Schema#create}
   */
-  readonly create?: boolean | cdktf.IResolvable;
+  readonly create?: boolean | cdktn.IResolvable;
   /**
   * If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#create_with_grant Schema#create_with_grant}
   */
-  readonly createWithGrant?: boolean | cdktf.IResolvable;
+  readonly createWithGrant?: boolean | cdktn.IResolvable;
   /**
   * ROLE who will receive this policy (default: PUBLIC)
   *
@@ -80,62 +80,62 @@ export interface SchemaPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#usage Schema#usage}
   */
-  readonly usage?: boolean | cdktf.IResolvable;
+  readonly usage?: boolean | cdktn.IResolvable;
   /**
   * If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#usage_with_grant Schema#usage_with_grant}
   */
-  readonly usageWithGrant?: boolean | cdktf.IResolvable;
+  readonly usageWithGrant?: boolean | cdktn.IResolvable;
 }
 
-export function schemaPolicyToTerraform(struct?: SchemaPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function schemaPolicyToTerraform(struct?: SchemaPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.booleanToTerraform(struct!.create),
-    create_with_grant: cdktf.booleanToTerraform(struct!.createWithGrant),
-    role: cdktf.stringToTerraform(struct!.role),
-    usage: cdktf.booleanToTerraform(struct!.usage),
-    usage_with_grant: cdktf.booleanToTerraform(struct!.usageWithGrant),
+    create: cdktn.booleanToTerraform(struct!.create),
+    create_with_grant: cdktn.booleanToTerraform(struct!.createWithGrant),
+    role: cdktn.stringToTerraform(struct!.role),
+    usage: cdktn.booleanToTerraform(struct!.usage),
+    usage_with_grant: cdktn.booleanToTerraform(struct!.usageWithGrant),
   }
 }
 
 
-export function schemaPolicyToHclTerraform(struct?: SchemaPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function schemaPolicyToHclTerraform(struct?: SchemaPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.booleanToHclTerraform(struct!.create),
+      value: cdktn.booleanToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     create_with_grant: {
-      value: cdktf.booleanToHclTerraform(struct!.createWithGrant),
+      value: cdktn.booleanToHclTerraform(struct!.createWithGrant),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     usage: {
-      value: cdktf.booleanToHclTerraform(struct!.usage),
+      value: cdktn.booleanToHclTerraform(struct!.usage),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     usage_with_grant: {
-      value: cdktf.booleanToHclTerraform(struct!.usageWithGrant),
+      value: cdktn.booleanToHclTerraform(struct!.usageWithGrant),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -146,9 +146,9 @@ export function schemaPolicyToHclTerraform(struct?: SchemaPolicy | cdktf.IResolv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SchemaPolicyOutputReference extends cdktf.ComplexObject {
+export class SchemaPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -156,11 +156,11 @@ export class SchemaPolicyOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SchemaPolicy | cdktf.IResolvable | undefined {
+  public get internalValue(): SchemaPolicy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -189,7 +189,7 @@ export class SchemaPolicyOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SchemaPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SchemaPolicy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -199,7 +199,7 @@ export class SchemaPolicyOutputReference extends cdktf.ComplexObject {
       this._usage = undefined;
       this._usageWithGrant = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -215,11 +215,11 @@ export class SchemaPolicyOutputReference extends cdktf.ComplexObject {
   }
 
   // create - computed: false, optional: true, required: false
-  private _create?: boolean | cdktf.IResolvable; 
+  private _create?: boolean | cdktn.IResolvable; 
   public get create() {
     return this.getBooleanAttribute('create');
   }
-  public set create(value: boolean | cdktf.IResolvable) {
+  public set create(value: boolean | cdktn.IResolvable) {
     this._create = value;
   }
   public resetCreate() {
@@ -231,11 +231,11 @@ export class SchemaPolicyOutputReference extends cdktf.ComplexObject {
   }
 
   // create_with_grant - computed: false, optional: true, required: false
-  private _createWithGrant?: boolean | cdktf.IResolvable; 
+  private _createWithGrant?: boolean | cdktn.IResolvable; 
   public get createWithGrant() {
     return this.getBooleanAttribute('create_with_grant');
   }
-  public set createWithGrant(value: boolean | cdktf.IResolvable) {
+  public set createWithGrant(value: boolean | cdktn.IResolvable) {
     this._createWithGrant = value;
   }
   public resetCreateWithGrant() {
@@ -263,11 +263,11 @@ export class SchemaPolicyOutputReference extends cdktf.ComplexObject {
   }
 
   // usage - computed: false, optional: true, required: false
-  private _usage?: boolean | cdktf.IResolvable; 
+  private _usage?: boolean | cdktn.IResolvable; 
   public get usage() {
     return this.getBooleanAttribute('usage');
   }
-  public set usage(value: boolean | cdktf.IResolvable) {
+  public set usage(value: boolean | cdktn.IResolvable) {
     this._usage = value;
   }
   public resetUsage() {
@@ -279,11 +279,11 @@ export class SchemaPolicyOutputReference extends cdktf.ComplexObject {
   }
 
   // usage_with_grant - computed: false, optional: true, required: false
-  private _usageWithGrant?: boolean | cdktf.IResolvable; 
+  private _usageWithGrant?: boolean | cdktn.IResolvable; 
   public get usageWithGrant() {
     return this.getBooleanAttribute('usage_with_grant');
   }
-  public set usageWithGrant(value: boolean | cdktf.IResolvable) {
+  public set usageWithGrant(value: boolean | cdktn.IResolvable) {
     this._usageWithGrant = value;
   }
   public resetUsageWithGrant() {
@@ -295,15 +295,15 @@ export class SchemaPolicyOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SchemaPolicyList extends cdktf.ComplexList {
-  public internalValue? : SchemaPolicy[] | cdktf.IResolvable
+export class SchemaPolicyList extends cdktn.ComplexList {
+  public internalValue? : SchemaPolicy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -318,7 +318,7 @@ export class SchemaPolicyList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema postgresql_schema}
 */
-export class Schema extends cdktf.TerraformResource {
+export class Schema extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -329,14 +329,14 @@ export class Schema extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Schema resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Schema resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Schema to import
   * @param importFromId The id of the existing Schema that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Schema to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_schema", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_schema", importId: importFromId, provider });
       }
 
   // ===========
@@ -396,11 +396,11 @@ export class Schema extends cdktf.TerraformResource {
   }
 
   // drop_cascade - computed: false, optional: true, required: false
-  private _dropCascade?: boolean | cdktf.IResolvable; 
+  private _dropCascade?: boolean | cdktn.IResolvable; 
   public get dropCascade() {
     return this.getBooleanAttribute('drop_cascade');
   }
-  public set dropCascade(value: boolean | cdktf.IResolvable) {
+  public set dropCascade(value: boolean | cdktn.IResolvable) {
     this._dropCascade = value;
   }
   public resetDropCascade() {
@@ -428,11 +428,11 @@ export class Schema extends cdktf.TerraformResource {
   }
 
   // if_not_exists - computed: false, optional: true, required: false
-  private _ifNotExists?: boolean | cdktf.IResolvable; 
+  private _ifNotExists?: boolean | cdktn.IResolvable; 
   public get ifNotExists() {
     return this.getBooleanAttribute('if_not_exists');
   }
-  public set ifNotExists(value: boolean | cdktf.IResolvable) {
+  public set ifNotExists(value: boolean | cdktn.IResolvable) {
     this._ifNotExists = value;
   }
   public resetIfNotExists() {
@@ -477,7 +477,7 @@ export class Schema extends cdktf.TerraformResource {
   public get policy() {
     return this._policy;
   }
-  public putPolicy(value: SchemaPolicy[] | cdktf.IResolvable) {
+  public putPolicy(value: SchemaPolicy[] | cdktn.IResolvable) {
     this._policy.internalValue = value;
   }
   public resetPolicy() {
@@ -494,56 +494,56 @@ export class Schema extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database: cdktf.stringToTerraform(this._database),
-      drop_cascade: cdktf.booleanToTerraform(this._dropCascade),
-      id: cdktf.stringToTerraform(this._id),
-      if_not_exists: cdktf.booleanToTerraform(this._ifNotExists),
-      name: cdktf.stringToTerraform(this._name),
-      owner: cdktf.stringToTerraform(this._owner),
-      policy: cdktf.listMapper(schemaPolicyToTerraform, true)(this._policy.internalValue),
+      database: cdktn.stringToTerraform(this._database),
+      drop_cascade: cdktn.booleanToTerraform(this._dropCascade),
+      id: cdktn.stringToTerraform(this._id),
+      if_not_exists: cdktn.booleanToTerraform(this._ifNotExists),
+      name: cdktn.stringToTerraform(this._name),
+      owner: cdktn.stringToTerraform(this._owner),
+      policy: cdktn.listMapper(schemaPolicyToTerraform, true)(this._policy.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       drop_cascade: {
-        value: cdktf.booleanToHclTerraform(this._dropCascade),
+        value: cdktn.booleanToHclTerraform(this._dropCascade),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       if_not_exists: {
-        value: cdktf.booleanToHclTerraform(this._ifNotExists),
+        value: cdktn.booleanToHclTerraform(this._ifNotExists),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
+        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy: {
-        value: cdktf.listMapperHcl(schemaPolicyToHclTerraform, true)(this._policy.internalValue),
+        value: cdktn.listMapperHcl(schemaPolicyToHclTerraform, true)(this._policy.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SchemaPolicyList",

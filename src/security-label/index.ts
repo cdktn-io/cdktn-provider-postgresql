@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecurityLabelConfig extends cdktf.TerraformMetaArguments {
+export interface SecurityLabelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/security_label#id SecurityLabel#id}
   *
@@ -48,7 +48,7 @@ export interface SecurityLabelConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/security_label postgresql_security_label}
 */
-export class SecurityLabel extends cdktf.TerraformResource {
+export class SecurityLabel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class SecurityLabel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecurityLabel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecurityLabel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityLabel to import
   * @param importFromId The id of the existing SecurityLabel that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/security_label#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityLabel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_security_label", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_security_label", importId: importFromId, provider });
       }
 
   // ===========
@@ -181,42 +181,42 @@ export class SecurityLabel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      label: cdktf.stringToTerraform(this._label),
-      label_provider: cdktf.stringToTerraform(this._labelProvider),
-      object_name: cdktf.stringToTerraform(this._objectName),
-      object_type: cdktf.stringToTerraform(this._objectType),
+      id: cdktn.stringToTerraform(this._id),
+      label: cdktn.stringToTerraform(this._label),
+      label_provider: cdktn.stringToTerraform(this._labelProvider),
+      object_name: cdktn.stringToTerraform(this._objectName),
+      object_type: cdktn.stringToTerraform(this._objectType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       label: {
-        value: cdktf.stringToHclTerraform(this._label),
+        value: cdktn.stringToHclTerraform(this._label),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       label_provider: {
-        value: cdktf.stringToHclTerraform(this._labelProvider),
+        value: cdktn.stringToHclTerraform(this._labelProvider),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_name: {
-        value: cdktf.stringToHclTerraform(this._objectName),
+        value: cdktn.stringToHclTerraform(this._objectName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_type: {
-        value: cdktf.stringToHclTerraform(this._objectType),
+        value: cdktn.stringToHclTerraform(this._objectType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataPostgresqlSchemasConfig extends cdktf.TerraformMetaArguments {
+export interface DataPostgresqlSchemasConfig extends cdktn.TerraformMetaArguments {
   /**
   * The PostgreSQL database which will be queried for schema names
   *
@@ -30,7 +30,7 @@ export interface DataPostgresqlSchemasConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
   */
-  readonly includeSystemSchemas?: boolean | cdktf.IResolvable;
+  readonly includeSystemSchemas?: boolean | cdktn.IResolvable;
   /**
   * Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator
   *
@@ -60,7 +60,7 @@ export interface DataPostgresqlSchemasConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas postgresql_schemas}
 */
-export class DataPostgresqlSchemas extends cdktf.TerraformDataSource {
+export class DataPostgresqlSchemas extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -71,14 +71,14 @@ export class DataPostgresqlSchemas extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataPostgresqlSchemas resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataPostgresqlSchemas resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPostgresqlSchemas to import
   * @param importFromId The id of the existing DataPostgresqlSchemas that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPostgresqlSchemas to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_schemas", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_schemas", importId: importFromId, provider });
       }
 
   // ===========
@@ -151,11 +151,11 @@ export class DataPostgresqlSchemas extends cdktf.TerraformDataSource {
   }
 
   // include_system_schemas - computed: false, optional: true, required: false
-  private _includeSystemSchemas?: boolean | cdktf.IResolvable; 
+  private _includeSystemSchemas?: boolean | cdktn.IResolvable; 
   public get includeSystemSchemas() {
     return this.getBooleanAttribute('include_system_schemas');
   }
-  public set includeSystemSchemas(value: boolean | cdktf.IResolvable) {
+  public set includeSystemSchemas(value: boolean | cdktn.IResolvable) {
     this._includeSystemSchemas = value;
   }
   public resetIncludeSystemSchemas() {
@@ -232,7 +232,7 @@ export class DataPostgresqlSchemas extends cdktf.TerraformDataSource {
 
   // schemas - computed: true, optional: false, required: false
   public get schemas() {
-    return cdktf.Fn.tolist(this.getListAttribute('schemas'));
+    return cdktn.Fn.tolist(this.getListAttribute('schemas'));
   }
 
   // =========
@@ -241,56 +241,56 @@ export class DataPostgresqlSchemas extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database: cdktf.stringToTerraform(this._database),
-      id: cdktf.stringToTerraform(this._id),
-      include_system_schemas: cdktf.booleanToTerraform(this._includeSystemSchemas),
-      like_all_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._likeAllPatterns),
-      like_any_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._likeAnyPatterns),
-      not_like_all_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notLikeAllPatterns),
-      regex_pattern: cdktf.stringToTerraform(this._regexPattern),
+      database: cdktn.stringToTerraform(this._database),
+      id: cdktn.stringToTerraform(this._id),
+      include_system_schemas: cdktn.booleanToTerraform(this._includeSystemSchemas),
+      like_all_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._likeAllPatterns),
+      like_any_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._likeAnyPatterns),
+      not_like_all_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._notLikeAllPatterns),
+      regex_pattern: cdktn.stringToTerraform(this._regexPattern),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_system_schemas: {
-        value: cdktf.booleanToHclTerraform(this._includeSystemSchemas),
+        value: cdktn.booleanToHclTerraform(this._includeSystemSchemas),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       like_all_patterns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._likeAllPatterns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._likeAllPatterns),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       like_any_patterns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._likeAnyPatterns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._likeAnyPatterns),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       not_like_all_patterns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notLikeAllPatterns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._notLikeAllPatterns),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       regex_pattern: {
-        value: cdktf.stringToHclTerraform(this._regexPattern),
+        value: cdktn.stringToHclTerraform(this._regexPattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

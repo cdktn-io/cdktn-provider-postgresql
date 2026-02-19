@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GrantRoleConfig extends cdktf.TerraformMetaArguments {
+export interface GrantRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the role that is granted to role
   *
@@ -36,13 +36,13 @@ export interface GrantRoleConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant_role#with_admin_option GrantRole#with_admin_option}
   */
-  readonly withAdminOption?: boolean | cdktf.IResolvable;
+  readonly withAdminOption?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant_role postgresql_grant_role}
 */
-export class GrantRole extends cdktf.TerraformResource {
+export class GrantRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class GrantRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GrantRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GrantRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrantRole to import
   * @param importFromId The id of the existing GrantRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrantRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_grant_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_grant_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -143,11 +143,11 @@ export class GrantRole extends cdktf.TerraformResource {
   }
 
   // with_admin_option - computed: false, optional: true, required: false
-  private _withAdminOption?: boolean | cdktf.IResolvable; 
+  private _withAdminOption?: boolean | cdktn.IResolvable; 
   public get withAdminOption() {
     return this.getBooleanAttribute('with_admin_option');
   }
-  public set withAdminOption(value: boolean | cdktf.IResolvable) {
+  public set withAdminOption(value: boolean | cdktn.IResolvable) {
     this._withAdminOption = value;
   }
   public resetWithAdminOption() {
@@ -164,35 +164,35 @@ export class GrantRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      grant_role: cdktf.stringToTerraform(this._grantRole),
-      id: cdktf.stringToTerraform(this._id),
-      role: cdktf.stringToTerraform(this._role),
-      with_admin_option: cdktf.booleanToTerraform(this._withAdminOption),
+      grant_role: cdktn.stringToTerraform(this._grantRole),
+      id: cdktn.stringToTerraform(this._id),
+      role: cdktn.stringToTerraform(this._role),
+      with_admin_option: cdktn.booleanToTerraform(this._withAdminOption),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       grant_role: {
-        value: cdktf.stringToHclTerraform(this._grantRole),
+        value: cdktn.stringToHclTerraform(this._grantRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       with_admin_option: {
-        value: cdktf.booleanToHclTerraform(this._withAdminOption),
+        value: cdktn.booleanToHclTerraform(this._withAdminOption),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

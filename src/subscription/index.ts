@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface SubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The connection string to the publisher. It should follow the keyword/value format (https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING)
   *
@@ -23,7 +23,7 @@ export interface SubscriptionConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/subscription#create_slot Subscription#create_slot}
   */
-  readonly createSlot?: boolean | cdktf.IResolvable;
+  readonly createSlot?: boolean | cdktn.IResolvable;
   /**
   * Sets the database to add the subscription for
   *
@@ -60,7 +60,7 @@ export interface SubscriptionConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/subscription postgresql_subscription}
 */
-export class Subscription extends cdktf.TerraformResource {
+export class Subscription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -71,14 +71,14 @@ export class Subscription extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Subscription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Subscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Subscription to import
   * @param importFromId The id of the existing Subscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Subscription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_subscription", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_subscription", importId: importFromId, provider });
       }
 
   // ===========
@@ -135,11 +135,11 @@ export class Subscription extends cdktf.TerraformResource {
   }
 
   // create_slot - computed: false, optional: true, required: false
-  private _createSlot?: boolean | cdktf.IResolvable; 
+  private _createSlot?: boolean | cdktn.IResolvable; 
   public get createSlot() {
     return this.getBooleanAttribute('create_slot');
   }
-  public set createSlot(value: boolean | cdktf.IResolvable) {
+  public set createSlot(value: boolean | cdktn.IResolvable) {
     this._createSlot = value;
   }
   public resetCreateSlot() {
@@ -198,7 +198,7 @@ export class Subscription extends cdktf.TerraformResource {
   // publications - computed: false, optional: false, required: true
   private _publications?: string[]; 
   public get publications() {
-    return cdktf.Fn.tolist(this.getListAttribute('publications'));
+    return cdktn.Fn.tolist(this.getListAttribute('publications'));
   }
   public set publications(value: string[]) {
     this._publications = value;
@@ -230,56 +230,56 @@ export class Subscription extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      conninfo: cdktf.stringToTerraform(this._conninfo),
-      create_slot: cdktf.booleanToTerraform(this._createSlot),
-      database: cdktf.stringToTerraform(this._database),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      publications: cdktf.listMapper(cdktf.stringToTerraform, false)(this._publications),
-      slot_name: cdktf.stringToTerraform(this._slotName),
+      conninfo: cdktn.stringToTerraform(this._conninfo),
+      create_slot: cdktn.booleanToTerraform(this._createSlot),
+      database: cdktn.stringToTerraform(this._database),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      publications: cdktn.listMapper(cdktn.stringToTerraform, false)(this._publications),
+      slot_name: cdktn.stringToTerraform(this._slotName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       conninfo: {
-        value: cdktf.stringToHclTerraform(this._conninfo),
+        value: cdktn.stringToHclTerraform(this._conninfo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       create_slot: {
-        value: cdktf.booleanToHclTerraform(this._createSlot),
+        value: cdktn.booleanToHclTerraform(this._createSlot),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publications: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._publications),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._publications),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       slot_name: {
-        value: cdktf.stringToHclTerraform(this._slotName),
+        value: cdktn.stringToHclTerraform(this._slotName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

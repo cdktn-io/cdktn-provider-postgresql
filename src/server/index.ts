@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServerConfig extends cdktf.TerraformMetaArguments {
+export interface ServerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Automatically drop objects that depend on the server (such as user mappings), and in turn all objects that depend on those objects. Drop RESTRICT is the default
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#drop_cascade Server#drop_cascade}
   */
-  readonly dropCascade?: boolean | cdktf.IResolvable;
+  readonly dropCascade?: boolean | cdktn.IResolvable;
   /**
   * The name of the foreign-data wrapper that manages the server
   *
@@ -66,7 +66,7 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server postgresql_server}
 */
-export class Server extends cdktf.TerraformResource {
+export class Server extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class Server extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Server resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Server resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Server to import
   * @param importFromId The id of the existing Server that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Server to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_server", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_server", importId: importFromId, provider });
       }
 
   // ===========
@@ -129,11 +129,11 @@ export class Server extends cdktf.TerraformResource {
   // ==========
 
   // drop_cascade - computed: false, optional: true, required: false
-  private _dropCascade?: boolean | cdktf.IResolvable; 
+  private _dropCascade?: boolean | cdktn.IResolvable; 
   public get dropCascade() {
     return this.getBooleanAttribute('drop_cascade');
   }
-  public set dropCascade(value: boolean | cdktf.IResolvable) {
+  public set dropCascade(value: boolean | cdktn.IResolvable) {
     this._dropCascade = value;
   }
   public resetDropCascade() {
@@ -256,63 +256,63 @@ export class Server extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      drop_cascade: cdktf.booleanToTerraform(this._dropCascade),
-      fdw_name: cdktf.stringToTerraform(this._fdwName),
-      id: cdktf.stringToTerraform(this._id),
-      options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
-      server_name: cdktf.stringToTerraform(this._serverName),
-      server_owner: cdktf.stringToTerraform(this._serverOwner),
-      server_type: cdktf.stringToTerraform(this._serverType),
-      server_version: cdktf.stringToTerraform(this._serverVersion),
+      drop_cascade: cdktn.booleanToTerraform(this._dropCascade),
+      fdw_name: cdktn.stringToTerraform(this._fdwName),
+      id: cdktn.stringToTerraform(this._id),
+      options: cdktn.hashMapper(cdktn.stringToTerraform)(this._options),
+      server_name: cdktn.stringToTerraform(this._serverName),
+      server_owner: cdktn.stringToTerraform(this._serverOwner),
+      server_type: cdktn.stringToTerraform(this._serverType),
+      server_version: cdktn.stringToTerraform(this._serverVersion),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       drop_cascade: {
-        value: cdktf.booleanToHclTerraform(this._dropCascade),
+        value: cdktn.booleanToHclTerraform(this._dropCascade),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       fdw_name: {
-        value: cdktf.stringToHclTerraform(this._fdwName),
+        value: cdktn.stringToHclTerraform(this._fdwName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       options: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._options),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       server_name: {
-        value: cdktf.stringToHclTerraform(this._serverName),
+        value: cdktn.stringToHclTerraform(this._serverName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_owner: {
-        value: cdktf.stringToHclTerraform(this._serverOwner),
+        value: cdktn.stringToHclTerraform(this._serverOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_type: {
-        value: cdktf.stringToHclTerraform(this._serverType),
+        value: cdktn.stringToHclTerraform(this._serverType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_version: {
-        value: cdktf.stringToHclTerraform(this._serverVersion),
+        value: cdktn.stringToHclTerraform(this._serverVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

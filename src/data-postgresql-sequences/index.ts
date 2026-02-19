@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataPostgresqlSequencesConfig extends cdktf.TerraformMetaArguments {
+export interface DataPostgresqlSequencesConfig extends cdktn.TerraformMetaArguments {
   /**
   * The PostgreSQL database which will be queried for sequence names
   *
@@ -60,8 +60,8 @@ export interface DataPostgresqlSequencesSequences {
 }
 
 export function dataPostgresqlSequencesSequencesToTerraform(struct?: DataPostgresqlSequencesSequences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -70,8 +70,8 @@ export function dataPostgresqlSequencesSequencesToTerraform(struct?: DataPostgre
 
 
 export function dataPostgresqlSequencesSequencesToHclTerraform(struct?: DataPostgresqlSequencesSequences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -79,7 +79,7 @@ export function dataPostgresqlSequencesSequencesToHclTerraform(struct?: DataPost
   return attrs;
 }
 
-export class DataPostgresqlSequencesSequencesOutputReference extends cdktf.ComplexObject {
+export class DataPostgresqlSequencesSequencesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -88,7 +88,7 @@ export class DataPostgresqlSequencesSequencesOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -123,14 +123,14 @@ export class DataPostgresqlSequencesSequencesOutputReference extends cdktf.Compl
   }
 }
 
-export class DataPostgresqlSequencesSequencesList extends cdktf.ComplexList {
+export class DataPostgresqlSequencesSequencesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -145,7 +145,7 @@ export class DataPostgresqlSequencesSequencesList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/sequences postgresql_sequences}
 */
-export class DataPostgresqlSequences extends cdktf.TerraformDataSource {
+export class DataPostgresqlSequences extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -156,14 +156,14 @@ export class DataPostgresqlSequences extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataPostgresqlSequences resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataPostgresqlSequences resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPostgresqlSequences to import
   * @param importFromId The id of the existing DataPostgresqlSequences that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/sequences#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPostgresqlSequences to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_sequences", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_sequences", importId: importFromId, provider });
       }
 
   // ===========
@@ -327,56 +327,56 @@ export class DataPostgresqlSequences extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database: cdktf.stringToTerraform(this._database),
-      id: cdktf.stringToTerraform(this._id),
-      like_all_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._likeAllPatterns),
-      like_any_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._likeAnyPatterns),
-      not_like_all_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notLikeAllPatterns),
-      regex_pattern: cdktf.stringToTerraform(this._regexPattern),
-      schemas: cdktf.listMapper(cdktf.stringToTerraform, false)(this._schemas),
+      database: cdktn.stringToTerraform(this._database),
+      id: cdktn.stringToTerraform(this._id),
+      like_all_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._likeAllPatterns),
+      like_any_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._likeAnyPatterns),
+      not_like_all_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._notLikeAllPatterns),
+      regex_pattern: cdktn.stringToTerraform(this._regexPattern),
+      schemas: cdktn.listMapper(cdktn.stringToTerraform, false)(this._schemas),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       like_all_patterns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._likeAllPatterns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._likeAllPatterns),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       like_any_patterns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._likeAnyPatterns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._likeAnyPatterns),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       not_like_all_patterns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notLikeAllPatterns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._notLikeAllPatterns),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       regex_pattern: {
-        value: cdktf.stringToHclTerraform(this._regexPattern),
+        value: cdktn.stringToHclTerraform(this._regexPattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schemas: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._schemas),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._schemas),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

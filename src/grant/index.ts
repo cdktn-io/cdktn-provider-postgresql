@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GrantConfig extends cdktf.TerraformMetaArguments {
+export interface GrantConfig extends cdktn.TerraformMetaArguments {
   /**
   * The specific columns to grant privileges on for this role
   *
@@ -66,13 +66,13 @@ export interface GrantConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#with_grant_option Grant#with_grant_option}
   */
-  readonly withGrantOption?: boolean | cdktf.IResolvable;
+  readonly withGrantOption?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant postgresql_grant}
 */
-export class Grant extends cdktf.TerraformResource {
+export class Grant extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -83,14 +83,14 @@ export class Grant extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Grant resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Grant resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Grant to import
   * @param importFromId The id of the existing Grant that should be imported. Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Grant to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_grant", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "postgresql_grant", importId: importFromId, provider });
       }
 
   // ===========
@@ -138,7 +138,7 @@ export class Grant extends cdktf.TerraformResource {
   // columns - computed: false, optional: true, required: false
   private _columns?: string[]; 
   public get columns() {
-    return cdktf.Fn.tolist(this.getListAttribute('columns'));
+    return cdktn.Fn.tolist(this.getListAttribute('columns'));
   }
   public set columns(value: string[]) {
     this._columns = value;
@@ -196,7 +196,7 @@ export class Grant extends cdktf.TerraformResource {
   // objects - computed: false, optional: true, required: false
   private _objects?: string[]; 
   public get objects() {
-    return cdktf.Fn.tolist(this.getListAttribute('objects'));
+    return cdktn.Fn.tolist(this.getListAttribute('objects'));
   }
   public set objects(value: string[]) {
     this._objects = value;
@@ -212,7 +212,7 @@ export class Grant extends cdktf.TerraformResource {
   // privileges - computed: false, optional: false, required: true
   private _privileges?: string[]; 
   public get privileges() {
-    return cdktf.Fn.tolist(this.getListAttribute('privileges'));
+    return cdktn.Fn.tolist(this.getListAttribute('privileges'));
   }
   public set privileges(value: string[]) {
     this._privileges = value;
@@ -252,11 +252,11 @@ export class Grant extends cdktf.TerraformResource {
   }
 
   // with_grant_option - computed: false, optional: true, required: false
-  private _withGrantOption?: boolean | cdktf.IResolvable; 
+  private _withGrantOption?: boolean | cdktn.IResolvable; 
   public get withGrantOption() {
     return this.getBooleanAttribute('with_grant_option');
   }
-  public set withGrantOption(value: boolean | cdktf.IResolvable) {
+  public set withGrantOption(value: boolean | cdktn.IResolvable) {
     this._withGrantOption = value;
   }
   public resetWithGrantOption() {
@@ -273,70 +273,70 @@ export class Grant extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      columns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._columns),
-      database: cdktf.stringToTerraform(this._database),
-      id: cdktf.stringToTerraform(this._id),
-      object_type: cdktf.stringToTerraform(this._objectType),
-      objects: cdktf.listMapper(cdktf.stringToTerraform, false)(this._objects),
-      privileges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._privileges),
-      role: cdktf.stringToTerraform(this._role),
-      schema: cdktf.stringToTerraform(this._schema),
-      with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
+      columns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._columns),
+      database: cdktn.stringToTerraform(this._database),
+      id: cdktn.stringToTerraform(this._id),
+      object_type: cdktn.stringToTerraform(this._objectType),
+      objects: cdktn.listMapper(cdktn.stringToTerraform, false)(this._objects),
+      privileges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._privileges),
+      role: cdktn.stringToTerraform(this._role),
+      schema: cdktn.stringToTerraform(this._schema),
+      with_grant_option: cdktn.booleanToTerraform(this._withGrantOption),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       columns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._columns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._columns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_type: {
-        value: cdktf.stringToHclTerraform(this._objectType),
+        value: cdktn.stringToHclTerraform(this._objectType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       objects: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._objects),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._objects),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       privileges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._privileges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._privileges),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       with_grant_option: {
-        value: cdktf.booleanToHclTerraform(this._withGrantOption),
+        value: cdktn.booleanToHclTerraform(this._withGrantOption),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
