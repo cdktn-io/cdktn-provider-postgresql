@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/physicalreplicationslot"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/physicalreplicationslot"
 
 physicalreplicationslot.NewPhysicalReplicationSlot(scope Construct, id *string, config PhysicalReplicationSlotConfig) PhysicalReplicationSlot
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/physicalreplicationslot"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/physicalreplicationslot"
 
 physicalreplicationslot.PhysicalReplicationSlot_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/physicalreplicationslot"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/physicalreplicationslot"
 
 physicalreplicationslot.PhysicalReplicationSlot_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ physicalreplicationslot.PhysicalReplicationSlot_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/physicalreplicationslot"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/physicalreplicationslot"
 
 physicalreplicationslot.PhysicalReplicationSlot_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ physicalreplicationslot.PhysicalReplicationSlot_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/physicalreplicationslot"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/physicalreplicationslot"
 
 physicalreplicationslot.PhysicalReplicationSlot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/physicalreplicationslot"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/physicalreplicationslot"
 
 &physicalreplicationslot.PhysicalReplicationSlotConfig {
 	Connection: interface{},

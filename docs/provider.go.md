@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/provider"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/provider"
 
 provider.NewPostgresqlProvider(scope Construct, id *string, config PostgresqlProviderConfig) PostgresqlProvider
 ```
@@ -327,7 +327,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/provider"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/provider"
 
 provider.PostgresqlProvider_IsConstruct(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/provider"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/provider"
 
 provider.PostgresqlProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ provider.PostgresqlProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/provider"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/provider"
 
 provider.PostgresqlProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ provider.PostgresqlProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-postgresql.provider.PostgresqlProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/provider"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/provider"
 
 provider.PostgresqlProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1056,7 +1056,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.provider.PostgresqlProviderClientcert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/provider"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/provider"
 
 &provider.PostgresqlProviderClientcert {
 	Cert: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 #### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.provider.PostgresqlProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/provider"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/provider"
 
 &provider.PostgresqlProviderConfig {
 	Alias: *string,
@@ -1132,7 +1132,7 @@ import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/provider
 	AwsRdsIamRegion: *string,
 	AzureIdentityAuth: interface{},
 	AzureTenantId: *string,
-	Clientcert: github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13.provider.PostgresqlProviderClientcert,
+	Clientcert: github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14.provider.PostgresqlProviderClientcert,
 	ConnectTimeout: *f64,
 	Database: *string,
 	DatabaseUsername: *string,

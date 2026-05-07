@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqlsequences"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqlsequences"
 
 datapostgresqlsequences.NewDataPostgresqlSequences(scope Construct, id *string, config DataPostgresqlSequencesConfig) DataPostgresqlSequences
 ```
@@ -340,7 +340,7 @@ func ResetSchemas()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequences.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqlsequences"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqlsequences"
 
 datapostgresqlsequences.DataPostgresqlSequences_IsConstruct(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequences.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqlsequences"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqlsequences"
 
 datapostgresqlsequences.DataPostgresqlSequences_IsTerraformElement(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datapostgresqlsequences.DataPostgresqlSequences_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequences.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqlsequences"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqlsequences"
 
 datapostgresqlsequences.DataPostgresqlSequences_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ datapostgresqlsequences.DataPostgresqlSequences_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequences.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqlsequences"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqlsequences"
 
 datapostgresqlsequences.DataPostgresqlSequences_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -772,7 +772,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqlsequences"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqlsequences"
 
 &datapostgresqlsequences.DataPostgresqlSequencesConfig {
 	Connection: interface{},
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 #### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqlsequences"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqlsequences"
 
 &datapostgresqlsequences.DataPostgresqlSequencesSequences {
 
@@ -1002,7 +1002,7 @@ import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapost
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqlsequences"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqlsequences"
 
 datapostgresqlsequences.NewDataPostgresqlSequencesSequencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPostgresqlSequencesSequencesList
 ```
@@ -1151,7 +1151,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqlsequences"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqlsequences"
 
 datapostgresqlsequences.NewDataPostgresqlSequencesSequencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPostgresqlSequencesSequencesOutputReference
 ```
