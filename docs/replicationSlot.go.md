@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.replicationSlot.ReplicationSlot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/replicationslot"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/replicationslot"
 
 replicationslot.NewReplicationSlot(scope Construct, id *string, config ReplicationSlotConfig) ReplicationSlot
 ```
@@ -414,7 +414,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-postgresql.replicationSlot.ReplicationSlot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/replicationslot"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/replicationslot"
 
 replicationslot.ReplicationSlot_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-postgresql.replicationSlot.ReplicationSlot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/replicationslot"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/replicationslot"
 
 replicationslot.ReplicationSlot_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ replicationslot.ReplicationSlot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-postgresql.replicationSlot.ReplicationSlot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/replicationslot"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/replicationslot"
 
 replicationslot.ReplicationSlot_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ replicationslot.ReplicationSlot_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-postgresql.replicationSlot.ReplicationSlot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/replicationslot"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/replicationslot"
 
 replicationslot.ReplicationSlot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.replicationSlot.ReplicationSlotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/replicationslot"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/replicationslot"
 
 &replicationslot.ReplicationSlotConfig {
 	Connection: interface{},

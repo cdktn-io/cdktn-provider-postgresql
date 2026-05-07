@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.grant.Grant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/grant"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/grant"
 
 grant.NewGrant(scope Construct, id *string, config GrantConfig) Grant
 ```
@@ -435,7 +435,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-postgresql.grant.Grant.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/grant"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/grant"
 
 grant.Grant_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-postgresql.grant.Grant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/grant"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/grant"
 
 grant.Grant_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ grant.Grant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-postgresql.grant.Grant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/grant"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/grant"
 
 grant.Grant_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ grant.Grant_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-postgresql.grant.Grant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/grant"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/grant"
 
 grant.Grant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -922,7 +922,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.grant.GrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/grant"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/grant"
 
 &grant.GrantConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqltables"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqltables"
 
 datapostgresqltables.NewDataPostgresqlTables(scope Construct, id *string, config DataPostgresqlTablesConfig) DataPostgresqlTables
 ```
@@ -347,7 +347,7 @@ func ResetTableTypes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqltables"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqltables"
 
 datapostgresqltables.DataPostgresqlTables_IsConstruct(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqltables"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqltables"
 
 datapostgresqltables.DataPostgresqlTables_IsTerraformElement(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ datapostgresqltables.DataPostgresqlTables_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqltables"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqltables"
 
 datapostgresqltables.DataPostgresqlTables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ datapostgresqltables.DataPostgresqlTables_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqltables"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqltables"
 
 datapostgresqltables.DataPostgresqlTables_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -801,7 +801,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqltables"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqltables"
 
 &datapostgresqltables.DataPostgresqlTablesConfig {
 	Connection: interface{},
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 #### Initializer <a name="Initializer" id="@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesTables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqltables"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqltables"
 
 &datapostgresqltables.DataPostgresqlTablesTables {
 
@@ -1049,7 +1049,7 @@ import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapost
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesTablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqltables"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqltables"
 
 datapostgresqltables.NewDataPostgresqlTablesTablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPostgresqlTablesTablesList
 ```
@@ -1198,7 +1198,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v13/datapostgresqltables"
+import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapostgresqltables"
 
 datapostgresqltables.NewDataPostgresqlTablesTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPostgresqlTablesTablesOutputReference
 ```
