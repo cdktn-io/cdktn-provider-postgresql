@@ -4,7 +4,7 @@
 
 ### DefaultPrivileges <a name="DefaultPrivileges" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges postgresql_default_privileges}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges postgresql_default_privileges}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer"></a>
 
@@ -46,7 +46,7 @@ DefaultPrivileges.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.owner">owner</a></code> | <code>java.lang.String</code> | Target role for which to alter default privileges. |
 | <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.privileges">privileges</a></code> | <code>java.util.List<java.lang.String></code> | The list of privileges to apply as default privileges. |
 | <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | The name of the role to which grant default privileges on. |
-| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#id DefaultPrivileges#id}. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#id DefaultPrivileges#id}. |
 | <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | The database schema to set default privileges for this role. |
 | <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivileges.Initializer.parameter.withGrantOption">withGrantOption</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Permit the grant recipient to grant it to others. |
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The database to grant default privileges for this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#database DefaultPrivileges#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#database DefaultPrivileges#database}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 The PostgreSQL object type to set the default privileges on (one of: table, sequence, function, routine, type, schema).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#object_type DefaultPrivileges#object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#object_type DefaultPrivileges#object_type}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Target role for which to alter default privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#owner DefaultPrivileges#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#owner DefaultPrivileges#owner}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 The list of privileges to apply as default privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#privileges DefaultPrivileges#privileges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#privileges DefaultPrivileges#privileges}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 The name of the role to which grant default privileges on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#role DefaultPrivileges#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#role DefaultPrivileges#role}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#id DefaultPrivileges#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#id DefaultPrivileges#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,7 +179,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The database schema to set default privileges for this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#schema DefaultPrivileges#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#schema DefaultPrivileges#schema}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Permit the grant recipient to grant it to others.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#with_grant_option DefaultPrivileges#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#with_grant_option DefaultPrivileges#with_grant_option}
 
 ---
 
@@ -659,7 +659,7 @@ The construct id used in the generated config for the DefaultPrivileges to impor
 
 The id of the existing DefaultPrivileges that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1072,7 +1072,7 @@ DefaultPrivilegesConfig.builder()
 | <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.owner">owner</a></code> | <code>java.lang.String</code> | Target role for which to alter default privileges. |
 | <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.privileges">privileges</a></code> | <code>java.util.List<java.lang.String></code> | The list of privileges to apply as default privileges. |
 | <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.role">role</a></code> | <code>java.lang.String</code> | The name of the role to which grant default privileges on. |
-| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#id DefaultPrivileges#id}. |
+| <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#id DefaultPrivileges#id}. |
 | <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | The database schema to set default privileges for this role. |
 | <code><a href="#@cdktn/provider-postgresql.defaultPrivileges.DefaultPrivilegesConfig.property.withGrantOption">withGrantOption</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Permit the grant recipient to grant it to others. |
 
@@ -1158,7 +1158,7 @@ public java.lang.String getDatabase();
 
 The database to grant default privileges for this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#database DefaultPrivileges#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#database DefaultPrivileges#database}
 
 ---
 
@@ -1172,7 +1172,7 @@ public java.lang.String getObjectType();
 
 The PostgreSQL object type to set the default privileges on (one of: table, sequence, function, routine, type, schema).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#object_type DefaultPrivileges#object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#object_type DefaultPrivileges#object_type}
 
 ---
 
@@ -1186,7 +1186,7 @@ public java.lang.String getOwner();
 
 Target role for which to alter default privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#owner DefaultPrivileges#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#owner DefaultPrivileges#owner}
 
 ---
 
@@ -1200,7 +1200,7 @@ public java.util.List<java.lang.String> getPrivileges();
 
 The list of privileges to apply as default privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#privileges DefaultPrivileges#privileges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#privileges DefaultPrivileges#privileges}
 
 ---
 
@@ -1214,7 +1214,7 @@ public java.lang.String getRole();
 
 The name of the role to which grant default privileges on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#role DefaultPrivileges#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#role DefaultPrivileges#role}
 
 ---
 
@@ -1226,7 +1226,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#id DefaultPrivileges#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#id DefaultPrivileges#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1243,7 +1243,7 @@ public java.lang.String getSchema();
 
 The database schema to set default privileges for this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#schema DefaultPrivileges#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#schema DefaultPrivileges#schema}
 
 ---
 
@@ -1257,7 +1257,7 @@ public java.lang.Boolean|IResolvable getWithGrantOption();
 
 Permit the grant recipient to grant it to others.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/default_privileges#with_grant_option DefaultPrivileges#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/default_privileges#with_grant_option DefaultPrivileges#with_grant_option}
 
 ---
 

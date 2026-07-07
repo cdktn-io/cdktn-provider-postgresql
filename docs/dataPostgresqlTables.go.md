@@ -4,7 +4,7 @@
 
 ### DataPostgresqlTables <a name="DataPostgresqlTables" id="@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/tables postgresql_tables}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/tables postgresql_tables}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTables.Initializer"></a>
 
@@ -436,7 +436,7 @@ The construct id used in the generated config for the DataPostgresqlTables to im
 
 The id of the existing DataPostgresqlTables that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/tables#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/tables#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -834,7 +834,7 @@ import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/datapost
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.database">Database</a></code> | <code>*string</code> | The PostgreSQL database which will be queried for table names. |
-| <code><a href="#@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/tables#id DataPostgresqlTables#id}. |
+| <code><a href="#@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/tables#id DataPostgresqlTables#id}. |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.likeAllPatterns">LikeAllPatterns</a></code> | <code>*[]*string</code> | Expression(s) which will be pattern matched against table names in the query using the PostgreSQL LIKE ALL operator. |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.likeAnyPatterns">LikeAnyPatterns</a></code> | <code>*[]*string</code> | Expression(s) which will be pattern matched against table names in the query using the PostgreSQL LIKE ANY operator. |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlTables.DataPostgresqlTablesConfig.property.notLikeAllPatterns">NotLikeAllPatterns</a></code> | <code>*[]*string</code> | Expression(s) which will be pattern matched against table names in the query using the PostgreSQL NOT LIKE ALL operator. |
@@ -924,7 +924,7 @@ Database *string
 
 The PostgreSQL database which will be queried for table names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/tables#database DataPostgresqlTables#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/tables#database DataPostgresqlTables#database}
 
 ---
 
@@ -936,7 +936,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/tables#id DataPostgresqlTables#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/tables#id DataPostgresqlTables#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -953,7 +953,7 @@ LikeAllPatterns *[]*string
 
 Expression(s) which will be pattern matched against table names in the query using the PostgreSQL LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/tables#like_all_patterns DataPostgresqlTables#like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/tables#like_all_patterns DataPostgresqlTables#like_all_patterns}
 
 ---
 
@@ -967,7 +967,7 @@ LikeAnyPatterns *[]*string
 
 Expression(s) which will be pattern matched against table names in the query using the PostgreSQL LIKE ANY operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/tables#like_any_patterns DataPostgresqlTables#like_any_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/tables#like_any_patterns DataPostgresqlTables#like_any_patterns}
 
 ---
 
@@ -981,7 +981,7 @@ NotLikeAllPatterns *[]*string
 
 Expression(s) which will be pattern matched against table names in the query using the PostgreSQL NOT LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/tables#not_like_all_patterns DataPostgresqlTables#not_like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/tables#not_like_all_patterns DataPostgresqlTables#not_like_all_patterns}
 
 ---
 
@@ -995,7 +995,7 @@ RegexPattern *string
 
 Expression which will be pattern matched against table names in the query using the PostgreSQL ~ (regular expression match) operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/tables#regex_pattern DataPostgresqlTables#regex_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/tables#regex_pattern DataPostgresqlTables#regex_pattern}
 
 ---
 
@@ -1009,7 +1009,7 @@ Schemas *[]*string
 
 The PostgreSQL schema(s) which will be queried for table names. Queries all schemas in the database by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/tables#schemas DataPostgresqlTables#schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/tables#schemas DataPostgresqlTables#schemas}
 
 ---
 
@@ -1025,7 +1025,7 @@ The PostgreSQL table types which will be queried for table names.
 
 Includes all table types by default. Use 'BASE TABLE' for normal tables only
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/tables#table_types DataPostgresqlTables#table_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/tables#table_types DataPostgresqlTables#table_types}
 
 ---
 

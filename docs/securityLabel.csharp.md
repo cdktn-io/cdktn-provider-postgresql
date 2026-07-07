@@ -4,7 +4,7 @@
 
 ### SecurityLabel <a name="SecurityLabel" id="@cdktn/provider-postgresql.securityLabel.SecurityLabel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/security_label postgresql_security_label}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/security_label postgresql_security_label}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.securityLabel.SecurityLabel.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the SecurityLabel to import.
 
 The id of the existing SecurityLabel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/security_label#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/security_label#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ new SecurityLabelConfig {
 | <code><a href="#@cdktn/provider-postgresql.securityLabel.SecurityLabelConfig.property.labelProvider">LabelProvider</a></code> | <code>string</code> | The provider to apply the security label for. |
 | <code><a href="#@cdktn/provider-postgresql.securityLabel.SecurityLabelConfig.property.objectName">ObjectName</a></code> | <code>string</code> | The name of the existing object to apply the security label to. |
 | <code><a href="#@cdktn/provider-postgresql.securityLabel.SecurityLabelConfig.property.objectType">ObjectType</a></code> | <code>string</code> | The type of the existing object to apply the security label to. |
-| <code><a href="#@cdktn/provider-postgresql.securityLabel.SecurityLabelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/security_label#id SecurityLabel#id}. |
+| <code><a href="#@cdktn/provider-postgresql.securityLabel.SecurityLabelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/security_label#id SecurityLabel#id}. |
 
 ---
 
@@ -923,7 +923,7 @@ public string Label { get; set; }
 
 The label to be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/security_label#label SecurityLabel#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/security_label#label SecurityLabel#label}
 
 ---
 
@@ -937,7 +937,7 @@ public string LabelProvider { get; set; }
 
 The provider to apply the security label for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/security_label#label_provider SecurityLabel#label_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/security_label#label_provider SecurityLabel#label_provider}
 
 ---
 
@@ -951,7 +951,7 @@ public string ObjectName { get; set; }
 
 The name of the existing object to apply the security label to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/security_label#object_name SecurityLabel#object_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/security_label#object_name SecurityLabel#object_name}
 
 ---
 
@@ -965,7 +965,7 @@ public string ObjectType { get; set; }
 
 The type of the existing object to apply the security label to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/security_label#object_type SecurityLabel#object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/security_label#object_type SecurityLabel#object_type}
 
 ---
 
@@ -977,7 +977,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/security_label#id SecurityLabel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/security_label#id SecurityLabel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

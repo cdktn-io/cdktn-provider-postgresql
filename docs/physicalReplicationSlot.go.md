@@ -4,7 +4,7 @@
 
 ### PhysicalReplicationSlot <a name="PhysicalReplicationSlot" id="@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/physical_replication_slot postgresql_physical_replication_slot}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlot.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the PhysicalReplicationSlot to
 
 The id of the existing PhysicalReplicationSlot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/physical_replication_slot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/physical_replication_slot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,8 +766,8 @@ import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/physical
 | <code><a href="#@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlotConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/physical_replication_slot#name PhysicalReplicationSlot#name}. |
-| <code><a href="#@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/physical_replication_slot#id PhysicalReplicationSlot#id}. |
+| <code><a href="#@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/physical_replication_slot#name PhysicalReplicationSlot#name}. |
+| <code><a href="#@cdktn/provider-postgresql.physicalReplicationSlot.PhysicalReplicationSlotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/physical_replication_slot#id PhysicalReplicationSlot#id}. |
 
 ---
 
@@ -849,7 +849,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/physical_replication_slot#name PhysicalReplicationSlot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/physical_replication_slot#name PhysicalReplicationSlot#name}.
 
 ---
 
@@ -861,7 +861,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/physical_replication_slot#id PhysicalReplicationSlot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/physical_replication_slot#id PhysicalReplicationSlot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

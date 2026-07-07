@@ -4,7 +4,7 @@
 
 ### Schema <a name="Schema" id="@cdktn/provider-postgresql.schema.Schema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema postgresql_schema}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema postgresql_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.schema.Schema.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the Schema to import.
 
 The id of the existing Schema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -932,7 +932,7 @@ import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/schema"
 | <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.name">Name</a></code> | <code>*string</code> | The name of the schema. |
 | <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.database">Database</a></code> | <code>*string</code> | The database name to alter schema. |
 | <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.dropCascade">DropCascade</a></code> | <code>interface{}</code> | When true, will also drop all the objects that are contained in the schema. |
-| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#id Schema#id}. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#id Schema#id}. |
 | <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.ifNotExists">IfNotExists</a></code> | <code>interface{}</code> | When true, use the existing schema if it exists. |
 | <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.owner">Owner</a></code> | <code>*string</code> | The ROLE name who owns the schema. |
 | <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.policy">Policy</a></code> | <code>interface{}</code> | policy block. |
@@ -1019,7 +1019,7 @@ Name *string
 
 The name of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#name Schema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#name Schema#name}
 
 ---
 
@@ -1033,7 +1033,7 @@ Database *string
 
 The database name to alter schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#database Schema#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#database Schema#database}
 
 ---
 
@@ -1047,7 +1047,7 @@ DropCascade interface{}
 
 When true, will also drop all the objects that are contained in the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
 
 ---
 
@@ -1059,7 +1059,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#id Schema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#id Schema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1076,7 +1076,7 @@ IfNotExists interface{}
 
 When true, use the existing schema if it exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
 
 ---
 
@@ -1090,7 +1090,7 @@ Owner *string
 
 The ROLE name who owns the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#owner Schema#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#owner Schema#owner}
 
 ---
 
@@ -1104,7 +1104,7 @@ Policy interface{}
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#policy Schema#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#policy Schema#policy}
 
 ---
 
@@ -1146,7 +1146,7 @@ Create interface{}
 
 If true, allow the specified ROLEs to CREATE new objects within the schema(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#create Schema#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#create Schema#create}
 
 ---
 
@@ -1160,7 +1160,7 @@ CreateWithGrant interface{}
 
 If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#create_with_grant Schema#create_with_grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#create_with_grant Schema#create_with_grant}
 
 ---
 
@@ -1174,7 +1174,7 @@ Role *string
 
 ROLE who will receive this policy (default: PUBLIC).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#role Schema#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#role Schema#role}
 
 ---
 
@@ -1188,7 +1188,7 @@ Usage interface{}
 
 If true, allow the specified ROLEs to use objects within the schema(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#usage Schema#usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#usage Schema#usage}
 
 ---
 
@@ -1202,7 +1202,7 @@ UsageWithGrant interface{}
 
 If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#usage_with_grant Schema#usage_with_grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#usage_with_grant Schema#usage_with_grant}
 
 ---
 
