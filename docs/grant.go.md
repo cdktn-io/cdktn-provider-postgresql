@@ -4,7 +4,7 @@
 
 ### Grant <a name="Grant" id="@cdktn/provider-postgresql.grant.Grant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant postgresql_grant}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/grant postgresql_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.grant.Grant.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the Grant to import.
 
 The id of the existing Grant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/grant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -960,7 +960,7 @@ import "github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v14/grant"
 | <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.privileges">Privileges</a></code> | <code>*[]*string</code> | The list of privileges to grant. |
 | <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.role">Role</a></code> | <code>*string</code> | The name of the role to grant privileges on. |
 | <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.columns">Columns</a></code> | <code>*[]*string</code> | The specific columns to grant privileges on for this role. |
-| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#id Grant#id}. |
+| <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/grant#id Grant#id}. |
 | <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.objects">Objects</a></code> | <code>*[]*string</code> | The specific objects to grant privileges on for this role (empty means all objects of the requested type). |
 | <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.schema">Schema</a></code> | <code>*string</code> | The database schema to grant privileges on for this role. |
 | <code><a href="#@cdktn/provider-postgresql.grant.GrantConfig.property.withGrantOption">WithGrantOption</a></code> | <code>interface{}</code> | Permit the grant recipient to grant it to others. |
@@ -1047,7 +1047,7 @@ Database *string
 
 The database to grant privileges on for this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#database Grant#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/grant#database Grant#database}
 
 ---
 
@@ -1061,7 +1061,7 @@ ObjectType *string
 
 The PostgreSQL object type to grant the privileges on (one of: database, function, procedure, routine, schema, sequence, table, foreign_data_wrapper, foreign_server, column).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#object_type Grant#object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/grant#object_type Grant#object_type}
 
 ---
 
@@ -1075,7 +1075,7 @@ Privileges *[]*string
 
 The list of privileges to grant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#privileges Grant#privileges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/grant#privileges Grant#privileges}
 
 ---
 
@@ -1089,7 +1089,7 @@ Role *string
 
 The name of the role to grant privileges on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#role Grant#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/grant#role Grant#role}
 
 ---
 
@@ -1103,7 +1103,7 @@ Columns *[]*string
 
 The specific columns to grant privileges on for this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#columns Grant#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/grant#columns Grant#columns}
 
 ---
 
@@ -1115,7 +1115,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#id Grant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/grant#id Grant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1132,7 +1132,7 @@ Objects *[]*string
 
 The specific objects to grant privileges on for this role (empty means all objects of the requested type).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#objects Grant#objects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/grant#objects Grant#objects}
 
 ---
 
@@ -1146,7 +1146,7 @@ Schema *string
 
 The database schema to grant privileges on for this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#schema Grant#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/grant#schema Grant#schema}
 
 ---
 
@@ -1160,7 +1160,7 @@ WithGrantOption interface{}
 
 Permit the grant recipient to grant it to others.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/grant#with_grant_option Grant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/grant#with_grant_option Grant#with_grant_option}
 
 ---
 

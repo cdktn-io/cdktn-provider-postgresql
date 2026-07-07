@@ -4,7 +4,7 @@
 
 ### FunctionResource <a name="FunctionResource" id="@cdktn/provider-postgresql.functionResource.FunctionResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function postgresql_function}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function postgresql_function}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer"></a>
 
@@ -51,7 +51,7 @@ FunctionResource.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.arg">arg</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>></code> | arg block. |
 | <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.database">database</a></code> | <code>java.lang.String</code> | The database where the function is located. If not specified, the provider default database is used. |
 | <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.dropCascade">dropCascade</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#id FunctionResource#id}. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#id FunctionResource#id}. |
 | <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.language">language</a></code> | <code>java.lang.String</code> | Language of the function. One of: internal, sql, c, plpgsql. |
 | <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.parallel">parallel</a></code> | <code>java.lang.String</code> | If the function can be executed in parallel for a single query execution. One of: UNSAFE, RESTRICTED, SAFE. |
 | <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResource.Initializer.parameter.returns">returns</a></code> | <code>java.lang.String</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 Body of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#body FunctionResource#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#body FunctionResource#body}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Name of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#name FunctionResource#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#name FunctionResource#name}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 arg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#arg FunctionResource#arg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#arg FunctionResource#arg}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 The database where the function is located. If not specified, the provider default database is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#database FunctionResource#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#database FunctionResource#database}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#drop_cascade FunctionResource#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#drop_cascade FunctionResource#drop_cascade}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#id FunctionResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#id FunctionResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -189,7 +189,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Language of the function. One of: internal, sql, c, plpgsql.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#language FunctionResource#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#language FunctionResource#language}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 If the function can be executed in parallel for a single query execution. One of: UNSAFE, RESTRICTED, SAFE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#parallel FunctionResource#parallel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#parallel FunctionResource#parallel}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Function return type. If not specified, it will be calculated based on the output arguments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#returns FunctionResource#returns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#returns FunctionResource#returns}
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Schema where the function is located. If not specified, the provider default schema is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#schema FunctionResource#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#schema FunctionResource#schema}
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 If the function should execute with the permissions of the function owner instead of the permissions of the caller.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#security_definer FunctionResource#security_definer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#security_definer FunctionResource#security_definer}
 
 ---
 
@@ -239,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 If the function should always return NULL if any of it's inputs is NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#strict FunctionResource#strict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#strict FunctionResource#strict}
 
 ---
 
@@ -249,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Volatility of the function. One of: VOLATILE, STABLE, IMMUTABLE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#volatility FunctionResource#volatility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#volatility FunctionResource#volatility}
 
 ---
 
@@ -788,7 +788,7 @@ The construct id used in the generated config for the FunctionResource to import
 
 The id of the existing FunctionResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1305,7 +1305,7 @@ public java.lang.String getType();
 
 The argument type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#type FunctionResource#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#type FunctionResource#type}
 
 ---
 
@@ -1319,7 +1319,7 @@ public java.lang.String getDefault();
 
 An expression to be used as default value if the parameter is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#default FunctionResource#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#default FunctionResource#default}
 
 ---
 
@@ -1333,7 +1333,7 @@ public java.lang.String getMode();
 
 The argument mode. One of: IN, OUT, INOUT, or VARIADIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#mode FunctionResource#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#mode FunctionResource#mode}
 
 ---
 
@@ -1347,7 +1347,7 @@ public java.lang.String getName();
 
 The argument name. The name may be required for some languages or depending on the argument mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#name FunctionResource#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#name FunctionResource#name}
 
 ---
 
@@ -1398,7 +1398,7 @@ FunctionResourceConfig.builder()
 | <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.arg">arg</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceArg">FunctionResourceArg</a>></code> | arg block. |
 | <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.database">database</a></code> | <code>java.lang.String</code> | The database where the function is located. If not specified, the provider default database is used. |
 | <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.dropCascade">dropCascade</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects. |
-| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#id FunctionResource#id}. |
+| <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#id FunctionResource#id}. |
 | <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.language">language</a></code> | <code>java.lang.String</code> | Language of the function. One of: internal, sql, c, plpgsql. |
 | <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.parallel">parallel</a></code> | <code>java.lang.String</code> | If the function can be executed in parallel for a single query execution. One of: UNSAFE, RESTRICTED, SAFE. |
 | <code><a href="#@cdktn/provider-postgresql.functionResource.FunctionResourceConfig.property.returns">returns</a></code> | <code>java.lang.String</code> | Function return type. If not specified, it will be calculated based on the output arguments. |
@@ -1489,7 +1489,7 @@ public java.lang.String getBody();
 
 Body of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#body FunctionResource#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#body FunctionResource#body}
 
 ---
 
@@ -1503,7 +1503,7 @@ public java.lang.String getName();
 
 Name of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#name FunctionResource#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#name FunctionResource#name}
 
 ---
 
@@ -1517,7 +1517,7 @@ public IResolvable|java.util.List<FunctionResourceArg> getArg();
 
 arg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#arg FunctionResource#arg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#arg FunctionResource#arg}
 
 ---
 
@@ -1531,7 +1531,7 @@ public java.lang.String getDatabase();
 
 The database where the function is located. If not specified, the provider default database is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#database FunctionResource#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#database FunctionResource#database}
 
 ---
 
@@ -1545,7 +1545,7 @@ public java.lang.Boolean|IResolvable getDropCascade();
 
 Automatically drop objects that depend on the function (such as operators or triggers), and in turn all objects that depend on those objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#drop_cascade FunctionResource#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#drop_cascade FunctionResource#drop_cascade}
 
 ---
 
@@ -1557,7 +1557,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#id FunctionResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#id FunctionResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1574,7 +1574,7 @@ public java.lang.String getLanguage();
 
 Language of the function. One of: internal, sql, c, plpgsql.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#language FunctionResource#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#language FunctionResource#language}
 
 ---
 
@@ -1588,7 +1588,7 @@ public java.lang.String getParallel();
 
 If the function can be executed in parallel for a single query execution. One of: UNSAFE, RESTRICTED, SAFE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#parallel FunctionResource#parallel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#parallel FunctionResource#parallel}
 
 ---
 
@@ -1602,7 +1602,7 @@ public java.lang.String getReturns();
 
 Function return type. If not specified, it will be calculated based on the output arguments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#returns FunctionResource#returns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#returns FunctionResource#returns}
 
 ---
 
@@ -1616,7 +1616,7 @@ public java.lang.String getSchema();
 
 Schema where the function is located. If not specified, the provider default schema is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#schema FunctionResource#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#schema FunctionResource#schema}
 
 ---
 
@@ -1630,7 +1630,7 @@ public java.lang.Boolean|IResolvable getSecurityDefiner();
 
 If the function should execute with the permissions of the function owner instead of the permissions of the caller.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#security_definer FunctionResource#security_definer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#security_definer FunctionResource#security_definer}
 
 ---
 
@@ -1644,7 +1644,7 @@ public java.lang.Boolean|IResolvable getStrict();
 
 If the function should always return NULL if any of it's inputs is NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#strict FunctionResource#strict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#strict FunctionResource#strict}
 
 ---
 
@@ -1658,7 +1658,7 @@ public java.lang.String getVolatility();
 
 Volatility of the function. One of: VOLATILE, STABLE, IMMUTABLE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/function#volatility FunctionResource#volatility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/function#volatility FunctionResource#volatility}
 
 ---
 

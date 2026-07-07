@@ -4,7 +4,7 @@
 
 ### DataPostgresqlSchemas <a name="DataPostgresqlSchemas" id="@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas postgresql_schemas}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas postgresql_schemas}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer"></a>
 
@@ -41,7 +41,7 @@ DataPostgresqlSchemas.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.database">database</a></code> | <code>java.lang.String</code> | The PostgreSQL database which will be queried for schema names. |
-| <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}. |
+| <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}. |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.includeSystemSchemas">includeSystemSchemas</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Determines whether to include system schemas (pg_ prefix and information_schema). 'public' will always be included. |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.likeAllPatterns">likeAllPatterns</a></code> | <code>java.util.List<java.lang.String></code> | Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator. |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemas.Initializer.parameter.likeAnyPatterns">likeAnyPatterns</a></code> | <code>java.util.List<java.lang.String></code> | Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ANY operator. |
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The PostgreSQL database which will be queried for schema names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#database DataPostgresqlSchemas#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#database DataPostgresqlSchemas#database}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Determines whether to include system schemas (pg_ prefix and information_schema). 'public' will always be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ANY operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#like_any_patterns DataPostgresqlSchemas#like_any_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#like_any_patterns DataPostgresqlSchemas#like_any_patterns}
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL NOT LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#not_like_all_patterns DataPostgresqlSchemas#not_like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#not_like_all_patterns DataPostgresqlSchemas#not_like_all_patterns}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 Expression which will be pattern matched in the query using the PostgreSQL ~ (regular expression match) operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
 
 ---
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the DataPostgresqlSchemas to i
 
 The id of the existing DataPostgresqlSchemas that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -939,7 +939,7 @@ DataPostgresqlSchemasConfig.builder()
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.database">database</a></code> | <code>java.lang.String</code> | The PostgreSQL database which will be queried for schema names. |
-| <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}. |
+| <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}. |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.includeSystemSchemas">includeSystemSchemas</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Determines whether to include system schemas (pg_ prefix and information_schema). 'public' will always be included. |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.likeAllPatterns">likeAllPatterns</a></code> | <code>java.util.List<java.lang.String></code> | Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator. |
 | <code><a href="#@cdktn/provider-postgresql.dataPostgresqlSchemas.DataPostgresqlSchemasConfig.property.likeAnyPatterns">likeAnyPatterns</a></code> | <code>java.util.List<java.lang.String></code> | Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ANY operator. |
@@ -1028,7 +1028,7 @@ public java.lang.String getDatabase();
 
 The PostgreSQL database which will be queried for schema names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#database DataPostgresqlSchemas#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#database DataPostgresqlSchemas#database}
 
 ---
 
@@ -1040,7 +1040,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#id DataPostgresqlSchemas#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1057,7 +1057,7 @@ public java.lang.Boolean|IResolvable getIncludeSystemSchemas();
 
 Determines whether to include system schemas (pg_ prefix and information_schema). 'public' will always be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#include_system_schemas DataPostgresqlSchemas#include_system_schemas}
 
 ---
 
@@ -1071,7 +1071,7 @@ public java.util.List<java.lang.String> getLikeAllPatterns();
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#like_all_patterns DataPostgresqlSchemas#like_all_patterns}
 
 ---
 
@@ -1085,7 +1085,7 @@ public java.util.List<java.lang.String> getLikeAnyPatterns();
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL LIKE ANY operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#like_any_patterns DataPostgresqlSchemas#like_any_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#like_any_patterns DataPostgresqlSchemas#like_any_patterns}
 
 ---
 
@@ -1099,7 +1099,7 @@ public java.util.List<java.lang.String> getNotLikeAllPatterns();
 
 Expression(s) which will be pattern matched in the query using the PostgreSQL NOT LIKE ALL operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#not_like_all_patterns DataPostgresqlSchemas#not_like_all_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#not_like_all_patterns DataPostgresqlSchemas#not_like_all_patterns}
 
 ---
 
@@ -1113,7 +1113,7 @@ public java.lang.String getRegexPattern();
 
 Expression which will be pattern matched in the query using the PostgreSQL ~ (regular expression match) operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/data-sources/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/data-sources/schemas#regex_pattern DataPostgresqlSchemas#regex_pattern}
 
 ---
 

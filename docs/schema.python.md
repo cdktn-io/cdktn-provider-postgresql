@@ -4,7 +4,7 @@
 
 ### Schema <a name="Schema" id="@cdktn/provider-postgresql.schema.Schema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema postgresql_schema}.
+Represents a {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema postgresql_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-postgresql.schema.Schema.Initializer"></a>
 
@@ -45,7 +45,7 @@ schema.Schema(
 | <code><a href="#@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the schema. |
 | <code><a href="#@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.database">database</a></code> | <code>str</code> | The database name to alter schema. |
 | <code><a href="#@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.dropCascade">drop_cascade</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, will also drop all the objects that are contained in the schema. |
-| <code><a href="#@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#id Schema#id}. |
+| <code><a href="#@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#id Schema#id}. |
 | <code><a href="#@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.ifNotExists">if_not_exists</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, use the existing schema if it exists. |
 | <code><a href="#@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.owner">owner</a></code> | <code>str</code> | The ROLE name who owns the schema. |
 | <code><a href="#@cdktn/provider-postgresql.schema.Schema.Initializer.parameter.policy">policy</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>]</code> | policy block. |
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#name Schema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#name Schema#name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 The database name to alter schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#database Schema#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#database Schema#database}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 When true, will also drop all the objects that are contained in the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#id Schema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#id Schema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 When true, use the existing schema if it exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 The ROLE name who owns the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#owner Schema#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#owner Schema#owner}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyril
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#policy Schema#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#policy Schema#policy}
 
 ---
 
@@ -733,7 +733,7 @@ The construct id used in the generated config for the Schema to import.
 
 The id of the existing Schema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1121,7 +1121,7 @@ schema.SchemaConfig(
 | <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.name">name</a></code> | <code>str</code> | The name of the schema. |
 | <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.database">database</a></code> | <code>str</code> | The database name to alter schema. |
 | <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.dropCascade">drop_cascade</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, will also drop all the objects that are contained in the schema. |
-| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#id Schema#id}. |
+| <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#id Schema#id}. |
 | <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.ifNotExists">if_not_exists</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, use the existing schema if it exists. |
 | <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.owner">owner</a></code> | <code>str</code> | The ROLE name who owns the schema. |
 | <code><a href="#@cdktn/provider-postgresql.schema.SchemaConfig.property.policy">policy</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-postgresql.schema.SchemaPolicy">SchemaPolicy</a>]</code> | policy block. |
@@ -1208,7 +1208,7 @@ name: str
 
 The name of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#name Schema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#name Schema#name}
 
 ---
 
@@ -1222,7 +1222,7 @@ database: str
 
 The database name to alter schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#database Schema#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#database Schema#database}
 
 ---
 
@@ -1236,7 +1236,7 @@ drop_cascade: bool | IResolvable
 
 When true, will also drop all the objects that are contained in the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#drop_cascade Schema#drop_cascade}
 
 ---
 
@@ -1248,7 +1248,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#id Schema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#id Schema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1265,7 +1265,7 @@ if_not_exists: bool | IResolvable
 
 When true, use the existing schema if it exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#if_not_exists Schema#if_not_exists}
 
 ---
 
@@ -1279,7 +1279,7 @@ owner: str
 
 The ROLE name who owns the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#owner Schema#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#owner Schema#owner}
 
 ---
 
@@ -1293,7 +1293,7 @@ policy: IResolvable | typing.List[SchemaPolicy]
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#policy Schema#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#policy Schema#policy}
 
 ---
 
@@ -1335,7 +1335,7 @@ create: bool | IResolvable
 
 If true, allow the specified ROLEs to CREATE new objects within the schema(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#create Schema#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#create Schema#create}
 
 ---
 
@@ -1349,7 +1349,7 @@ create_with_grant: bool | IResolvable
 
 If true, allow the specified ROLEs to CREATE new objects within the schema(s) and GRANT the same CREATE privilege to different ROLEs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#create_with_grant Schema#create_with_grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#create_with_grant Schema#create_with_grant}
 
 ---
 
@@ -1363,7 +1363,7 @@ role: str
 
 ROLE who will receive this policy (default: PUBLIC).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#role Schema#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#role Schema#role}
 
 ---
 
@@ -1377,7 +1377,7 @@ usage: bool | IResolvable
 
 If true, allow the specified ROLEs to use objects within the schema(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#usage Schema#usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#usage Schema#usage}
 
 ---
 
@@ -1391,7 +1391,7 @@ usage_with_grant: bool | IResolvable
 
 If true, allow the specified ROLEs to use objects within the schema(s) and GRANT the same USAGE privilege to different ROLEs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.26.0/docs/resources/schema#usage_with_grant Schema#usage_with_grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cyrilgdn/postgresql/1.27.0/docs/resources/schema#usage_with_grant Schema#usage_with_grant}
 
 ---
 
